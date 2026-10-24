@@ -1,0 +1,12 @@
+# Quellen zum Vorbild (Werkbuch Abschnitt 14), Daten und die App (Phase 17, GR_QUELLE).
+# KURZ | ART | ABGERUFEN | TITEL | URL | BEMERKUNG
+WP_SCHWESTERN | WEB | 2026-10-18 | Wikipedia: Seven Sisters Waterfall (Norway) | https://en.wikipedia.org/wiki/Seven_Sisters_Waterfall_(Norway) | Höhen, Lage, Friaren, Knivsflå
+WP_FV63 | WEB | 2026-10-18 | Wikipedia: Norwegian County Road 63 | https://en.wikipedia.org/wiki/Norwegian_County_Road_63 | Länge, Ørnevegen bis 620 m, Wintersperre
+FJORDNORWAY | WEB | 2026-10-18 | Fjord Norway: The Geirangerfjord | https://www.fjordnorway.com/en/see-and-do/the-geirangerfjord | Länge, Tiefe, Gipfel, Skageflå und Knivsflå
+WP_KIRCHE | WEB | 2026-10-21 | Wikipedia: Geiranger Church | https://en.wikipedia.org/wiki/Geiranger_Church | achteckige weiße Holzkirche von 1842, Dachreiter
+DANGEROUSROADS | WEB | 2026-10-20 | dangerousroads.org: Ørnesvingen road | https://www.dangerousroads.org/europe/norway/9248-ornesvingen-road.html | 11 Kehren, 7,3 km ab Geiranger, höchstens 10 %, höchster Punkt 620 m bei Korsmyra
+WP_FAEHRE | WEB | 2026-10-22 | Wikipedia: Geiranger–Hellesylt Ferry | https://en.wikipedia.org/wiki/Geiranger%E2%80%93Hellesylt_Ferry | die Linie, die Fähren, rund eine Stunde Fahrt; Fahrplan 2025 nach Fjord1 (2026 eingestellt)
+KYSTVERKET | WEB | 2026-10-22 | Kystverket: Ankeranvisning Geiranger 2026 | https://www.kystverket.no/contentassets/f9d6d17d609144a6afc371582ce08144/ankeranvisning-utskriftvenlig-2026.pdf/download | Ankerplätze, 8 und 5 Knoten vor dem Ort
+DTM1 | DATEN | 2026-10-17 | data.norge.no: Høyde DTM1 | https://data.norge.no/en/datasets/1a7327eb-1fa5-3432-8dea-fc198a5ede13/hoyde-dtm1 | Bezug über hoydedata.no, GeoTIFF, CC BY 4.0; für die Szene nicht verwendet (F6: HGT 1″)
+HGT | DATEN | 2026-10-18 | HGT-Kacheln 1″ N62E006 und N62E007 (DEM1) |  | Oberflächenmodell, Hauptraster 12 m und Fernring 120 m aus tools.HgtImport (Phase 2)
+APP | APP |  | Geiranger Studio: gestaltet [G] |  | Was die Szene setzt, wo keine Quelle es belegt: Lagen, Abläufe, Zahlen mit [G] im Werkbuch

@@ -1,0 +1,1065 @@
+Microsoft Windows [Version 10.0.26300.9711]
+(c) Microsoft Corporation. Alle Rechte vorbehalten.
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>ant clean pruefung
+Buildfile: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build.xml
+
+-pre-init:
+
+-init-private:
+
+-pre-init-libraries:
+
+-init-private-libraries:
+
+-init-libraries:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-init-modules-supported:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-modulename:
+
+-init-source-module-properties:
+
+-init-macrodef-javac-with-module:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-test-impl:
+
+-init-macrodef-junit-init:
+
+-init-test-properties:
+
+-init-macrodef-junit-prototype-with-module:
+
+-init-macrodef-junit-prototype-without-module:
+
+-init-macrodef-junit-single:
+
+-init-macrodef-junit-batch:
+
+-init-macrodef-junit:
+
+-init-macrodef-junit-impl:
+
+-init-macrodef-testng:
+
+-init-macrodef-testng-impl:
+
+-init-macrodef-test:
+
+-init-macrodef-junit-debug-impl:
+
+-init-macrodef-test-debug-junit:
+
+-init-macrodef-testng-debug:
+
+-init-macrodef-testng-debug-impl:
+
+-init-macrodef-test-debug-testng:
+
+-init-macrodef-test-debug:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java-with-module:
+
+-init-macrodef-java-with-unnamed-module:
+
+-init-macrodef-java-without-module:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-clean-init:
+
+deps-clean:
+
+-warn-already-built-clean:
+[propertyfile] Updating property file: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\built-clean.properties
+
+-do-clean:
+   [delete] Deleting directory C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+-post-clean:
+
+clean:
+
+-pre-init:
+
+-init-private:
+
+-pre-init-libraries:
+
+-init-private-libraries:
+
+-init-libraries:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-init-modules-supported:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-modulename:
+
+-init-source-module-properties:
+
+-init-macrodef-javac-with-module:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-test-impl:
+
+-init-macrodef-junit-init:
+
+-init-test-properties:
+
+-init-macrodef-junit-prototype-with-module:
+
+-init-macrodef-junit-prototype-without-module:
+
+-init-macrodef-junit-single:
+
+-init-macrodef-junit-batch:
+
+-init-macrodef-junit:
+
+-init-macrodef-junit-impl:
+
+-init-macrodef-testng:
+
+-init-macrodef-testng-impl:
+
+-init-macrodef-test:
+
+-init-macrodef-junit-debug-impl:
+
+-init-macrodef-test-debug-junit:
+
+-init-macrodef-testng-debug:
+
+-init-macrodef-testng-debug-impl:
+
+-init-macrodef-test-debug-testng:
+
+-init-macrodef-test-debug:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java-with-module:
+
+-init-macrodef-java-with-unnamed-module:
+
+-init-macrodef-java-without-module:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-jar-init:
+
+deps-jar:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+-warn-already-built-jar:
+[propertyfile] Updating property file: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\built-jar.properties
+
+-check-automatic-build:
+
+-clean-after-automatic-build:
+
+-verify-automatic-build:
+
+-pre-pre-compile:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+
+-pre-compile:
+
+-copy-persistence-xml:
+
+-compile-depend:
+
+-do-compile:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\empty
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\generated-sources\ap-source-output
+    [javac] Compiling 81 source files to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+     [copy] Copying 45 files to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+
+check-packages:
+     [exec] check-packages: 2 Packages, jedes für sich übersetzt
+     [exec]   Package        Kern   gl     demo   Importe  Dateien
+     [exec]   cliff          ok     ok     ok     ok       9
+     [exec]   fall           ok     ok     ok     ok       6
+     [exec] check-packages: alle 2 Packages unabhängig.
+
+-post-compile:
+
+compile:
+
+-pre-pre-compile-test:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\test\classes
+
+-pre-compile-test:
+
+-init-test-javac-module-properties-with-module:
+
+-init-test-module-properties-without-module:
+
+-init-test-module-properties:
+
+-compile-test-depend:
+
+-do-compile-test:
+    [javac] Compiling 1 source file to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\test\classes
+
+-post-compile-test:
+
+compile-test:
+
+pruefung:
+     [java] Matrizen
+     [java]   ok    Projektion·Blick mal Inverse = Einheit (Fehler 7,6e-06)
+     [java]   ok    Umgekehrte Tiefe: Punkt in 100 m hat Tiefe Nahebene/100
+     [java]   ok    Gipfel am Rand des Ausschnitts (18 km) liegen zwischen 0 und Nahebene, vor dem Unendlichen
+     [java] Ort (UTM 32 N, Ursprung am Anleger)
+     [java]   ok    UTM hin und zurück auf 1 cm (0,0000 m)
+     [java]   ok    Anleger bei 62°06?05? N · 7°12?20? E (Geiranger, Ende des Fjords)
+     [java]   ok    Ursprung (0, 0), Nord = ?z (F2 A)
+     [java]   ok    Umgebung 18,8 × 17,4 km deckt den GLO-30-Ausschnitt 6,95?7,30° O, 62,05?62,21° N
+     [java]   ok    Kern West 3 × 2 km quer, Kern Ost 2,3 × 3,5 km hochkant (F1 A; seit Phase 9 mit den westlichen Kehren)
+     [java]   ok    Sieben Schwestern, Friaren und Skageflå liegen in Kern West
+     [java]   ok    Die Schwestern an der Nordwand, Friaren gegenüber im Süden
+     [java]   ok    Anleger, Plattform der Ørnesvingen und Storfossen liegen in Kern Ost
+     [java]   ok    Die Schwestern liegen 5,8 km westlich des Anlegers (Werkbuch: rund 6,5 km vom Ort)
+     [java]   ok    Die Ørnesvingen liegen nördlich des Orts (Karte, F1)
+     [java] Sonne (62,1° Nord)
+     [java]   ok    21.6.2026 Aufgang 3:39, Untergang 23:27 MESZ
+     [java]   ok    Höchststand 13:33 MESZ bei 51,3°, Azimut 180° ? die Sonne steht mittags im Süden
+     [java]   ok    21.12.2026 Tag 5,1 h (9:56 bis 15:02 MEZ)
+     [java]   ok    Sonne im Süden zeigt nach +z (z ist Süd)
+     [java] Uhr
+     [java]   ok    Start: 21.6.2026 11:00 MESZ (Ein Junitag)
+     [java]   ok    Norwegische Sommerzeit UTC+2
+     [java]   ok    Zeitraffer 1 min/s, 30 s ? 21.6.2026 11:30 MESZ
+     [java]   ok    Zeitraffer höchstens 3600-fach
+     [java]   ok    Jahreswechsel in MEZ: 1.1.2027 00:30 MEZ
+     [java]   ok    Uhr steht, Laufzeit läuft weiter
+     [java] Gelände (HGT 1?, Phase 2)
+     [java]   ok    daten/gelaende gelesen: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   ok    Naht bei 7° O: die Randspalten von N62E006 und N62E007 sind gleich (größter Unterschied 0 m)
+     [java]   ok    GLO-30 als Gegenprobe: im Mittel -0,53 m (Streuung 11.88 m, 505203 Punkte) ? unter 2 m
+     [java]         (in den Kernen -4,29 m, Streuung 18.28 m: an den Wänden verschieben sich die Raster um Bruchteile einer Zelle)
+     [java]   ok    Fjord im Hauptraster 45,9 km² (Geirangerfjord und Teile des Sunnylvsfjords)
+     [java]   ok    Plattform der Ørnesvingen auf 531 m (elfte Kehre, rund 530 m; 620 m ist Korsmyra)
+     [java]   ok    Anleger am Ufer auf NN +1,4 m
+     [java]   ok    Sieben Schwestern: Fuß auf 1 m, 400 m westlich 511 m (die Wand)
+     [java]   ok    Zwischen Schwestern und Friaren Fjord, NN genau ein Wert, Grund dort -185 m (Phase 3)
+     [java]   ok    Skageflå auf 265 m, Knivsflå auf 256 m (Höfe auf ihren Bändern um 250 m)
+     [java]   ok    Fernring: außen allein, innen das Hauptraster, dazwischen weich (1287 / 1268 m)
+     [java]   ok    Detailstufen: an der Plattform (Kern Ost) Knoten bis 128 m (2 m Punktabstand), außerhalb der Kerne nicht unter 512 m (8 m)
+     [java] Fjordgrund (F7, Phase 3)
+     [java]   ok    Profil: am Ufer 10 m, ab der halben Breite 150 m, in der Mitte eines breiten Fjords 250 m
+     [java]   ok    Schmale Arme flacher: 200 m breit 32 m, 400 m breit 150 m
+     [java]   ok    Delta: 2 m an der Mündung, 150 m erst rund 550 m davor
+     [java]   ok    Grund gemalt, tiefste Stelle 249.1 m (Rinne 250 m)
+     [java]   ok    Schnitte: A: Ufer 5 m, tiefste 182 m; B: Ufer 5 m, tiefste 246 m; C: Ufer 2 m, tiefste 159 m (A quer vor den Schwestern Mitte, B im breiten Bogen mit Rinne)
+     [java]   ok    Vor der Mündung der Geirangelva das Delta: -0,2 m tief
+     [java]   ok    Vor dem Kai (Ansicht Anleger) 103 m: am Hang des Deltas, nicht in der Mitte
+     [java]   ok    Fernring: 11673 Zellen unter NN auf 150 m (der Sunnylvsfjord läuft unter ocean weiter)
+     [java]   ok    Land liegt überall über NN (Senken ohne Fjord gehoben: 258 Zellen), damit ocean dort nicht steht
+     [java] Wasser (ocean, Preset Fjord, Phase 3)
+     [java]   ok    Preset Fjord: Streichlänge 3 km, keine Dünung, 150 m tief
+     [java]   ok    Stiller Morgen Bft 0: H_s 0,000 m (Spiegel); Bft 4 nur 0,19 m (Wände nehmen den Wind)
+     [java]   ok    Stufen: ocean folgt eins zu eins, Spiegelbild und Rundumbild steigen an (Mittel: 85 % der Auflösung, Budget 16,0 ms, Gelände 2,6 Knoten, am Auge 8 m, in den Kernen 2 m, Wasser FFT 256² × 3, Spiegelbild 50 % (Rundumbild 2048 × 1024), Wolken MEDIUM, Schatten der Wände 1024², Fels MEDIUM, Fälle MEDIUM, Wald MEDIUM (1,8 km), Bodendecke 16 m)
+     [java]   ok    Spiegelbild: vom Auge unter dem Spiegel trifft der gespiegelte Strahl genau den Wasserpunkt
+     [java]   ok    Vom Wasser steht man auf NN; ?Grund zeigen? lässt bis auf den Grund (-185 m)
+     [java]   ok    Ansicht ?Fjordgrund? schaltet ?Grund zeigen? ein, Auge über dem Spiegel
+     [java] Wetter (Klima Geiranger, Phase 4)
+     [java]   ok    Freie Regie 120 Tage ab Juni: Wind im Mittel 4,0 m/s (im Windschatten der Wände), Regen 27 %, Fjordnebel 9 % der Zeit, 9 Lagen
+     [java]   ok    Nebelmorgen: um 5:30 Nebel 90 % bis 170 m über dem Spiegel (die Wände ragen heraus), um 13 Uhr 0 %
+     [java]   ok    Regentag um 10 Uhr: 3,5 mm/h, 7,9/8 Nimbostratus, Wolkenband 100 % von 480 bis 1030 m an den Wänden
+     [java]   ok    Ein Junitag: 23,5 h ab 3:30, Zeitraffer 720, um 11 Uhr 3,0/8 ohne Regen
+     [java]   ok    Himmel bekommt Ort (62,1° N), Augenhöhe und Sicht aus der Regie
+     [java]   ok    Stufen: Wolken und Karte der Wandschatten steigen an (Mittel 1024², 24 m)
+     [java] Schatten der Wände (F19, Phase 4)
+     [java]   ok    21.6.: Wasser in der Sonne um 6 Uhr 8 %, mittags 99 %, um 20 Uhr 36 % (das Licht erreicht den Spiegel spät)
+     [java]   ok    Sonne am Wasser: vor dem Anleger ab 8:00, vor den Schwestern ab 5:55 Uhr (Aufgang 3:39)
+     [java]   ok    21.12.: die Sonne erreicht das Wasser vor den Schwestern nie
+     [java]   ok    Sonne im Zenit: alles hell; unter der Kimm: alles dunkel
+     [java] Fels (com.dan.cliff, Phase 5)
+     [java]   ok    Stufen: Fels steigt an (Mittel = MEDIUM, 3 Oktaven bis 1,5 km; Niedrig ohne Überhänge)
+     [java]   ok    Gelände bindet cliff.glsl: Feinform im Scheitelshader, Material im Bildpunkt
+     [java]   Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 11 Fälle
+     [java]   ok    Wandkarte über dem Hauptraster: Wand 4,4 %, Geröll 8,9 %, 11 Fälle mit nassen Linien (seit Phase 7 aus ihrem Weg)
+     [java]   ok    Nasser Streifen in der Wand der Sieben Schwestern (Nässe 1,00 an der Wand)
+     [java]   ok    Drei Überhänge an den Abrisskanten (Schwestern, Friaren, seit Phase 8 Storsæterfossen), 400 m ü. NN, 294 m ü. NN, 527 m ü. NN
+     [java] Wasserfall (com.dan.fall, Phase 6, Lauf über Fels seit Phase 7)
+     [java]   ok    Engine: 7 Strähnen und 4000 Bündel auf ?Mittel? (Vorführung, Kante 40 m)
+     [java]   ok    250 m in 16,1 s (frei 7,1 s), Schleier unten 58 m statt 40 m
+     [java]   ok    Shader von fall mit Baustein fall.glsl
+     [java] Wasserfälle (Phase 7)
+     [java]   ok    cliff: das Hochladen der Wandkarte lässt die Rauschtextur stehen (Selbsttest der Phase 5 meldete ± 96 %)
+     [java]   ok    Jahreszeit: Juni 100 %, 20. Mai 83 %, Oktober 30 %, Februar 6 % vom Juni
+     [java]   ok    Regen: nach 10 mm in 10 h 6,3 mm im Speicher, Schwestern 4,06 statt 2,49 m³/s, Regenfall 0,06 statt0; nach 12 h trocken 1,6 mm
+     [java]   ok    Von Hand: 50 % vom Juni gilt für alle Fälle
+     [java]   ok    Frost: nach vier Tagen bei ?20 °C hat der Fall -19 °C und steht
+     [java]   ok    Stufen: die App gibt fall ihre Stufe (Mittel = MEDIUM)
+     [java]   ok    Ansichten 8 Sieben Schwestern und 9 Friaren
+     [java]         Storfossen: Kante 67 m über NN (E 406505, N 6886279), nach 333° · 5 Strähnen · 25,00 m³/s · über Fels 100 % der Zeit, 1 Aufschläge, freier Fall bis 0 m, Weg 215 m
+     [java]         Geirangelva, Kaskade 1: Kante 111 m über NN (E 406913, N 6885871), nach 330° · 5 Strähnen · 25,00 m³/s · über Fels 100 % der Zeit, 1 Aufschläge, freier Fall bis 0 m, Weg 100 m
+     [java]         Sieben Schwestern: Kante 404 m über NN (E 400549, N 6887632), nach 125° · 7 Strähnen · 2,50 m³/s · über Fels 55 % der Zeit, 14 Aufschläge, freier Fall bis 232 m, Weg 457 m
+     [java]         Friaren: Kante 298 m über NN (E 401619, N 6887424), nach 312° · 4 Strähnen · 1,50 m³/s · über Fels 77 % der Zeit, 16 Aufschläge, freier Fall bis 107 m, Weg 390 m
+     [java]         Brudesløret: Kante 562 m über NN (E 399952, N 6887429), nach 156° · 5 Strähnen · 0,60 m³/s · über Fels 97 % der Zeit, 8 Aufschläge, freier Fall bis 6 m, Weg 719 m
+     [java]         Storsæterfossen: Kante 531 m über NN (E 407646, N 6887150), nach 199° · 2 Strähnen · 0,80 m³/s · über Fels 95 % der Zeit, 7 Aufschläge, freier Fall bis 12 m, Weg 115 m
+     [java]         Regenfall 1: Kante 357 m über NN (E 400224, N 6887461), nach 140° · 2 Strähnen · 0,15 m³/s · über Fels 95 % der Zeit, 14 Aufschläge, freier Fall bis 4 m, Weg 467 m
+     [java]         Regenfall 2: Kante 344 m über NN (E 401947, N 6887613), nach 316° · 2 Strähnen · 0,15 m³/s · über Fels 95 % der Zeit, 12 Aufschläge, freier Fall bis 5 m, Weg 487 m
+     [java]         Regenfall 3: Kante 332 m über NN (E 402385, N 6888271), nach 354° · 2 Strähnen · 0,15 m³/s · über Fels 100 % der Zeit, 1 Aufschläge, freier Fall bis 0 m, Weg 10 m
+     [java]         Regenfall 4: Kante 332 m über NN (E 402687, N 6888297), nach 003° · 2 Strähnen · 0,15 m³/s · über Fels 84 % der Zeit, 10 Aufschläge, freier Fall bis 24 m, Weg 395 m
+     [java]         Regenfall 5: Kante 311 m über NN (E 400575, N 6887775), nach 079° · 2 Strähnen · 0,15 m³/s · über Fels 94 % der Zeit, 16 Aufschläge, freier Fall bis 7 m, Weg 475 m
+     [java]   ok    Drei benannte Fälle und 5 Regenfälle an ihren Kanten
+     [java]   ok    Sieben Schwestern: sieben Strähnen im Lauf über Fels, Kante auf 404 m (410 m), 5 von 7 kommen im Fjord an
+     [java]   ok    Die Kante der Schwestern liegt in Kern West, 365 m von Knivsflå
+     [java]   ok    Friaren gegenüber: Kante auf 298 m, 4 von 4 Strähnen im Fjord · über Fels 77 % der Zeit, 16 Aufschläge, freier Fall bis 107 m, Weg 390 m
+     [java]   ok    Kein Fall steckt im Fels: das Wasser bleibt mindestens 0,80 m über der Wand mit Feinform
+     [java]   ok    Ansichten 8 und 9 stehen auf dem Fjord und blicken auf ihren Fall (± 9° und ± 1°)
+     [java]   ok    ?Vom Wasser? blickt auf die Schwestern an ihrer neuen Lage
+     [java]   ok    Doppelter Abfluss: der Hintergrund rechnet die Fälle neu (6 Rechnungen), die Schwestern führen 5,0 m³/s
+     [java]   ok    Nässe der Wand folgt dem Abfluss; eigener Durchgang ?Fälle? nach dem Wasser
+     [java] Geirangelva und Storfossen (Phase 8)
+     [java]   ok    Belichtung im Bild: Logarithmus der Leuchtdichte, Mip-Mittel, Ausgleich zum arithmetischen Mittel des Himmels 2.0
+     [java]   ok    Gelände billiger: Hash ohne Sinus, Platzhalter-Gneis nur ohne cliff, Fjordanteil nur für den Platzhalter-Spiegel
+     [java]   ok    Ansicht 3 ?Am Storfossen?
+     [java]   Formen: Sieben Schwestern: Stufe 250 m, Front 109 m vor der Kante, 191 Zellen, 1,3 Mio. m³ bewegt; Friaren: Stufe 120 m, Front 41 m vor der Kante, 61 Zellen, 0,2 Mio. m³ bewegt; Bett der Geirangelva: 163 Zellen, 0,11 Mio. m³ abgetragen; Fv63: Feinraster 1048 × 1998 zu 2 m, Einschnitt 0,52 Mio. m³, Damm 0,33 Mio. m³, unter der Plattform 82 Zellen gesenkt
+     [java]   ok    Formen: Wandschnitt unter Schwestern und Friaren, Bett der Elva
+     [java]   ok    Geschärfte Wände (F12b A): unter der Kante der Schwestern 250 m auf 30 m (Stufe 250 m), unter Friaren 137 m (Stufe 120 m)
+     [java]   ok    Geirangelva: Geirangelva: 1462 m vom Delta bis 161 m über NN · Storfossen 11?67 m (200 m lang) · Geirangelva, Kaskade 1 88?111 m (105 m lang) · Geirangelva, Kaskade 2 115?161 m (155 m lang) · 3 Strecken als Fluss
+     [java]   ok    Spiegel steigt vom Delta (0,6 m) bergauf nie ab; Storfossen als Stufe; 3 Strecken als Fluss
+     [java]   ok    Das Bett liegt unter dem Spiegel: 391 von 396 Proben der Strecken mindestens 0,4 m tief
+     [java]   ok    Strömung (com.dan.river) im Juni: 5148 Ecken, 69 % nass, höchstens 8,9 m/s
+     [java]   Treppe am Storfossen: 308 Stufen, 55 m hoch · Geländer 84 Pfosten · 20 Steine im Fluss · 7.632 Dreiecke
+     [java]   ok    Treppe am Storfossen: 308 Stufen, steigt, über dem Wasser und am Ufer; 84 Pfosten; 20 Steine im Fluss
+     [java]   ok    Storfossen als Fall im Lauf über Fels, 5 Strähnen erreichen die Elva (Spiegel 11 m); Storsæterfossen dabei
+     [java]   ok    ?Am Storfossen? steht am Ufer (13 m von der Mitte) und blickt auf den Fall (± 22°)
+     [java] Ørnevegen und Plattform (Phase 9)
+     [java]   ok    Nacharbeit 8: Schleier und Nebel der Fälle nah am Auge begrenzt (der Storfossen von der Treppe kostete 18,9 ms)
+     [java]   ok    Nacharbeit 8: die Belichtung folgt dem Bild zu 0.75
+     [java]   ok    Gelände auf der Grafikkarte mit Feinraster wie Terrain.height
+     [java]   ok    Treppe am Storfossen höchstens 2,2 m über dem Hang; ?Am Storfossen? auf der Treppe, Blick 19° hinauf
+     [java]   ok    Fv63: Fv63 Ørnevegen: 9,4 km, 11 Kehren, von 2 bis 606 m, Steigung bis 11,0 %, Plattform auf 533 m
+     [java]   ok    Elf Kehren, jede höher als die vorige; Steigung bis 11,0 %, 9,4 km
+     [java]   ok    Feinraster: 4614 von 4663 Proben der Achse liegen auf dem geformten Gelände (± 0,6 m) · Fv63: Feinraster 1048 × 1998 zu 2 m, Einschnitt 0,52 Mio. m³, Damm 0,33 Mio. m³, unter der Plattform 82 Zellen gesenkt
+     [java]   ok    Plattform der Ørnesvingen: 533 m, Deck 12 × 22 m, 8 Stützen, 26 Pfosten; unter dem Deck mindestens 1,2 m Luft
+     [java]   ok    Verkehr nach 10 min: 104 Fahrzeuge, Begegnungsregel: 15 große Fahrzeuge, 37 Mal gewartet · Kehre 1:großes Fahrzeug bergauf, Gegenverkehr wartet · Kehre 2: großes Fahrzeug bergab, Gegenverkehr wartet · Kehre 11: großes Fahrzeug bergab, Gegenverkehr wartet
+     [java]   ok    Ansicht 1 ?Plattform? auf dem Deck, in Kern Ost
+     [java] Wald, Wiesen und Höfe (Phase 10)
+     [java]   ok    ground und road kommen aus Renderer.jar, nicht aus den älteren Kopien in FStyle.jar (Klassenpfad: Renderer.jar zuerst) · BeansProjects/Geiranger/lib/Renderer.jar
+     [java]   ok    Gelände: Tundra mit der Zeichnung des Scans (daten/tundra/tundra_1024.jpg, F10 A) und Hofwiesen
+     [java]   ok    Stufen: Wald Mittel = MEDIUM (1.8 km), Bodendecke 16.0 m
+     [java]   Höfe: Knivsflå 228 m (5 Häuser, Band 22°) Skageflå 302 m (5 Häuser, Band 4°)
+     [java]   ok    Knivsflå und Skageflå auf ihren Bändern, je mindestens vier Häuser aus timber: Bohlen 2177 m², Grasdach 961 m² (Phase 11)
+     [java]   ok    Wald 100 bis 650 m: 66 % der Fläche, über 950 m 0,0 %; nie im Fjord, auf der Straße oder den Hofwiesen
+     [java]   ok    Unten an der Elva Erle zu Birke 0,79; Birken bis 14 m hoch (Fjordhang)
+     [java]   ok    Wald um den Ort (Reichweite 1,8 km): 63.849 Bäume, keiner im Fjord
+     [java]   ok    Nacharbeit 8b: Gischt der Stufen in der Elva auf 0.3
+     [java] Der Ort Geiranger (Phase 11)
+     [java]   ok    bauten.frag: Verschalung, Fenster (nachts erleuchtet) und Laternen; glow für die Lichthöfe
+     [java]   ok    Gelände: Kronendach aus der Waldkarte (Nacharbeit 10)
+     [java]   ok    Birkenlaub dunkler (Sommer 0,135, Frühling 0,180 Grün; Austrieb Tag 135) wie auf den Fotos
+     [java]   Ort: 60 Gebäude (34 Wohnhäuser, 4 Läden, 6 Nebenhäuser, 2 Hotels, Kirche, Terminal, 4 Naust, Camping mit 7 Hütten und 7 Wohnwagen) · 1314 Fenster · 29 Laternen · Anleger 62 × 10 m
+     [java]   ok    Rund 60 Gebäude: 60 (Kirche, Hotel Union, Hotel Geiranger, Terminal, 4 Naust, Camping)
+     [java]   ok    Keine Ecke im Fjord (0), auf der Fahrbahn (0) oder in der Elva (0); kein Boden mehr als 7 m über dem Grund (0)
+     [java]   ok    Kirche bei 62° 05? 56? N, 7° 12? 26? O (UTM 406 406 / 6 886 481)
+     [java]   ok    Anleger aus timber: 1290 m² Deck, 60 von 64 m über dem Fjord
+     [java]   ok    Lichter in der Nacht: 29 Laternen, 1314 Fenster
+     [java]   ok    Kein Baum auf einem Bau oder dem Campingplatz (0)
+     [java]   ok    Fv63 vom Storfossen durch den Ort (Beginn 375 m südlich des Anlegers), Strandvegen 165 m zum Campingplatz
+     [java]   ok    Ansicht 5 ?Anleger?: der Ort vom Wasser, 50 von 67 Bauten im Blickfeld
+     [java]   ok    Waldkarte 2048²: 78 % der Hänge 100 bis 600 m über der Hälfte bewaldet, im Fjord nichts
+     [java]   ok    Ansicht 7 zeigt den Grund, die nächste Ansicht wieder das Wasser; ?Grund zeigen? von Hand bleibt (Fehler aus Status_Phase10a)
+     [java] Schiffe und Kielwasser (Phase 12)
+     [java]   ok    Kielwasser (iWave, Kern 13 × 13) und Schiffe (Modellmatrix) auf der Grafikkarte
+     [java]   ok    Nacharbeit 11 (Status_Phase11a): Relief des Fels nah genau gemischt (kein Strichraster), Maßstab der Feinform ohne Sprung zwischen Knoten (kein Spalt)
+     [java]   ok    Kern des Kielwassers: Antwort |k| für 0,5 ? |k| ? 2,4 auf 4,2 %, bei k = 0: 0,0001
+     [java]   ok    Weg der Fähre 19,9 km im Fjord, mindestens 206 m vom Ufer
+     [java]   ok    21. Juni 6 bis 20 Uhr: 403810 Rumpfpunkte, 0 an Land oder zu flach
+     [java]   ok    Die Fähren begegnen sich unterwegs (63 × 10 s unter 600 m), vor den Schwestern höchstens 3,0 m/s
+     [java]   ok    Fahrplan 2025: 10:00 ab Hellesylt, 11:05 an der Liegestelle in Geiranger, 11:40 legt sie wieder ab · legt ab
+     [java]   ok    Kreuzfahrtschiff 250 m vor Anker (UTM 405890 / 6886720), 442 m vom Anleger, 143 m neben dem Weg derFähre
+     [java]   ok    Fähre schwimmt (buoyancy): Wasserlinie +0,00 m, Trimm 0,00°, Krängung 0,00°, GM 1,5 m, Tauchen 4,4 s, Rollen 9,9 s, 2502 t
+     [java]   Schiffe: MF Veøy liegt in Geiranger, ab 11:40 · MF Bolsøy in Hellesylt · Kreuzfahrtschiff vor Anker bis 17:30 · Schnellboot liegt am Anleger · 6 Kajaks
+     [java] Kamera
+     [java]   ok    Grundansicht: hoch über dem Ostarm, Blick 245° den Fjord hinab nach Westsüdwest
+     [java]   ok    Frei auf der Bühne: Auge bleibt über dem Boden (1,5 m)
+     [java]   ok    Wechsel Frei ? Kreisen behält die Ansicht
+     [java]   ok    Drehpunkt bleibt im Ausschnitt
+     [java]   ok    9 von 9 Ansichten stehen (Plattform, Vom Wasser, Am Storfossen, Skageflå, Anleger, Vogelauge, Fjordgrund, Sieben Schwestern, Friaren); ohne Gelände in der Höhe ihres Grunds
+     [java]   ok    Auf dem Gelände: jedes Auge über dem Grund (Plattform 531 m, Vom Wasser 0 m, Am Storfossen 23 m, Skageflå 265 m, Anleger 0 m, Vogelauge 0 m, Fjordgrund 0 m, Sieben Schwestern 0 m, Friaren 0 m)
+     [java]   ok    ?Vom Wasser?, ?Anleger? und ?Fjordgrund? stehen auf dem Fjord
+     [java]   ok    Von der Plattform liegt der Fjord in Blickrichtung (wie Foto Ørnesvingen2)
+     [java]   ok    Plattform auf 536 m (Phase 9), ?Skagefla? findet Skageflå (Umgebungsvariablen)
+     [java] Qualität
+     [java]   ok    Stufen Niedrig ? Ultra steigen an
+     [java]   ok    ?Mittel? hat das Budget aus Abschnitt 10: 16,7 ms je Bild, 0,7 ms Reserve
+     [java] Physik: Pruefung$$Lambda/0x0000025137095710: java.lang.IllegalStateException: Probe  ok    Start auf ?Mittel? (F22 A)
+     [java]
+     [java]   ok    Grafikkarte 30 ms: Auflösung sinkt auf 70 %
+     [java]   ok    nie unter 50 %
+     [java]   ok    In den Kernfenstern ist das Gelände nie gröber als außerhalb; ?Mittel? bis 2 m (F3)
+     [java]   ok    fall und cliff haben je vier Stufen (Paketvertrag Punkt 7)
+     [java] Faden der Physik
+     [java]   ok    Fester Schritt 1/120 s, höchstens 24 Schritte nachgeholt (24)
+     [java]   ok    3,5 Schritte Zeit ? 3 Schritte, der Rest wartet
+     [java]   ok    Eine fehlerhafte Aufgabe fällt heraus, die anderen laufen weiter
+     [java] Shader
+     [java]   ok    Shader fullscreen.vert gefunden und Bausteine eingesetzt (8 Zeilen)
+     [java]   ok    Shader sky.frag gefunden und Bausteine eingesetzt (123 Zeilen)
+     [java]   ok    Shader terrain.vert gefunden und Bausteine eingesetzt (407 Zeilen)
+     [java]   ok    Shader terrain.frag gefunden und Bausteine eingesetzt (560 Zeilen)
+     [java]   ok    Shader fullscreen.vert gefunden und Bausteine eingesetzt (8 Zeilen)
+     [java]   ok    Shader post.frag gefunden und Bausteine eingesetzt (30 Zeilen)
+     [java]   ok    Shader fullscreen.vert gefunden und Bausteine eingesetzt (8 Zeilen)
+     [java]   ok    Shader overlay.frag gefunden und Bausteine eingesetzt (15 Zeilen)
+     [java]   ok    Shader fullscreen.vert gefunden und Bausteine eingesetzt (8 Zeilen)
+     [java]   ok    Shader spiegel.frag gefunden und Bausteine eingesetzt (148 Zeilen)
+     [java]   ok    Shader fullscreen.vert gefunden und Bausteine eingesetzt (8 Zeilen)
+     [java]   ok    Shader schatten.frag gefunden und Bausteine eingesetzt (218 Zeilen)
+     [java]   ok    Shader elva.vert gefunden und Bausteine eingesetzt (130 Zeilen)
+     [java]   ok    Shader elva.frag gefunden und Bausteine eingesetzt (261 Zeilen)
+     [java]   ok    Shader bauten.vert gefunden und Bausteine eingesetzt (129 Zeilen)
+     [java]   ok    Shader bauten.frag gefunden und Bausteine eingesetzt (288 Zeilen)
+     [java]   ok    Shader fullscreen.vert gefunden und Bausteine eingesetzt (8 Zeilen)
+     [java]   ok    Shader lum.frag gefunden und Bausteine eingesetzt (19 Zeilen)
+     [java]   ok    Shader strasse.vert gefunden und Bausteine eingesetzt (132 Zeilen)
+     [java]   ok    Shader strasse.frag gefunden und Bausteine eingesetzt (259 Zeilen)
+     [java]   ok    Shader glow.vert gefunden und Bausteine eingesetzt (126 Zeilen)
+     [java]   ok    Shader glow.frag gefunden und Bausteine eingesetzt (127 Zeilen)
+     [java]   ok    Shader schiff.vert gefunden und Bausteine eingesetzt (132 Zeilen)
+     [java]   ok    Shader bauten.frag gefunden und Bausteine eingesetzt (288 Zeilen)
+     [java]   ok    Gelände: Fjord nach der Art je Zelle, Dunst, Fernring mit Überblendung wie Terrain.height
+     [java]   ok    kein reserviertes Wort ?half?, kein smoothstep mit vertauschten Kanten (AMD-Treiber sind streng)
+     [java]   ok    Compute-Test: Erwartungswerte der Präfixsumme
+     [java]   ok    Dreizehn Durchgänge mit Zeitmessung: Schatten, Himmel, Spiegelbild, Gelände, Straße, Wald, Ort, Schiffe, Wasser, Fälle, Wetter, Nachbearbeitung, HUD
+     [java]   ok    Gelände: Schatten der Wände und Wolkenschatten, Himmelslicht aus com.dan.sky; die Schattenkarte mitErdkrümmung, über dem Fjord ab dem Spiegel
+     [java]   ok    Rundumbild des Spiegelbilds in derselben Abbildung, die ocean als Himmel liest (Azimut von Nord, Höhe)
+     [java]   ok    Gelände: Spiegelbild schneidet unter dem Wasser ab, ?Grund zeigen? und Platzhalter-Spiegel, wenn ocean fehlt
+     [java] Verdrahtung
+     [java]   ok    26 Verbindungen, 6 geplant · Wind Bft 2 aus 270° · Spiegel NN +0,00 m
+     [java]   ok    Ohne ocean ist die Fläche der feste Spiegel
+     [java]   ok    Spiegel auf NN
+     [java]   ok    Geplante Verbindungen folgen dem Phasenplan (2 bis 17)
+     [java]   ok    Mit dem Renderer gibt ocean (Preset Fjord) die Fläche an die Verdrahtung
+     [java]   ok    HUD und Statuszeile mit Datum: Kreisen · Auge 1654 m über NN, 1654 m über Grund · Blick 245° · Umgebung · 2,6 km bis Plattform Ørnesvingen
+     [java] Renderer.jar (F4 A)
+     [java]   ok    31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   ok    Alle 21 Packages, die das Werkbuch braucht, liegen in Renderer.jar
+     [java]   ok    fall und cliff sind neu (noch nicht in Renderer.jar)
+     [java] Programmsymbol
+     [java]   ok    Symbol in 7 Größen gemalt, deckend in der Mitte, runde Ecken (Entwurf, F23 in Phase 18)
+     [java] Projekt (F24 A)
+     [java]   ok    fall und cliff mit README im Quellbaum (bis Phase 18), sonst keine Element-Packages (F4 A)
+     [java]   ok    .gitignore hält templates/ und db/db.properties aus dem Git
+     [java]   ok    ?Neuer Ordner? ist aufgeräumt
+     [java]   ok    Prompt-Entwurf bleibt in docs/claude/
+     [java] Isolation
+     [java]   ok    15 Dateien in 2 Packages, keine nennt com.dan.geiranger
+     [java]
+     [java] 200 Prüfungen, 0 Verstöße, 16,6 s
+     [java] ERGEBNIS: alles in Ordnung
+
+BUILD SUCCESSFUL
+Total time: 26 seconds
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>ant clean schiffe
+Buildfile: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build.xml
+
+-pre-init:
+
+-init-private:
+
+-pre-init-libraries:
+
+-init-private-libraries:
+
+-init-libraries:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-init-modules-supported:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-modulename:
+
+-init-source-module-properties:
+
+-init-macrodef-javac-with-module:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-test-impl:
+
+-init-macrodef-junit-init:
+
+-init-test-properties:
+
+-init-macrodef-junit-prototype-with-module:
+
+-init-macrodef-junit-prototype-without-module:
+
+-init-macrodef-junit-single:
+
+-init-macrodef-junit-batch:
+
+-init-macrodef-junit:
+
+-init-macrodef-junit-impl:
+
+-init-macrodef-testng:
+
+-init-macrodef-testng-impl:
+
+-init-macrodef-test:
+
+-init-macrodef-junit-debug-impl:
+
+-init-macrodef-test-debug-junit:
+
+-init-macrodef-testng-debug:
+
+-init-macrodef-testng-debug-impl:
+
+-init-macrodef-test-debug-testng:
+
+-init-macrodef-test-debug:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java-with-module:
+
+-init-macrodef-java-with-unnamed-module:
+
+-init-macrodef-java-without-module:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-clean-init:
+
+deps-clean:
+
+-warn-already-built-clean:
+[propertyfile] Updating property file: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\built-clean.properties
+
+-do-clean:
+   [delete] Deleting directory C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+-post-clean:
+
+clean:
+
+-pre-init:
+
+-init-private:
+
+-pre-init-libraries:
+
+-init-private-libraries:
+
+-init-libraries:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-init-modules-supported:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-modulename:
+
+-init-source-module-properties:
+
+-init-macrodef-javac-with-module:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-test-impl:
+
+-init-macrodef-junit-init:
+
+-init-test-properties:
+
+-init-macrodef-junit-prototype-with-module:
+
+-init-macrodef-junit-prototype-without-module:
+
+-init-macrodef-junit-single:
+
+-init-macrodef-junit-batch:
+
+-init-macrodef-junit:
+
+-init-macrodef-junit-impl:
+
+-init-macrodef-testng:
+
+-init-macrodef-testng-impl:
+
+-init-macrodef-test:
+
+-init-macrodef-junit-debug-impl:
+
+-init-macrodef-test-debug-junit:
+
+-init-macrodef-testng-debug:
+
+-init-macrodef-testng-debug-impl:
+
+-init-macrodef-test-debug-testng:
+
+-init-macrodef-test-debug:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java-with-module:
+
+-init-macrodef-java-with-unnamed-module:
+
+-init-macrodef-java-without-module:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-jar-init:
+
+deps-jar:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+-warn-already-built-jar:
+[propertyfile] Updating property file: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\built-jar.properties
+
+-check-automatic-build:
+
+-clean-after-automatic-build:
+
+-verify-automatic-build:
+
+-pre-pre-compile:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+
+-pre-compile:
+
+-copy-persistence-xml:
+
+-compile-depend:
+
+-do-compile:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\empty
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\generated-sources\ap-source-output
+    [javac] Compiling 81 source files to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+     [copy] Copying 45 files to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+
+check-packages:
+     [exec] check-packages: 2 Packages, jedes für sich übersetzt
+     [exec]   Package        Kern   gl     demo   Importe  Dateien
+     [exec]   cliff          ok     ok     ok     ok       9
+     [exec]   fall           ok     ok     ok     ok       6
+     [exec] check-packages: alle 2 Packages unabhängig.
+
+-post-compile:
+
+compile:
+
+-pre-jar:
+
+-check-module-main-class:
+
+-set-module-main-class:
+
+-pre-pre-jar:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist
+
+-do-jar-create-manifest:
+
+-do-jar-copy-manifest:
+     [copy] Copying 1 file to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+-do-jar-set-mainclass:
+
+-do-jar-set-profile:
+
+-do-jar-set-splashscreen:
+
+-check-do-mkdist:
+
+-do-jar-jar:
+
+-init-macrodef-copylibs:
+
+-do-jar-copylibs:
+ [copylibs] Copy libraries to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist\lib.
+ [copylibs] Building jar: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist\Geiranger.jar
+     [echo] To run this application from the command line without Ant, try:
+     [echo] C:\Program Files\Java\jdk-21/bin/java -jar "C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist\Geiranger.jar"
+
+-do-jar-delete-manifest:
+
+-do-jar-without-libraries:
+
+-do-jar-with-libraries:
+
+-post-jar:
+
+-do-jar:
+
+-pre-deploy:
+
+-check-jlink:
+
+-do-deploy:
+
+-post-deploy:
+
+deploy:
+
+jar:
+
+schiffe:
+     [java] Kamera am Schiff: MF Veøy nach Geiranger, an 11:05
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Tundra 1024² aus daten\tundra\tundra_1024.jpg
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 21.6.2026 10:40 MESZ: bestes Bild 17,70 ms, Mittel 21,08 ms (47 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 3,35 · Spiegelbild 1,71 · Gelände 5,40 · Straße 0,00 · Wald 0,26 · Ort 0,03 · Schiffe 0,00 · Wasser 2,78 · Fälle 0,21 · Wetter 0,00 · Nachbearbeitung 0,49 · HUD 0,02
+     [java]   47 Bilder/s   Grafikkarte 14,24 ms   Prozessor 5,34 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 3,35 · Spiegelbild 1,71 · Gelände 5,40 · Straße 0,00 · Wald 0,26 · Ort 0,03 · Schiffe 0,00 · Wasser 2,78 · Fälle 0,21 · Wetter 0,00 · Nachbearbeitung 0,49 · HUD 0,02
+     [java]   Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   21.6.2026 10:40 MESZ · Sonne 41,6° / 123° · Belichtung 3,8 (gemessen, Bild 0,0394)
+     [java]   Verdrahtung 26 Verbindungen, 6 geplant · Wind Bft 3 aus 270° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Fjordwind am Mittag · 3/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 0 % · 20 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 41,7° · Mond 44 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 3/8 · Basis 900 m · Gipfel bis 2500 m · Zug 8 m/s aus 290° · hoher Schleier 10 %, Sonne amAuge 100 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge ja
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m· Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 11 Fälle (0,7 s, Fälle 0,1 s) · 3 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,57 %, Relief ± 6,2 mm · Wände nass 0 %, unter den Fällen 96 %
+     [java]   Fälle: Storfossen 23,63 m³/s · Geirangelva, Kaskade 1 23,63 m³/s · Sieben Schwestern 2,36 m³/s · Friaren 1,42 m³/s · Brudesløret 0,57 m³/s · Storsæterfossen 0,76 m³/s · Regenfälle 0 von 5 · nächster Sieben Schwestern 706 m, 62 dB · 2 gezeichnet, 0,03 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 95 %) · 95 % vom Juni · Regen 0,0 mm im Speicher · am Fall 20 °C
+     [java]   Geirangelva: 1462 m vom Delta bis 161 m über NN · Storfossen 11?67 m (200 m lang) · Geirangelva, Kaskade 1 88?111 m (105 m lang) · Geirangelva, Kaskade 2 115?161 m (155 m lang) · 3 Strecken als Fluss · 3 Strecken als Fluss, 23,6 m³/s, 69 % des Bands nass · Treppe am Storfossen: 308 Stufen, 55 m hoch · Geländer 84 Pfosten · 20 Steine im Fluss ·7.632 Dreiecke
+     [java]   Fv63 Ørnevegen: 9,4 km, 11 Kehren, von 2 bis 606 m, Steigung bis 11,0 %, Plattform auf 533 m · 130 Fahrzeuge · 0 Dreiecke, 0,3 ms im Faden · Begegnungsregel: 9 große Fahrzeuge, 0 Mal gewartet · Plattform der Ørnesvingen: 533 m, Deck 12 × 22 m, 8 Stützen, 26 Pfosten
+     [java]   Vestland: Birke, Erle, Waldkiefer, Fichte · Waldgrenze 760 m ± 50 m · Wald: 6.218 Bäume (0/0/0/36/6.182 je Stufe), 237.724 Dreiecke, 67.511 gepflanzt, Tag 172 · Bodendecke: aus · Höfe: Knivsflå 228 m (5 Häuser, Band 22°) Skageflå 302 m (5 Häuser, Band 4°) · Waldkarte 2048² (255 ms)
+     [java]   Ort: 60 Gebäude (34 Wohnhäuser, 4 Läden, 6 Nebenhäuser, 2 Hotels, Kirche, Terminal, 4 Naust, Camping mit 7 Hütten und 7 Wohnwagen) · 1314 Fenster · 29 Laternen · Anleger 62 × 10 m · timber 2.588 Dreiecke (Höfe, Naust, Anleger)
+     [java]   Schiffe: MF Veøy nach Geiranger, an 11:05 (3,0 m/s) · MF Bolsøy nach Hellesylt, an 11:05 (7,0 m/s) · Kreuzfahrtschiff vor Anker bis 17:30 · Schnellboot liegt am Anleger · 6 Kajaks · 4 gezeichnet · Kielwasser 512² zu 3 m um das Auge, 0 Schritte in diesem Bild, 0,03 ms Prozessor
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 90 Knoten, 264.218 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN -152,8 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,06 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 153 m tief
+     [java]   Frei · Auge 22 m über NN, 22 m über dem Fjord · Blick 006° · Kern West · 0,6 km bis Sieben Schwestern
+     [java]   UTM 32 N  E 400921  N 6887008 · 62°06?08? N · 7°06?07? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase12.png
+     [java] Kamera am Schiff: MF Veøy nach Geiranger, an 11:05
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Tundra 1024² aus daten\tundra\tundra_1024.jpg
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 21.6.2026 10:33 MESZ: bestes Bild 16,28 ms, Mittel 19,84 ms (50 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 2,75 · Spiegelbild 2,10 · Gelände 5,29 · Straße 0,00 · Wald 0,24 · Ort 0,03 · Schiffe 0,00 · Wasser 2,92 · Fälle 0,08 · Wetter 0,00 · Nachbearbeitung 0,46 · HUD 0,02
+     [java]   54 Bilder/s   Grafikkarte 13,89 ms   Prozessor 5,37 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 2,75 · Spiegelbild 2,10 · Gelände 5,29 · Straße 0,00 · Wald 0,24 · Ort 0,03 · Schiffe 0,00 · Wasser 2,92 · Fälle 0,08 · Wetter 0,00 · Nachbearbeitung 0,46 · HUD 0,02
+     [java]   Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   21.6.2026 10:33 MESZ · Sonne 40,9° / 121° · Belichtung 4,4 (gemessen, Bild 0,0312)
+     [java]   Verdrahtung 26 Verbindungen, 6 geplant · Wind Bft 3 aus 270° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Fjordwind am Mittag · 3/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 0 % · 20 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 40,9° · Mond 44 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 3/8 · Basis 900 m · Gipfel bis 2500 m · Zug 8 m/s aus 290° · hoher Schleier 10 %, Sonne amAuge 100 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge ja
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m· Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 11 Fälle (0,7 s, Fälle 0,1 s) · 3 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,57 %, Relief ± 6,2 mm · Wände nass 0 %, unter den Fällen 96 %
+     [java]   Fälle: Storfossen 23,63 m³/s · Geirangelva, Kaskade 1 23,63 m³/s · Sieben Schwestern 2,36 m³/s · Friaren 1,42 m³/s · Brudesløret 0,57 m³/s · Storsæterfossen 0,76 m³/s · Regenfälle 0 von 5 · nächster Brudesløret 1744 m, 49 dB · 6 gezeichnet, 0,02 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 95 %) · 95 % vom Juni · Regen 0,0 mm im Speicher · am Fall 20 °C
+     [java]   Geirangelva: 1462 m vom Delta bis 161 m über NN · Storfossen 11?67 m (200 m lang) · Geirangelva, Kaskade 1 88?111 m (105 m lang) · Geirangelva, Kaskade 2 115?161 m (155 m lang) · 3 Strecken als Fluss · 3 Strecken als Fluss, 23,6 m³/s, 69 % des Bands nass · Treppe am Storfossen: 308 Stufen, 55 m hoch · Geländer 84 Pfosten · 20 Steine im Fluss ·7.632 Dreiecke
+     [java]   Fv63 Ørnevegen: 9,4 km, 11 Kehren, von 2 bis 606 m, Steigung bis 11,0 %, Plattform auf 533 m · 130 Fahrzeuge · 0 Dreiecke, 0,2 ms im Faden · Begegnungsregel: 9 große Fahrzeuge, 0 Mal gewartet · Plattform der Ørnesvingen: 533 m, Deck 12 × 22 m, 8 Stützen, 26 Pfosten
+     [java]   Vestland: Birke, Erle, Waldkiefer, Fichte · Waldgrenze 760 m ± 50 m · Wald: 4.632 Bäume (0/0/0/20/4.612 je Stufe), 176.816 Dreiecke, 55.383 gepflanzt, Tag 172 · Bodendecke: aus · Höfe: Knivsflå 228 m (5 Häuser, Band 22°) Skageflå 302 m (5 Häuser, Band 4°) · Waldkarte 2048² (237 ms)
+     [java]   Ort: 60 Gebäude (34 Wohnhäuser, 4 Läden, 6 Nebenhäuser, 2 Hotels, Kirche, Terminal, 4 Naust, Camping mit 7 Hütten und 7 Wohnwagen) · 1314 Fenster · 29 Laternen · Anleger 62 × 10 m · timber 2.588 Dreiecke (Höfe, Naust, Anleger)
+     [java]   Schiffe: MF Veøy nach Geiranger, an 11:05 (6,6 m/s) · MF Bolsøy nach Hellesylt, an 11:05 (7,0 m/s) · Kreuzfahrtschiff vor Anker bis 17:30 · Schnellboot liegt am Anleger · 6 Kajaks · 3 gezeichnet · Kielwasser 512² zu 3 m um das Auge, 0 Schritte in diesem Bild, 0,02 ms Prozessor
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 66 Knoten, 197.314 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN -235,5 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,06 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 236 m tief
+     [java]   Frei · Auge 200 m über NN, 200 m über dem Fjord · Blick 073° · Umgebung · 2,3 km bis Sieben Schwestern
+     [java]   UTM 32 N  E 399001  N 6885874 · 62°05?29? N · 7°03?57? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase12_Kielwasser.png
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,017 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Tundra 1024² aus daten\tundra\tundra_1024.jpg
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,017 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 21.6.2026 11:15 MESZ: bestes Bild 19,86 ms, Mittel 23,40 ms (43 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 3,55 · Spiegelbild 1,47 · Gelände 5,93 · Straße 0,04 · Wald 0,89 · Ort 0,11 · Schiffe 0,01 · Wasser 2,38 · Fälle 0,07 · Wetter 0,00 · Nachbearbeitung 0,50 · HUD 0,01
+     [java]   46 Bilder/s   Grafikkarte 14,97 ms   Prozessor 6,93 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 3,55 · Spiegelbild 1,47 · Gelände 5,93 · Straße 0,04 · Wald 0,89 · Ort 0,11 · Schiffe 0,01 · Wasser 2,38 · Fälle 0,07 · Wetter 0,00 · Nachbearbeitung 0,50 · HUD 0,01
+     [java]   Compute 4.3: in Ordnung (64×64, 0,017 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   21.6.2026 11:15 MESZ · Sonne 44,9° / 133° · Belichtung 5,1 (gemessen, Bild 0,0270)
+     [java]   Verdrahtung 26 Verbindungen, 6 geplant · Wind Bft 3 aus 270° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Fjordwind am Mittag · 3/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 0 % · 20 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 44,9° · Mond 45 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 3/8 · Basis 900 m · Gipfel bis 2500 m · Zug 8 m/s aus 290° · hoher Schleier 10 %, Sonne amAuge 0 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge ja
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m· Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 11 Fälle (0,7 s, Fälle 0,1 s) · 3 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,57 %, Relief ± 6,2 mm · Wände nass 0 %, unter den Fällen 96 %
+     [java]   Fälle: Storfossen 23,63 m³/s · Geirangelva, Kaskade 1 23,63 m³/s · Sieben Schwestern 2,36 m³/s · Friaren 1,42 m³/s · Brudesløret 0,57 m³/s · Storsæterfossen 0,76 m³/s · Regenfälle 0 von 5 · nächster Storfossen 551 m, 65 dB · 3 gezeichnet, 0,01 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 95 %) · 95 % vom Juni · Regen 0,0 mm im Speicher · am Fall 20 °C
+     [java]   Geirangelva: 1462 m vom Delta bis 161 m über NN · Storfossen 11?67 m (200 m lang) · Geirangelva, Kaskade 1 88?111 m (105 m lang) · Geirangelva, Kaskade 2 115?161 m (155 m lang) · 3 Strecken als Fluss · 3 Strecken als Fluss, 23,6 m³/s, 69 % des Bands nass · Treppe am Storfossen: 308 Stufen, 55 m hoch · Geländer 84 Pfosten · 20 Steine im Fluss ·7.632 Dreiecke
+     [java]   Fv63 Ørnevegen: 9,4 km, 11 Kehren, von 2 bis 606 m, Steigung bis 11,0 %, Plattform auf 533 m · 130 Fahrzeuge · 29.934 Dreiecke, 1,1 ms im Faden · Begegnungsregel: 9 große Fahrzeuge, 0 Mal gewartet · Plattform der Ørnesvingen:533 m, Deck 12 × 22 m, 8 Stützen, 26 Pfosten
+     [java]   Vestland: Birke, Erle, Waldkiefer, Fichte · Waldgrenze 760 m ± 50 m · Wald: 26.685 Bäume (0/0/0/2.000/24.685 je Stufe), 1.094.030 Dreiecke, 132.273 gepflanzt, Tag 172 · Bodendecke: aus · Höfe: Knivsflå 228 m (5 Häuser, Band 22°) Skageflå 302 m (5 Häuser, Band 4°) · Waldkarte 2048² (228 ms)
+     [java]   Ort: 60 Gebäude (34 Wohnhäuser, 4 Läden, 6 Nebenhäuser, 2 Hotels, Kirche, Terminal, 4 Naust, Camping mit 7 Hütten und 7 Wohnwagen) · 1314 Fenster · 29 Laternen · Anleger 62 × 10 m · timber 2.588 Dreiecke (Höfe, Naust, Anleger)
+     [java]   Schiffe: MF Veøy liegt in Geiranger, ab 11:40 · MF Bolsøy in Hellesylt · Kreuzfahrtschiff vor Anker bis 17:30 · Schnellboot liegt am Anleger · 6 Kajaks · 9 gezeichnet · Kielwasser 512² zu 3 m um das Auge, 0 Schritte in diesemBild, 0,02 ms Prozessor
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 90 Knoten, 273.626 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN -77,0 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,06 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 77 m tief
+     [java]   Frei · Auge 3 m über NN, 3 m über dem Fjord · Blick 102° · Kern Ost · 0,3 km bis Anleger
+     [java]   UTM 32 N  E 406050  N 6886730 · 62°06?03? N · 7°12?01? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase12_Anleger.png
+     [java] Kamera am Schiff: Kreuzfahrtschiff läuft ein, vor Anker 8:00
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 1 · Leiser Zug · Douglas 1 gekräuselt · Windsee Hs 0,0 m, Tp 1,2 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Tundra 1024² aus daten\tundra\tundra_1024.jpg
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 21.6.2026 07:24 MESZ: bestes Bild 18,13 ms, Mittel 21,07 ms (47 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 2,84 · Spiegelbild 1,46 · Gelände 4,69 · Straße 0,00 · Wald 2,74 · Ort 0,02 · Schiffe 0,03 · Wasser 1,38 · Fälle 0,06 · Wetter 0,00 · Nachbearbeitung 0,43 · HUD 0,02
+     [java]   50 Bilder/s   Grafikkarte 13,67 ms   Prozessor 6,26 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 2,84 · Spiegelbild 1,46 · Gelände 4,69 · Straße 0,00 · Wald 2,74 · Ort 0,02 · Schiffe 0,03 · Wasser 1,38 · Fälle 0,06 · Wetter 0,00 · Nachbearbeitung 0,43 · HUD 0,02
+     [java]   Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   21.6.2026 07:24 MESZ · Sonne 19,6° / 077° · Belichtung 9,9 (gemessen, Bild 0,00877)
+     [java]   Verdrahtung 26 Verbindungen, 6 geplant · Wind Bft 1 aus 116° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Die Sonne steigt über die Wände · 1/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 1 % · 10 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 19,6° · Mond 43 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 1/8 · Basis 900 m · Gipfel bis 2500 m · Zug 3 m/s aus 136° · hoher Schleier 10 %, Sonne amAuge 100 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge nein (Schatten der Wände)
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m· Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 11 Fälle (0,7 s, Fälle 0,1 s) · 3 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,57 %, Relief ± 6,2 mm · Wände nass 0 %, unter den Fällen 96 %
+     [java]   Fälle: Storfossen 23,63 m³/s · Geirangelva, Kaskade 1 23,63 m³/s · Sieben Schwestern 2,36 m³/s · Friaren 1,42 m³/s · Brudesløret 0,57 m³/s · Storsæterfossen 0,76 m³/s · Regenfälle 0 von 5 · nächster Brudesløret 1656 m, 50 dB · 3 gezeichnet, 0,01 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 95 %) · 95 % vom Juni · Regen 0,0 mm im Speicher · am Fall 10 °C
+     [java]   Geirangelva: 1462 m vom Delta bis 161 m über NN · Storfossen 11?67 m (200 m lang) · Geirangelva, Kaskade 1 88?111 m (105 m lang) · Geirangelva, Kaskade 2 115?161 m (155 m lang) · 3 Strecken als Fluss · 3 Strecken als Fluss, 23,6 m³/s, 69 % des Bands nass · Treppe am Storfossen: 308 Stufen, 55 m hoch · Geländer 84 Pfosten · 20 Steine im Fluss ·7.632 Dreiecke
+     [java]   Fv63 Ørnevegen: 9,4 km, 11 Kehren, von 2 bis 606 m, Steigung bis 11,0 %, Plattform auf 533 m · 130 Fahrzeuge · 0 Dreiecke, 0,3 ms im Faden · Begegnungsregel: 9 große Fahrzeuge, 0 Mal gewartet · Plattform der Ørnesvingen: 533 m, Deck 12 × 22 m, 8 Stützen, 26 Pfosten
+     [java]   Vestland: Birke, Erle, Waldkiefer, Fichte · Waldgrenze 760 m ± 50 m · Wald: 6.991 Bäume (2/15/515/607/5.852 je Stufe), 3.059.688 Dreiecke, 47.922 gepflanzt, Tag 172 · Bodendecke: 35.740 Dreiecke, 1,3 ms auf dem Prozessor · Höfe: Knivsflå 228 m (5 Häuser, Band 22°) Skageflå 302 m (5 Häuser, Band 4°) · Waldkarte 2048² (238 ms)
+     [java]   Ort: 60 Gebäude (34 Wohnhäuser, 4 Läden, 6 Nebenhäuser, 2 Hotels, Kirche, Terminal, 4 Naust, Camping mit 7 Hütten und 7 Wohnwagen) · 1314 Fenster · 29 Laternen · Anleger 62 × 10 m · timber 2.588 Dreiecke (Höfe, Naust, Anleger)
+     [java]   Schiffe: MF Veøy liegt in Geiranger, ab 8:30 · MF Bolsøy in Hellesylt · Kreuzfahrtschiff läuft ein, vor Anker 8:00 (4,4 m/s) · Schnellboot liegt am Anleger · 0 Kajaks · 2 gezeichnet · Kielwasser 512² zu 3 m um das Auge, 0 Schritte in diesem Bild, 0,03 ms Prozessor
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 72 Knoten, 216.392 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN +200,9 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 2 · Leichte Brise · Douglas 2 ruhig · Windsee Hs 0,0 m, Tp 1,2 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild 2048×1024· Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,02 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 0 m tief
+     [java]   Frei · Auge 202 m über NN, 2 m über Grund · Blick 355° · Umgebung · 2,1 km bis Sieben Schwestern
+     [java]   UTM 32 N  E 399895  N 6885601 · 62°05?21? N · 7°04?59? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase12_Kreuzfahrt.png
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,004 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 2 · Leichte Brise · Douglas 2 ruhig · Windsee Hs 0,1 m, Tp 1,3s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Tundra 1024² aus daten\tundra\tundra_1024.jpg
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,004 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 10.9.2026 22:00 MESZ: bestes Bild 19,04 ms, Mittel 22,64 ms (44 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 3,22 · Spiegelbild 1,25 · Gelände 5,36 · Straße 0,05 · Wald 0,81 · Ort 0,11 · Schiffe 0,01 · Wasser 2,29 · Fälle 0,06 · Wetter 0,00 · Nachbearbeitung 0,45 · HUD 0,02
+     [java]   47 Bilder/s   Grafikkarte 13,62 ms   Prozessor 6,76 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 3,22 · Spiegelbild 1,25 · Gelände 5,36 · Straße 0,05 · Wald 0,81 · Ort 0,11 · Schiffe 0,01 · Wasser 2,29 · Fälle 0,06 · Wetter 0,00 · Nachbearbeitung 0,45 · HUD 0,02
+     [java]   Compute 4.3: in Ordnung (64×64, 0,004 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   10.9.2026 22:00 MESZ · Sonne -12,4° / 306° · Belichtung 5,1e+05 (gemessen, Bild 2,76e-08)
+     [java]   Verdrahtung 26 Verbindungen, 6 geplant · Wind Bft 2 aus 270° · Spiegel NN +0,00 m
+     [java]   Wetter freie Regie, klar · 2/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 0 % · 12 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne -11,7° · Mond 0 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,3 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 2/8 · Basis 900 m · Gipfel bis 2500 m · Zug 7 m/s aus 290° · hoher Schleier 10 %, Sonne amAuge 0 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge nein (Schatten der Wände)
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m· Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 11 Fälle (0,7 s, Fälle 0,1 s) · 3 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,57 %, Relief ± 6,2 mm · Wände nass 0 %, unter den Fällen 55 %
+     [java]   Fälle: Storfossen 8,98 m³/s · Geirangelva, Kaskade 1 8,98 m³/s · Sieben Schwestern 0,90 m³/s · Friaren 0,54 m³/s · Brudesløret 0,22 m³/s · Storsæterfossen 0,29 m³/s · Regenfälle 0 von 5 · nächster Storfossen 551 m, 61 dB · 3 gezeichnet, 0,01 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 36 %)· 36 % vom Juni · Regen 0,0 mm im Speicher · am Fall 12 °C
+     [java]   Geirangelva: 1462 m vom Delta bis 161 m über NN · Storfossen 11?67 m (200 m lang) · Geirangelva, Kaskade 1 88?111 m (105 m lang) · Geirangelva, Kaskade 2 115?161 m (155 m lang) · 3 Strecken als Fluss · 3 Strecken als Fluss, 9,0 m³/s, 69 % des Bands nass · Treppe am Storfossen: 308 Stufen, 55 m hoch · Geländer 84 Pfosten · 20 Steine im Fluss · 7.632 Dreiecke
+     [java]   Fv63 Ørnevegen: 9,4 km, 11 Kehren, von 2 bis 606 m, Steigung bis 11,0 %, Plattform auf 533 m · 130 Fahrzeuge · 30.118 Dreiecke, 1,3 ms im Faden · Begegnungsregel: 9 große Fahrzeuge, 0 Mal gewartet · Plattform der Ørnesvingen:533 m, Deck 12 × 22 m, 8 Stützen, 26 Pfosten
+     [java]   Vestland: Birke, Erle, Waldkiefer, Fichte · Waldgrenze 760 m ± 50 m · Wald: 26.685 Bäume (0/0/0/2.000/24.685 je Stufe), 1.094.030 Dreiecke, 132.273 gepflanzt, Tag 253 · Bodendecke: aus · Höfe: Knivsflå 228 m (5 Häuser, Band 22°) Skageflå 302 m (5 Häuser, Band 4°) · Waldkarte 2048² (222 ms)
+     [java]   Ort: 60 Gebäude (34 Wohnhäuser, 4 Läden, 6 Nebenhäuser, 2 Hotels, Kirche, Terminal, 4 Naust, Camping mit 7 Hütten und 7 Wohnwagen) · 1314 Fenster · 29 Laternen · Anleger 62 × 10 m · timber 2.588 Dreiecke (Höfe, Naust, Anleger)
+     [java]   Schiffe: MF Veøy über Nacht in Hellesylt · MF Bolsøy liegt über Nacht in Geiranger · Kreuzfahrtschiff aufSee · Schnellboot liegt am Anleger · 0 Kajaks · 2 gezeichnet · Kielwasser 512² zu 3 m um das Auge, 0 Schritte in diesemBild, 0,02 ms Prozessor
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 90 Knoten, 273.626 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN -77,0 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,05 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 77 m tief
+     [java]   Frei · Auge 3 m über NN, 3 m über dem Fjord · Blick 102° · Kern Ost · 0,3 km bis Anleger
+     [java]   UTM 32 N  E 406050  N 6886730 · 62°06?03? N · 7°12?01? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase12_Nacht.png
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,009 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Tundra 1024² aus daten\tundra\tundra_1024.jpg
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,009 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 21.6.2026 11:00 MESZ: bestes Bild 15,84 ms, Mittel 20,24 ms (49 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 3,41 · Spiegelbild 1,93 · Gelände 5,78 · Straße 0,00 · Wald 1,05 · Ort 0,03 · Schiffe 0,02 · Wasser 0,92 · Fälle 0,00 · Wetter 0,00 · Nachbearbeitung 0,35 · HUD 0,02
+     [java]   49 Bilder/s   Grafikkarte 13,51 ms   Prozessor 5,78 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 3,41 · Spiegelbild 1,93 · Gelände 5,78 · Straße 0,00 · Wald 1,05 · Ort 0,03 · Schiffe 0,02 · Wasser 0,92 · Fälle 0,00 · Wetter 0,00 · Nachbearbeitung 0,35 · HUD 0,02
+     [java]   Compute 4.3: in Ordnung (64×64, 0,009 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   21.6.2026 11:00 MESZ · Sonne 43,5° / 128° · Belichtung 8,2 (gemessen, Bild 0,0127)
+     [java]   Verdrahtung 26 Verbindungen, 6 geplant · Wind Bft 3 aus 270° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Fjordwind am Mittag · 3/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 0 % · 20 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 43,5° · Mond 45 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 3/8 · Basis 900 m · Gipfel bis 2500 m · Zug 8 m/s aus 290° · hoher Schleier 10 %, Sonne amAuge 0 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge nein (Schatten der Wände)
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m· Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 11 Fälle (0,7 s, Fälle 0,1 s) · 3 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,57 %, Relief ± 6,2 mm · Wände nass 0 %, unter den Fällen 96 %
+     [java]   Fälle: Storfossen 23,63 m³/s · Geirangelva, Kaskade 1 23,63 m³/s · Sieben Schwestern 2,36 m³/s · Friaren 1,42 m³/s · Brudesløret 0,57 m³/s · Storsæterfossen 0,76 m³/s · Regenfälle 0 von 5 · nächster Friaren 835 m, 57 dB · 0 gezeichnet, 0,00 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 95 %) · 95 % vom Juni · Regen 0,0 mm im Speicher · am Fall 20 °C
+     [java]   Geirangelva: 1462 m vom Delta bis 161 m über NN · Storfossen 11?67 m (200 m lang) · Geirangelva, Kaskade 1 88?111 m (105 m lang) · Geirangelva, Kaskade 2 115?161 m (155 m lang) · 3 Strecken als Fluss · 3 Strecken als Fluss, 23,6 m³/s, 69 % des Bands nass · Treppe am Storfossen: 308 Stufen, 55 m hoch · Geländer 84 Pfosten · 20 Steine im Fluss ·7.632 Dreiecke
+     [java]   Fv63 Ørnevegen: 9,4 km, 11 Kehren, von 2 bis 606 m, Steigung bis 11,0 %, Plattform auf 533 m · 130 Fahrzeuge · 0 Dreiecke, 0,3 ms im Faden · Begegnungsregel: 9 große Fahrzeuge, 0 Mal gewartet · Plattform der Ørnesvingen: 533 m, Deck 12 × 22 m, 8 Stützen, 26 Pfosten
+     [java]   Vestland: Birke, Erle, Waldkiefer, Fichte · Waldgrenze 760 m ± 50 m · Wald: 11.737 Bäume (0/0/193/11/11.533 je Stufe), 1.210.128 Dreiecke, 74.768 gepflanzt, Tag 172 · Bodendecke: 6.123 Dreiecke, 0,3 ms auf dem Prozessor · Höfe: Knivsflå 228 m (5 Häuser, Band 22°) Skageflå 302 m (5 Häuser, Band 4°) · Waldkarte 2048² (232 ms)
+     [java]   Ort: 60 Gebäude (34 Wohnhäuser, 4 Läden, 6 Nebenhäuser, 2 Hotels, Kirche, Terminal, 4 Naust, Camping mit 7 Hütten und 7 Wohnwagen) · 1314 Fenster · 29 Laternen · Anleger 62 × 10 m · timber 2.588 Dreiecke (Höfe, Naust, Anleger)
+     [java]   Schiffe: MF Veøy nach Geiranger, an 11:05 (4,1 m/s) · MF Bolsøy nach Hellesylt unterwegs · Kreuzfahrtschiff vor Anker bis 17:30 · Schnellboot liegt am Anleger · 6 Kajaks · 3 gezeichnet · Kielwasser 512² zu 3 m um das Auge, 0 Schritte in diesem Bild, 0,03 ms Prozessor
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 93 Knoten, 242.397 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN +264,9 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,06 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 0 m tief
+     [java]   Frei · Auge 267 m über NN, 2 m über Grund · Blick 337° · Kern West · 0,0 km bis Skageflå
+     [java]   UTM 32 N  E 402090  N 6888150 · 62°06?46? N · 7°07?25? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase11b.png
+
+BUILD SUCCESSFUL
+Total time: 1 minute 12 seconds
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>

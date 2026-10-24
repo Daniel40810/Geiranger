@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="Geiranger" default="default" basedir=".">
+    <description>Builds, tests, and runs the project Geiranger.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <!--
+
+    There exist several targets which are by default empty and which can be 
+    used for execution of your tasks. These targets are usually executed 
+    before and after some main targets. They are: 
+
+      -pre-init:                 called before initialization of project properties
+      -post-init:                called after initialization of project properties
+      -pre-compile:              called before javac compilation
+      -post-compile:             called after javac compilation
+      -pre-compile-single:       called before javac compilation of single file
+      -post-compile-single:      called after javac compilation of single file
+      -pre-compile-test:         called before javac compilation of JUnit tests
+      -post-compile-test:        called after javac compilation of JUnit tests
+      -pre-compile-test-single:  called before javac compilation of single JUnit test
+      -post-compile-test-single: called after javac compilation of single JUunit test
+      -pre-jar:                  called before JAR building
+      -post-jar:                 called after JAR building
+      -post-clean:               called after cleaning build products
+
+    (Targets beginning with '-' are not intended to be called on their own.)
+
+    Example of inserting an obfuscator after compilation could look like this:
+
+        <target name="-post-compile">
+            <obfuscate>
+                <fileset dir="${build.classes.dir}"/>
+            </obfuscate>
+        </target>
+
+    For list of available properties check the imported 
+    nbproject/build-impl.xml file. 
+
+
+    Another way to customize the build is by overriding existing main targets.
+    The targets of interest are: 
+
+      -init-macrodef-javac:     defines macro for javac compilation
+      -init-macrodef-junit:     defines macro for junit execution
+      -init-macrodef-debug:     defines macro for class debugging
+      -init-macrodef-java:      defines macro for class execution
+      -do-jar:                  JAR building
+      run:                      execution of project 
+      -javadoc-build:           Javadoc generation
+      test-report:              JUnit report generation
+
+    An example of overriding the target for project execution could look like this:
+
+        <target name="run" depends="Geiranger-impl.jar">
+            <exec dir="bin" executable="launcher.exe">
+                <arg file="${dist.jar}"/>
+            </exec>
+        </target>
+
+    Notice that the overridden target depends on the jar target and not only on 
+    the compile target as the regular run target does. Again, for a list of available 
+    properties which you can use, check the target you are overriding in the
+    nbproject/build-impl.xml file. 
+
+    -->
+    <!--
+        Phase 1: Isolationsprüfung der Element-Packages (Paketvertrag Punkt 9). Jedes Package unter src/com/dan
+        außer der App (in Geiranger seit Phase 18 aus pakete/: fall und cliff, die auch in lib/Renderer.jar liegen) wird für sich allein
+        übersetzt: Kern nur gegen das JDK, gl/ gegen JOGL, demo/ gegen FStyle. Läuft nach jedem Übersetzen; abschalten
+        mit -Dohne.paketpruefung=true.
+    -->
+    <target name="check-packages" description="Übersetzt jedes Element-Package einzeln gegen JDK, JOGL und FStyle." unless="ohne.paketpruefung">
+        <property name="platform.java" value="java"/>
+        <exec executable="${platform.java}" dir="${basedir}" failonerror="true">
+            <arg value="-Dstdout.encoding=UTF-8"/>
+            <arg value="-Dstderr.encoding=UTF-8"/>
+            <arg value="tools/PaketPruefung.java"/>
+            <arg value="pakete"/>
+            <arg value="lib"/>
+        </exec>
+    </target>
+    <target name="-post-compile" depends="check-packages"/>
+
+    <!-- Phase 18: fall und cliff liegen in lib/Renderer.jar. Ihre Quellen stehen in pakete/ (nicht im Quellbaum der App);
+         nach einer Änderung dort baut dieses Target sie neu und frischt Renderer.jar auf (Klassen, Shader, README). -->
+    <target name="renderer-jar" description="Phase 18: übersetzt pakete/ (fall, cliff) für Java 21 und frischt lib/Renderer.jar damit auf.">
+        <delete dir="build/pakete"/>
+        <mkdir dir="build/pakete"/>
+        <javac srcdir="pakete" destdir="build/pakete" release="21" encoding="UTF-8" includeantruntime="false" debug="true">
+            <classpath>
+                <pathelement location="lib/jogl-all.jar"/>
+                <pathelement location="lib/gluegen-rt.jar"/>
+                <pathelement location="lib/FStyle.jar"/>
+            </classpath>
+        </javac>
+        <copy todir="build/pakete">
+            <fileset dir="pakete" excludes="**/*.java"/>
+        </copy>
+        <jar destfile="lib/Renderer.jar" update="true" basedir="build/pakete"/>
+        <echo message="lib/Renderer.jar mit fall und cliff aus pakete/ aufgefrischt"/>
+    </target>
+
+    <!-- Phase 1: Prüfprogramm der App ohne Grafikkarte und Datenbank (endet mit "ERGEBNIS: alles in Ordnung"). -->
+    <target name="pruefung" depends="compile-test" description="Startet die Prüfung com.dan.geiranger.test.Pruefung.">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.test.Pruefung" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="-Djava.awt.headless=true"/>
+            <classpath><pathelement path="${run.test.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 5: Tempo-Probe ohne Fenster und Statusbilder der Abnahme (Full HD, „Mittel“, 21. Juni 16 Uhr): die Wand der
+         Sieben Schwestern von Skageflå (rund 1,3 km), dieselbe Wand aus rund 80 m vom Wasser, und zum Vergleich die
+         Nahansicht ohne cliff (Platzhalter aus Phase 2). Dazu die Vorführung von com.dan.cliff als Bild. -->
+    <target name="tempo" depends="jar" description="Statusbilder Phase 5: docs/status/Status_Phase5.png (Skageflå), Status_Phase5_Nah.png, Status_Phase5_Nah_ohne.png.">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=Skagefla"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <arg line="120 1920 1080 docs/status/Status_Phase5.png MITTEL 16 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dkamera=-5410,-1060,0,-28,3"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <arg line="120 1920 1080 docs/status/Status_Phase5_Nah.png MITTEL 16 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dkamera=-5410,-1060,0,-28,3"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dfels=aus"/>
+            <arg line="30 1920 1080 docs/status/Status_Phase5_Nah_ohne.png MITTEL 16 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 5: die Vorführung von com.dan.cliff als Bild (Wand von 300 m aus 2 km, aus 50 m, von der Seite, Abend, Regen, Mai). -->
+    <target name="cliffdemo" depends="jar" description="Vorführung com.dan.cliff als Bild: docs/status/Cliff_Demo.png.">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.cliff.demo.CliffDemo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <arg line="--bild docs/status/Cliff_Demo.png"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 6: die Vorführung von com.dan.fall als Statusbild (sechs Ansichten, mit Zeit auf der Grafikkarte und
+         Selbsttest). Dazu bleibt „tempo“ aus Phase 5 für die Nacharbeit am Fels. -->
+    <target name="falldemo" depends="jar" description="Statusbild Phase 6: docs/status/Status_Phase6.png (Vorführung com.dan.fall).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.fall.demo.FallDemo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <arg line="--bild docs/status/Status_Phase6.png 1920"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.fall.demo.FallCheck" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 7: die Wasserfälle in der Szene. Drei Statusbilder in Full HD auf „Mittel“ am 21. Juni (Regiebuch „Ein Junitag“):
+         die Sieben Schwestern vom Wasser um 11 Uhr (Ansicht 8, vergleichen mit Waterfall1), Friaren um 19:30 im Abendlicht
+         (Ansicht 9, Waterfall2) und „Vom Wasser“ um 11 Uhr (Ansicht 2, die Schwestern von der Seite wie Waterfall3).
+         Gemessen wird erst, wenn Wandkarte und Fälle fertig sind; das HUD unten nennt Abfluss, Zeit der Fälle und die
+         Selbsttests von Fels (nach dem behobenen Fehler der Rauschtextur) und Fällen. -->
+    <target name="faelle" depends="jar" description="Statusbilder Phase 7: docs/status/Status_Phase7.png (Sieben Schwestern), Status_Phase7_Friaren.png, Status_Phase7_VomWasser.png.">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=SiebenSchwestern"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <arg line="120 1920 1080 docs/status/Status_Phase7.png MITTEL 11 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=Friaren"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase7_Friaren.png MITTEL 19.5 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=VomWasser"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase7_VomWasser.png MITTEL 11 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 8: Abnahme „Blick von der Treppe auf den Storfossen bei Hochwasser und im Spätsommer“, dazu die Schwestern nach F12b. -->
+    <target name="elva" depends="jar" description="Statusbilder Phase 8: docs/status/Status_Phase8_Hochwasser.png, Status_Phase8_Spaetsommer.png (Am Storfossen), Status_Phase8_Schwestern.png, Status_Phase8_Schwestern_geschaetzt.png (Belichtung wie bis Phase 7).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=AmStorfossen"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dabfluss=1.6"/>
+            <arg line="120 1920 1080 docs/status/Status_Phase8_Hochwasser.png MITTEL 13 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=AmStorfossen"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase8_Spaetsommer.png MITTEL 15 2026-09-05"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=SiebenSchwestern"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase8_Schwestern.png MITTEL 11 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=SiebenSchwestern"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dbelichtung=schaetzen"/>
+            <arg line="30 1920 1080 docs/status/Status_Phase8_Schwestern_geschaetzt.png MITTEL 11 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 9: Abnahme „Der Blick von der Plattform wie Ørnesvingen1–3; ein Bus fährt die Kehren hinauf und wartet in einer Kehre“. -->
+    <target name="kehren" depends="jar" description="Statusbilder Phase 9: docs/status/Status_Phase9.png (Plattform, wie Ørnesvingen2), Status_Phase9_Geiranger.png (Plattform, Blick zum Ort wie Ørnesvingen1), Status_Phase9_Bus.png (Begegnung in einer Kehre), Status_Phase8a_Storfossen.png (Nacharbeit: Blick von der Treppe).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=Plattform"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <arg line="120 1920 1080 docs/status/Status_Phase9.png MITTEL 14 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=Plattform"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dkamera.richtung=150"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase9_Geiranger.png MITTEL 10 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=Plattform"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dbus=1"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase9_Bus.png MITTEL 12 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=AmStorfossen"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dabfluss=1.6"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase8a_Storfossen.png MITTEL 13 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 10: Abnahme „Die Hänge über dem Ort aus 1 km und aus 50 m; die Höfe auf ihren Bändern“, dazu Phase 9 nach der Nacharbeit. -->
+    <target name="wald" depends="jar" description="Statusbilder Phase 10: docs/status/Status_Phase10.png (Hänge über dem Ort aus rund 1 km vom Fjord), Status_Phase10_Nah.png (im Birkenwald über Grande), Status_Phase10_Skagefla.png und Status_Phase10_Knivsfla.png (die Höfe auf ihren Bändern vom Fjord), Status_Phase9b.png (Plattform) und Status_Phase9b_Bus.png (Begegnung) nach der Nacharbeit.">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dkamera=-630,-290,52,-9,3"/>
+            <arg line="120 1920 1080 docs/status/Status_Phase10.png MITTEL 15 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dkamera=-495,-1123,225,4,1.7"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase10_Nah.png MITTEL 15 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dkamera=-4130,-1940,178,-24,3"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase10_Skagefla.png MITTEL 16 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dkamera=-5575,-470,355,-17,3"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase10_Knivsfla.png MITTEL 11 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dansicht=Plattform"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase9b.png MITTEL 14 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dansicht=Plattform"/>
+            <jvmarg value="-Dbus=1"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase9b_Bus.png MITTEL 12 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <target name="ort" depends="jar" description="Statusbilder Phase 11: docs/status/Status_Phase11.png (der Ort vom Wasser, Ansicht 5), Status_Phase11_Plattform.png (von der Plattform zum Ort hinab), Status_Phase11_Nacht.png (der Ort nachts vom Wasser, Lichter), Status_Phase11_Strasse.png (an der Fv63 im Ort), Status_Phase11_Haenge.png (wie Status_Phase10: Kronendach) und Status_Phase11_Skagefla.png (der Hof aus timber).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dansicht=Anleger"/>
+            <arg line="120 1920 1080 docs/status/Status_Phase11.png MITTEL 15 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dansicht=Plattform"/>
+            <jvmarg value="-Dkamera.richtung=146"/>
+            <jvmarg value="-Dkamera.neigung=9"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase11_Plattform.png MITTEL 15 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=Anleger"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase11_Nacht.png MITTEL 22.5 2026-09-20"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dkamera=30,-10,175,-2,1.7"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase11_Strasse.png MITTEL 17 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dkamera=-630,-290,52,-9,3"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase11_Haenge.png MITTEL 15 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dkamera=-4130,-1940,178,-24,3"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase11_Skagefla.png MITTEL 16 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <target name="schiffe" depends="jar" description="Statusbilder Phase 12: docs/status/Status_Phase12.png (die Fähre aus Hellesylt vor den Sieben Schwestern, 10:40), Status_Phase12_Kielwasser.png (von oben hinter der Fähre: das Kielwasser läuft an die Ufer), Status_Phase12_Anleger.png (Ansicht 5 um 11:15: Fähre an der Liegestelle, Kreuzfahrtschiff vor Anker, Kajaks), Status_Phase12_Kreuzfahrt.png (das Schiff läuft morgens ein), Status_Phase12_Nacht.png (die Fähre über Nacht am Anleger, Lichter) und Status_Phase11b.png (Ansicht 4, nach rechts geschwenkt: Nacharbeit 11).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dschiff=Veoy,320,150,22"/>
+            <arg line="120 1920 1080 docs/status/Status_Phase12.png MITTEL 10.67 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dschiff=Veoy,450,185,200"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase12_Kielwasser.png MITTEL 10.55 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dansicht=Anleger"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase12_Anleger.png MITTEL 11.25 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dschiff=Kreuz,600,115,45"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase12_Kreuzfahrt.png MITTEL 7.4 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=Anleger"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase12_Nacht.png MITTEL 22 2026-09-10"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dansicht=Skagefla"/>
+            <jvmarg value="-Dkamera.richtung=337"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase11b.png MITTEL 11 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 13: die Menschen. Gäste aus Avatar.jar auf der Plattform und am Storfossen, die Busgruppe, Wanderer nach Skageflå;
+         dazu Nacharbeit 12 (das Kreuzfahrtschiff aufrecht, ruhiges Wasser daneben, wie Status_Phase12a). -->
+    <target name="menschen" depends="jar" description="Statusbilder Phase 13: docs/status/Status_Phase13.png (Plattform 11:15 mit Gästen und Busgruppe), Status_Phase13_Gaeste.png (ein Gast aus der Nähe), Status_Phase13_Bus.png (die Gruppe steigt aus, 11:11), Status_Phase13_Storfossen.png (Ansicht 3: zwei Gäste und Besucher auf der Treppe), Status_Phase13_Skagefla.png (Wanderer auf dem Pfad, 10:36) und Status_Phase12b.png (Nacharbeit 12: Kreuzfahrtschiff vom Wasser, 11:03).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dmenschen=plattform"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase13.png MITTEL 11.25 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dmenschen=gaeste"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase13_Gaeste.png MITTEL 11.25 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dmenschen=bus"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase13_Bus.png MITTEL 11.19 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dansicht=AmStorfossen"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase13_Storfossen.png MITTEL 14 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dmenschen=skagefla"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase13_Skagefla.png MITTEL 10.6 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dschiff=Kreuz,230,90,3"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase12b.png MITTEL 11.05 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 16: Regie, Kameras, Kino. Abnahme: alle drei Regiebücher laufen durch und liefern ihre Fotos (je ein Blatt
+         Regiebuch_….png in docs/status, als Kopie Status_Phase16_….png); die Fähre zusätzlich im Kinomodus (Kinobilder). -->
+    <target name="regie" depends="jar" description="Phase 16: die drei Regiebücher ohne Fenster mit Blatt: docs/status/Status_Phase16_Junitag.png, Status_Phase16_Ornesvingen.png, Status_Phase16_Faehre.png; dazu „Mit der Fähre von Hellesylt“ im Kino (Status_Phase16_kino_01.png …).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dregie=Junitag"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase16_Junitag.png MITTEL 12 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dregie=Ornesvingen"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase16_Ornesvingen.png MITTEL 12 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dregie=Faehre"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase16_Faehre.png MITTEL 12 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dregie=Faehre"/>
+            <jvmarg value="-Dkino=1"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase16.png MITTEL 12 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 15: der Klang. Abnahme ohne Lautsprecher: eine Fahrt mit der Fähre an den Sieben Schwestern vorbei (Pegel über
+         die Fahrt, Horn mit Echo der Wände als Bild und Ton), dazu das Bild von Bord und Nacharbeit 14 (April an Friaren). -->
+    <target name="klang" depends="jar" description="Phase 15: docs/status/Status_Phase15.png (Pegel der Schwestern über die Fahrt, Horn und Echos), Status_Phase15.wav (3 min Ton von Bord), Status_Phase15_Faehre.png (von Bord vor den Schwestern, 21.6. 9:10) und Status_Phase14b.png (Nacharbeit 14: Friaren am 21. April).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.KlangFahrt" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Djava.awt.headless=true"/>
+            <arg line="docs/status/Status_Phase15.png docs/status/Status_Phase15.wav"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dmitfahrt=-55"/>
+            <jvmarg value="-Dansicht=SiebenSchwestern"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase15_Faehre.png MITTEL 9.165 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dwetter=regen"/>
+            <jvmarg value="-Dansicht=Friaren"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase14b.png MITTEL 11 2026-04-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 14: das Jahr. Dieselbe Ansicht (1, Plattform) am 15. Februar, Mai, Juni und Oktober um 12 Uhr (freie Regie, klar),
+         dazu die Schwestern und der Ort im Februar und Nacharbeit 13 (die Plattform mit den Menschen über den Fjord). -->
+    <target name="jahr" depends="jar" description="Statusbilder Phase 14: docs/status/Status_Phase14.png (Plattform 15.2.), Status_Phase14_Mai.png, Status_Phase14_Juni.png, Status_Phase14_Oktober.png, Status_Phase14_Eis.png (Sieben Schwestern 15.2.), Status_Phase14_Ort.png (Ansicht 5, 15.2.) und Status_Phase13b.png (Nacharbeit 13: Plattform 11:15 über den Fjord).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dansicht=Plattform"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase14.png MITTEL 12 2026-02-15"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dansicht=Plattform"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase14_Mai.png MITTEL 12 2026-05-15"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dansicht=Plattform"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase14_Juni.png MITTEL 12 2026-06-15"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dansicht=Plattform"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase14_Oktober.png MITTEL 12 2026-10-15"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dansicht=SiebenSchwestern"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase14_Eis.png MITTEL 12 2026-02-15"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dansicht=Anleger"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase14_Ort.png MITTEL 12 2026-02-15"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dmenschen=plattform"/>
+            <arg line="60 1920 1080 docs/status/Status_Phase13b.png MITTEL 11.25 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 3: nur das Prüfbild des gemalten Grunds aus daten/gelaende (ohne neuen Import). -->
+    <target name="fjordprofil" depends="compile" description="Schreibt docs/status/Fjordprofil.png (Karte der Tiefen, drei Querschnitte).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Fjordprofil" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <arg line="daten/gelaende docs/status/Fjordprofil.png"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 2: das Gelände aus templates/N62E006.zip und N62E007.zip nach daten/gelaende, mit Prüfbild und GLO-30-Gegenprobe. -->
+    <!-- Phase 17: Startdaten aus dem Code erzeugen (db/sql/04_startdaten.sql), Prüfung gegen die echte Datenbank und
+         das Statusbild (Tageskarte eines Szenentags ohne Datenbank). -->
+    <target name="startdaten" depends="compile" description="Phase 17: erzeugt db/sql/04_startdaten.sql aus dem Code (tools.StartdatenSql daten/gelaende db/sql).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.StartdatenSql" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="-Xmx4g"/>
+            <jvmarg value="-Djava.awt.headless=true"/>
+            <arg line="daten/gelaende db/sql"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+    <target name="dbpruefung" depends="compile-test" description="Phase 17: Prüfung gegen die Datenbank aus db/db.properties (endet mit „Alles in Ordnung.“).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.test.DbPruefung" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="-Djava.awt.headless=true"/>
+            <classpath><pathelement path="${run.test.classpath}"/></classpath>
+        </java>
+    </target>
+    <target name="daten" depends="jar" description="Statusbild Phase 17: docs/status/Status_Phase17.png (Tageskarte 21.6.2026 aus der Chronik, ohne Datenbank).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tageslauf" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="-Xmx6g"/>
+            <jvmarg value="-Djava.awt.headless=true"/>
+            <arg line="2026-06-21 docs/status/Status_Phase17.png"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 18: Programmsymbol (PNGs ins Jar, Geiranger.ico für die Verknüpfung) und die Quellenliste docs/QUELLEN.md. -->
+    <target name="symbol" depends="compile" description="Phase 18: malt das Programmsymbol nach src/com/dan/geiranger/ui/icon/geiranger_NN.png und Geiranger.ico.">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Symbol" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Djava.awt.headless=true"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+    <target name="quellen" depends="compile" description="Phase 18: schreibt docs/QUELLEN.md aus quellen.txt und befunde.txt (wie die Startdaten).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Quellenliste" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <target name="gelaende" depends="compile" description="Importiert die HGT-Kacheln: tools.HgtImport templates daten/gelaende docs/status/Gelaende_Import.png.">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.HgtImport" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <arg line="templates daten/gelaende docs/status/Gelaende_Import.png"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+</project>

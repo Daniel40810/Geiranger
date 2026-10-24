@@ -1,0 +1,42 @@
+    <!-- Phase 5: Tempo-Probe ohne Fenster und Statusbilder der Abnahme (Full HD, „Mittel“, 21. Juni 16 Uhr): die Wand der
+         Sieben Schwestern von Skageflå (rund 1,3 km), dieselbe Wand aus rund 80 m vom Wasser, und zum Vergleich die
+         Nahansicht ohne cliff (Platzhalter aus Phase 2). Dazu die Vorführung von com.dan.cliff als Bild. -->
+    <target name="tempo" depends="jar" description="Statusbilder Phase 5: docs/status/Status_Phase5.png (Skageflå), Status_Phase5_Nah.png, Status_Phase5_Nah_ohne.png.">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dansicht=Skagefla"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <arg line="120 1920 1080 docs/status/Status_Phase5.png MITTEL 16 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dkamera=-5410,-1060,0,-28,3"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <arg line="120 1920 1080 docs/status/Status_Phase5_Nah.png MITTEL 16 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.geiranger.tools.Tempo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <jvmarg value="-Dkamera=-5410,-1060,0,-28,3"/>
+            <jvmarg value="-Dwetter=junitag"/>
+            <jvmarg value="-Dfels=aus"/>
+            <arg line="30 1920 1080 docs/status/Status_Phase5_Nah_ohne.png MITTEL 16 2026-06-21"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>
+
+    <!-- Phase 5: die Vorführung von com.dan.cliff als Bild (Wand von 300 m aus 2 km, aus 50 m, von der Seite, Abend, Regen, Mai). -->
+    <target name="cliffdemo" depends="jar" description="Vorführung com.dan.cliff als Bild: docs/status/Cliff_Demo.png.">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.cliff.demo.CliffDemo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <arg line="--bild docs/status/Cliff_Demo.png"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>

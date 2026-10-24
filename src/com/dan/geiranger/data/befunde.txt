@@ -1,0 +1,26 @@
+# Befunde je Gegenstand (Phase 17, GR_BEFUND): THEMA | GEGENSTAND | BEFUND | TEXT | QUELLEN (Kurzzeichen, mit Komma)
+FJORD | Länge und Tiefe | BELEGT | Rund 20 km als innerster Arm des Storfjords, knapp 260 m tief; der gemalte Grund (Ufer 10 m, Mitte 150 m, Rinne 250 m) ist gestaltet [G] | FJORDNORWAY
+FJORD | Fjordgrund | GESTALTET | Das Raster kennt unter dem Spiegel nichts; Ufer, Mitte und Rinne sowie das Delta der Geirangelva sind gemalt (F7) | APP
+GELAENDE | Raster | GEMESSEN | HGT 1″ (N62E006, N62E007), Hauptraster 2048² zu 12 m, Fernring 512² zu 120 m, Ursprung am Anleger (UTM 32 N) | HGT
+GELAENDE | Wände unter den Fällen | GESTALTET | Das 1″-Raster rundet die Wände auf 50 bis 76°; unter den Schwestern (250 m) und Friaren (120 m) schärft die App eine Stufe (F12b A) | APP
+FAELLE | Sieben Schwestern | BELEGT | 410 m gesamt, rund 250 m freier Fall, sieben Strähnen, gleich südlich von Knivsflå; Kante und Abfluss im Juni (2,5 m³/s) gestaltet [G] | WP_SCHWESTERN, APP
+FAELLE | Friaren | BELEGT | Der Freier gegenüber den Schwestern auf der Südseite; Höhe 300 m und Abfluss gestaltet [G] | WP_SCHWESTERN, APP
+FAELLE | Brudesløret | GESTALTET | Der Brautschleier am Südufer westlich von Friaren nach der Karte; Höhe (560 m) und Abfluss gestaltet [G] | APP
+FAELLE | Storsæterfossen | GESTALTET | Über Vinje, begehbar hinter dem Wasser; Lage nach Karte und Abflussnetz ± 300 m, 30 m hoch [G] | APP
+FAELLE | Abfluss im Jahr | GESTALTET | Anteil am Juni je Monat (Schmelze von Ende April bis Juli, Rest unter dem Eis), Regenspeicher mit 6 h Halbwertszeit; an Pegeln der NVE nicht geprüft (F13) | APP
+FAELLE | Regenfälle | GESTALTET | Rinnsale an den steilsten Wänden von Kern West (bis zu sechs, im Gelände fünf gefunden), die nur nach Regen laufen [G] | APP
+ELVA | Geirangelva | GESTALTET | Lauf aus dem Abflussnetz des Geländes, Bett eingetieft, Abfluss im Juni 25 m³/s [G]; der Storfossen als Stufe von 11 auf 67 m | APP
+STRASSE | Ørnevegen | BELEGT | Fv63 in elf Kehren vom Ufer bis Korsmyra (620 m), höchstens 10 %; Lage der Kehren nach Karte und Fotos (F14), die Plattform an der elften Kehre | WP_FV63, DANGEROUSROADS, APP
+STRASSE | Wintersperre | BELEGT | Fv63 Langvatnet–Geiranger meist von Anfang November bis Ende Mai gesperrt | WP_FV63
+ORT | Kirche | BELEGT | Achteckige weiße Holzkirche von 1842 mit Dachreiter; Lage in der Szene nach Koordinaten und Gelände | WP_KIRCHE
+ORT | Gebäude | GESTALTET | Rund 60 Gebäude: Hotel Union, Hotel Geiranger, Terminal, Läden, Wohnhäuser, Camping, Naust; Lage, Farbe und Dach gestaltet [G] | APP
+ORT | Höfe Knivsflå und Skageflå | BELEGT | Verlassene Fjordhöfe auf schmalen Felsbändern; Häuser und Lage auf dem Band gestaltet [G] | FJORDNORWAY, APP
+SCHIFFE | Fähre Geiranger–Hellesylt | BELEGT | Rund eine Stunde Fahrt, Saison im Sommer; die Szene fährt nach dem Fahrplan 2025, Fjord1 hat die Linie 2026 eingestellt | WP_FAEHRE
+SCHIFFE | Ankerplatz und Fahrt vor dem Ort | BELEGT | Ankerplätze vor dem Ort, 8 Knoten im Fahrwasser, 5 Knoten im Hafen | KYSTVERKET
+SCHIFFE | Kreuzfahrtschiff | GESTALTET | Mai bis September, ein Anlauf am Tag (ein 8:00, aus 17:30), GM 2,2 m nach Nacharbeit 12 [G] | APP
+KLIMA | Klima „Geiranger“ | GESTALTET | Monatsmittel der Temperatur, Niederschlag und Regentage im Ort, Lagen und Übergänge der Wetterregie [G] | APP
+JAHR | Höhenstufen | GESTALTET | Zehn Stufen alle 200 m, 0,65 K je 100 m kälter, 5 % je 100 m mehr Niederschlag [G] | APP
+WALD | Biom Vestland | GESTALTET | Birke bis rund 760 m, Erle am Wasser, Kiefer auf Absätzen, Fichte in Beständen; Laub nach den Fotos Geiranger1 bis 3 [G] | APP
+MENSCHEN | Busgruppe | GESTALTET | Ausflugsbus von Juni bis August alle 45 min, 12 min Halt in einer Bucht vor der Plattform, 22 bis 31 Gäste [G] | APP
+KLANG | Echo der Wände | GESTALTET | Spiegelquellen aus dem Gelände (Lambert-Rückstreuung), Abschattung hinter Graten nach Maekawa [G] | APP
+REGIE | Regiebücher | GESTALTET | „Ein Junitag“, „Fahrt über die Ørnesvingen“, „Mit der Fähre von Hellesylt“: Abläufe, Zeiten und Blickpunkte gestaltet [G] | APP

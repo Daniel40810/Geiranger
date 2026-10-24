@@ -1,0 +1,25 @@
+# Geiranger · Regiebuch (Phase 16), Befehle wie in junitag.txt. Die Fahrt „Ørnesvingen“ fährt im Ausflugsbus die rechte
+# Spur vom Ufer bei Grande die elf Kehren hinauf bis zur Busbucht an der Plattform; die Zahl ist ihre Dauer in echten
+# Sekunden (der Bus fährt im Film schneller als in Wirklichkeit). Gestaltet [G].
+Regiebuch: Fahrt über die Ørnesvingen
+Beschreibung: 21. Juni 2026, 10:30: im Ausflugsbus vom Ufer die elf Kehren des Ørnevegen hinauf bis zur Plattform der Ørnesvingen, 530 m über dem Fjord
+Länge: 4:20
+0:00 zeit 21.06.2026 10:30 | 10:30 in Geiranger: mit dem Bus auf die Fv63, den Ørnevegen
+0:00 wetter_frei KLAR 2 270
+0:00 raffer 1
+0:00 fahrt Ørnesvingen 210
+0:12 foto Im Bus: am Ufer bei Grande
+0:30 sage Elf Kehren, Steigung bis zehn Prozent
+0:45 foto Im Bus: die ersten Kehren
+1:15 sage Unten der Ort, der Anleger und die Fähre
+1:30 foto Im Bus: über dem Ort
+2:00 sage Hat ein Bus die Kehre, wartet der Gegenverkehr
+2:15 foto Im Bus: Kehre über Kehre
+2:50 foto Im Bus: der Fjord öffnet sich nach Westen
+3:20 sage Die elfte Kehre: die Plattform
+3:30 warte fahrt
+3:31 ansicht Plattform | Die Plattform der Ørnesvingen: der Blick den Fjord hinab
+3:45 foto Plattform: am Ziel der Fahrt
+3:55 ansicht Vogelauge | Die elf Kehren von oben
+4:10 foto Vogelauge: der Ørnevegen über dem Ort
+4:19 blatt Fahrt über die Ørnesvingen

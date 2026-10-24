@@ -1,0 +1,32 @@
+# Geiranger · Regiebuch (Phase 16), Befehle wie in junitag.txt. An Bord der MF Bolsøy (Hellesylt ab 8:30, Geiranger an
+# 9:35): im Zeitraffer durch den Fjord, vor den Sieben Schwestern langsamer, an ihnen vorbei in Echtzeit (das Horn und
+# sein Echo), dann wieder im Zeitraffer bis zum Anleger. Die Zeiten nach einem warte zählen ab dort. Gestaltet [G].
+Regiebuch: Mit der Fähre von Hellesylt
+Beschreibung: 21. Juni 2026: an Bord der MF Bolsøy von Hellesylt, vom Westrand an Knivsflå, den Sieben Schwestern und Friaren vorbei bis zum Anleger in Geiranger
+Länge: 2:16
+0:00 zeit 21.06.2026 08:34 | 8:30 hat die MF Bolsøy in Hellesylt abgelegt
+0:00 wetter_frei KLAR 2 270
+0:00 raffer 10
+0:00 ansicht Vogelauge
+0:03 warte faehre Bolsøy
+0:03 mitfahrt Bolsøy -20 | 8:35: an Bord, der Fjord öffnet sich nach Osten
+0:12 foto An Bord: der Westrand des Fjords
+0:14 raffer 20
+0:30 foto An Bord: Wände bis 1 700 m
+0:40 warte schwestern Bolsøy
+0:40 raffer 4 | Voraus die Sieben Schwestern, gegenüber der Freier
+0:48 mitfahrt Bolsøy -55
+0:58 foto An Bord: die Sieben Schwestern voraus
+1:00 warte vorbei Bolsøy
+1:00 raffer 1 | Das Horn – und zweimal kommt es von den Wänden zurück
+1:06 foto An Bord: vor den Sieben Schwestern
+1:16 mitfahrt Bolsøy 125 | Achteraus Friaren, der Freier
+1:26 foto An Bord: Friaren achteraus
+1:30 raffer 30
+1:30 mitfahrt Bolsøy -10 | Durch den Fjord nach Geiranger
+1:40 warte angelegt Bolsøy
+1:40 raffer 1 | 9:35: die Fähre legt in Geiranger an
+1:48 foto Am Anleger in Geiranger
+1:55 ansicht Anleger | Der Ort am Ende des Fjords
+2:08 foto Anleger: die Fähre liegt in Geiranger
+2:15 blatt Mit der Fähre von Hellesylt

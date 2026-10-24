@@ -1,0 +1,7 @@
+# Zugang zur Oracle-Datenbank (Schema Geiranger, Dienst PDBORCL), angelegt mit manage_user('Geiranger', …) (docs/Anweisung.txt).
+# Diese Datei nach db.properties kopieren; db.properties kommt nie ins Git.
+url=jdbc:oracle:thin:@//localhost:1521/PDBORCL
+user=Geiranger
+# Das Passwort kann hier leer bleiben. Dann fragt das Geiranger Studio (Block DATEN) danach und trägt es nach dem
+# erfolgreichen Verbinden in db.properties ein (Klartext). Alternativ aus der Umgebungsvariablen GEIRANGER_DB_PASSWORD.
+password=

@@ -1,0 +1,26 @@
+run:
+Fall (com.dan.fall, Phase 6)
+  ok     Vier Stufen, B�ndel steigen an
+  ok     Freier Fall �ber 250 m ohne Luft: 7,14 s
+  ok     Bahn in geschlossener Form = Runge-Kutta (gr��te Abweichung 0,0 mm, auch schneller als die Endgeschwindigkeit)
+  ok     Ohne Luft (v_t sehr gro�) f�llt das Wasser in ?(2h/g) genau 250 m (250,00 m)
+  ok     Abriss: Grenztiefe ?(q�/g) (q = 0,1 m�/s: 0,101 m), Strahl 0,715 h_c dick, q = v � Dicke
+  Fall � Engine (Phase 6) � MEDIUM � 7 Str�hnen, 4000 B�ndel � Kante 40 m, 2,00 m�/s � Abriss 0,06 m dick, 1,3 m/s � Zerfall nach 25 m � 250 m in 16,1 s (frei 7,1 s) � Schleier unten 58 m � Aufprall 16 m/s ins Wasser � 76 dB in 100 m
+  ok     250 m Fall: 16,1 s mit Luft, l�nger als frei (7,1 s), k�rzer als das Dreifache
+  ok     Am Zerfall springt nichts: Ort und Geschwindigkeit stetig
+  ok     Zerfall in der gerechneten H�he (23,3 m unter der Kante)
+  ok     Oben glatt: die Str�hnen halten mindestens 19 m, bevor sie zerfallen
+  ok     Aufprall im See auf dem Spiegel, mit rund der Endgeschwindigkeit der Pakete (bis 17,0 m/s)
+  ok     Schleier wird mit der Fallh�he breiter: 40 m oben, 47 m nach 100 m, 58 m unten
+  ok     Wind 8 m/s aus Westen biegt den Fall nach Osten: oben 0,2 m, unten 66 m
+  ok     Frost: der Fall steht, weniger Wasser, weniger Nebel
+  ok     Ringwellen f�r das Wasser: 7 Quellen, 0,13 m hoch
+  ok     Lautst�rke 76 dB in 100 m, je Verdopplung des Abstands 6 dB leiser
+  ok     Mehr Abfluss, mehr Nebel und h�here Ringwellen (Nebel 1,00 statt 0,48)
+  ok     Nasse Linie f�r die Wand: 47 Punkte
+  ok     Gleicher Seed, gleiches Bild (Str�hnen, B�ndel, Nebel)
+  ok     Anderer Seed, anderes Bild
+  ok     Niedrig: weniger B�ndel und Str�hnen
+  ok     Shader mit eingesetztem Baustein fall.glsl
+Alles in Ordnung.
+BUILD SUCCESSFUL (total time: 2 seconds)

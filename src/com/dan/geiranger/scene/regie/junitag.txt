@@ -1,0 +1,47 @@
+# Geiranger · Regiebuch (Phase 16). Eine Zeile je Stichwort: Zeit (Minuten:Sekunden echte Zeit), Befehl, Argumente, nach
+# „ | “ der Text fürs HUD und die Untertitel im Kino. Mehrere Befehle zur selben Zeit sind ein Stichwort. Befehle: zeit,
+# raffer, wetter, wetter_frei, ansicht, fahrt, mitfahrt, warte, foto, blatt, sage. „warte uhr hh:mm“, „warte faehre
+# Name“, „warte schwestern Name“, „warte vorbei Name“, „warte angelegt Name“ und „warte fahrt“ halten die Uhr des
+# Regiebuchs an, bis die Szene so weit ist. Gestaltet [G]. Zeitraffer 240: eine Sekunde sind vier Minuten.
+Regiebuch: Ein Junitag
+Beschreibung: 21. Juni 2026, von 4 Uhr bis Mitternacht im Zeitraffer 240 mit dem Wetter „Ein Junitag“: die Plattform, vom Wasser, die Sieben Schwestern und Friaren, die Fähre legt ab, der Storfossen, Skageflå, das Vogelauge, Busse an der Plattform, Abendlicht und die helle Nacht
+Länge: 5:34
+0:00 zeit 21.06.2026 04:00 | 4 Uhr: die Sonne ist schon auf, der Fjord liegt noch im Schatten der Wände
+0:00 wetter Ein Junitag
+0:00 raffer 240
+0:00 ansicht Plattform
+0:08 foto Plattform: Morgen, der Fjord im Schatten
+0:15 ansicht Vom Wasser | 5 Uhr: vom Wasser zu den Sieben Schwestern
+0:25 foto Vom Wasser: die Schwestern am Morgen
+0:32 ansicht Sieben Schwestern | 6 Uhr: sieben Strähnen, 250 m freier Fall, voll vom Schmelzwasser
+0:42 foto Sieben Schwestern: der Juni-Abfluss
+0:50 ansicht Friaren | gegenüber der Freier, der um die Schwestern wirbt
+1:00 foto Friaren am Morgen
+1:05 raffer 30
+1:05 ansicht Anleger | 8:20 am Anleger: um 8:30 legt die Fähre nach Hellesylt ab
+1:28 foto Anleger: die Fähre legt ab
+1:40 raffer 240
+1:40 ansicht Am Storfossen | 9 Uhr: der Storfossen mitten im Ort
+1:50 foto Am Storfossen: Hochwasser im Juni
+2:00 ansicht Skageflå | 10 Uhr: von Skageflå, Fjordwind aus Westen
+2:12 foto Skageflå: der Hof über dem Fjord
+2:20 ansicht Vogelauge | 11 Uhr: der Fjord von oben, das Kreuzfahrtschiff vor Anker
+2:32 foto Vogelauge: der Fjord am Mittag
+2:40 ansicht Plattform | 12:40: an der Plattform halten die Ausflugsbusse
+2:50 foto Plattform: Mittag, Gäste am Geländer
+3:00 ansicht Vom Wasser | 14 Uhr: Quellwolken über den Gipfeln
+3:12 foto Vom Wasser: Quellwolken
+3:20 ansicht Anleger | 15:20: der Ort am Nachmittag
+3:32 foto Anleger: Nachmittag im Ort
+3:40 ansicht Sieben Schwestern | 16:40: Abendlicht an den Wänden
+3:55 foto Sieben Schwestern im Abendlicht
+4:05 ansicht Friaren | 18:20: der Wind schläft ein
+4:15 foto Friaren am Abend
+4:20 ansicht Anleger | 19:20: das Kreuzfahrtschiff ist ausgelaufen, der Abend im Ort
+4:35 foto Anleger: Abend, der Fjord wird still
+4:45 ansicht Plattform | 21 Uhr: die Sonne geht hinter den Gipfeln unter
+5:10 foto Plattform: Sonnenuntergang über dem Fjord
+5:20 ansicht Vom Wasser | 23:20: die helle Nacht
+5:30 foto Vom Wasser: helle Nacht im Juni
+5:33 blatt Ein Junitag
+5:33 raffer 1

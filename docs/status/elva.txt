@@ -1,0 +1,444 @@
+Microsoft Windows [Version 10.0.26300.9711]
+(c) Microsoft Corporation. Alle Rechte vorbehalten.
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>ant clean elva
+Buildfile: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build.xml
+
+-pre-init:
+
+-init-private:
+
+-pre-init-libraries:
+
+-init-private-libraries:
+
+-init-libraries:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-init-modules-supported:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-modulename:
+
+-init-source-module-properties:
+
+-init-macrodef-javac-with-module:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-test-impl:
+
+-init-macrodef-junit-init:
+
+-init-test-properties:
+
+-init-macrodef-junit-prototype-with-module:
+
+-init-macrodef-junit-prototype-without-module:
+
+-init-macrodef-junit-single:
+
+-init-macrodef-junit-batch:
+
+-init-macrodef-junit:
+
+-init-macrodef-junit-impl:
+
+-init-macrodef-testng:
+
+-init-macrodef-testng-impl:
+
+-init-macrodef-test:
+
+-init-macrodef-junit-debug-impl:
+
+-init-macrodef-test-debug-junit:
+
+-init-macrodef-testng-debug:
+
+-init-macrodef-testng-debug-impl:
+
+-init-macrodef-test-debug-testng:
+
+-init-macrodef-test-debug:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java-with-module:
+
+-init-macrodef-java-with-unnamed-module:
+
+-init-macrodef-java-without-module:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-clean-init:
+
+deps-clean:
+
+-warn-already-built-clean:
+[propertyfile] Updating property file: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\built-clean.properties
+
+-do-clean:
+   [delete] Deleting directory C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+-post-clean:
+
+clean:
+
+-pre-init:
+
+-init-private:
+
+-pre-init-libraries:
+
+-init-private-libraries:
+
+-init-libraries:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-init-modules-supported:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-modulename:
+
+-init-source-module-properties:
+
+-init-macrodef-javac-with-module:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-test-impl:
+
+-init-macrodef-junit-init:
+
+-init-test-properties:
+
+-init-macrodef-junit-prototype-with-module:
+
+-init-macrodef-junit-prototype-without-module:
+
+-init-macrodef-junit-single:
+
+-init-macrodef-junit-batch:
+
+-init-macrodef-junit:
+
+-init-macrodef-junit-impl:
+
+-init-macrodef-testng:
+
+-init-macrodef-testng-impl:
+
+-init-macrodef-test:
+
+-init-macrodef-junit-debug-impl:
+
+-init-macrodef-test-debug-junit:
+
+-init-macrodef-testng-debug:
+
+-init-macrodef-testng-debug-impl:
+
+-init-macrodef-test-debug-testng:
+
+-init-macrodef-test-debug:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java-with-module:
+
+-init-macrodef-java-with-unnamed-module:
+
+-init-macrodef-java-without-module:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-jar-init:
+
+deps-jar:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+-warn-already-built-jar:
+[propertyfile] Updating property file: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\built-jar.properties
+
+-check-automatic-build:
+
+-clean-after-automatic-build:
+
+-verify-automatic-build:
+
+-pre-pre-compile:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+
+-pre-compile:
+
+-copy-persistence-xml:
+
+-compile-depend:
+
+-do-compile:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\empty
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\generated-sources\ap-source-output
+    [javac] Compiling 68 source files to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+     [copy] Copying 36 files to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+
+check-packages:
+     [exec] check-packages: 2 Packages, jedes für sich übersetzt
+     [exec]   Package        Kern   gl     demo   Importe  Dateien
+     [exec]   cliff          ok     ok     ok     ok       9
+     [exec]   fall           ok     ok     ok     ok       6
+     [exec] check-packages: alle 2 Packages unabhängig.
+
+-post-compile:
+
+compile:
+
+-pre-jar:
+
+-check-module-main-class:
+
+-set-module-main-class:
+
+-pre-pre-jar:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist
+
+-do-jar-create-manifest:
+
+-do-jar-copy-manifest:
+     [copy] Copying 1 file to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+-do-jar-set-mainclass:
+
+-do-jar-set-profile:
+
+-do-jar-set-splashscreen:
+
+-check-do-mkdist:
+
+-do-jar-jar:
+
+-init-macrodef-copylibs:
+
+-do-jar-copylibs:
+ [copylibs] Copy libraries to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist\lib.
+ [copylibs] Building jar: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist\Geiranger.jar
+     [echo] To run this application from the command line without Ant, try:
+     [echo] C:\Program Files\Java\jdk-21/bin/java -jar "C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist\Geiranger.jar"
+
+-do-jar-delete-manifest:
+
+-do-jar-without-libraries:
+
+-do-jar-with-libraries:
+
+-post-jar:
+
+-do-jar:
+
+-pre-deploy:
+
+-check-jlink:
+
+-do-deploy:
+
+-post-deploy:
+
+deploy:
+
+jar:
+
+elva:
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,004 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,004 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 21.6.2026 13:00 MESZ: bestes Bild 25,31 ms, Mittel 31,04 ms (32 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 3,92 · Spiegelbild 0,69 · Gelände 1,64 · Wasser 0,77 · Fälle 18,88 · Wetter 0,00 · Nachbearbeitung 0,25 · HUD 0,01
+     [java]   33 Bilder/s   Grafikkarte 26,16 ms   Prozessor 5,81 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 3,92 · Spiegelbild 0,69 · Gelände 1,64 · Wasser 0,77 · Fälle 18,88 · Wetter 0,00 · Nachbearbeitung 0,25 · HUD 0,01
+     [java]   Compute 4.3: in Ordnung (64×64, 0,004 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   21.6.2026 13:00 MESZ · Sonne 50,9° / 168° · Belichtung 3,1 (gemessen, Bild 0,0816)
+     [java]   Verdrahtung 19 Verbindungen, 9 geplant · Wind Bft 3 aus 270° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Fjordwind am Mittag · 3/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 0 % · 21 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 50,9° · Mond 45 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 3/8 · Basis 900 m · Gipfel bis 2500 m · Zug 8 m/s aus 290° · hoher Schleier 10 %, Sonne am Auge 0 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge ja
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m · Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 11 Fälle (0,7 s, Fälle 0,1 s) · 3 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,56 %, Relief ± 22,7 mm · Wände nass 0 %, unter den Fällen 100 %
+     [java]   Fälle: Storfossen 40,00 m³/s · Geirangelva, Kaskade 1 40,00 m³/s · Sieben Schwestern 4,00 m³/s · Friaren 2,40 m³/s · Brudesløret 0,96 m³/s · Storsæterfossen 1,28 m³/s · Regenfälle 5 von 5 · nächster Storfossen 48 m, 89 dB · 2 gezeichnet, 0,02 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss von Hand · 160 % vom Juni · Regen 0,0 mm im Speicher · am Fall 21 °C
+     [java]   Geirangelva: 1462 m vom Delta bis 161 m über NN · Storfossen 11?67 m (200 m lang) · Geirangelva, Kaskade 1 88?111 m (105 m lang) · Geirangelva, Kaskade 2 115?161 m (155 m lang) · 3 Strecken als Fluss · 3 Strecken als Fluss, 40,0 m³/s, 69 % des Bands nass · Treppe am Storfossen: 308 Stufen, 55 m hoch · Geländer 84 Pfosten · 20 Steine im Fluss · 7.632 Dreiecke
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 76 Knoten, 248.972 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN +23,4 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild 2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,05 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 0 m tief
+     [java]   Frei · Auge 27 m über NN, 3 m über Grund · Blick 120° · Kern Ost · 0,0 km bis Storfossen
+     [java]   UTM 32 N  E 406395  N 6886363 · 62°05?52? N · 7°12?25? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase8_Hochwasser.png
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,009 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 2 · Leichte Brise · Douglas 2 ruhig · Windsee Hs 0,1 m, Tp 1,3 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,009 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 5.9.2026 15:00 MESZ: bestes Bild 24,65 ms, Mittel 30,23 ms (33 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 3,99 · Spiegelbild 0,66 · Gelände 1,58 · Wasser 0,77 · Fälle 17,79 · Wetter 0,00 · Nachbearbeitung 0,25 · HUD 0,02
+     [java]   34 Bilder/s   Grafikkarte 25,07 ms   Prozessor 5,59 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 3,99 · Spiegelbild 0,66 · Gelände 1,58 · Wasser 0,77 · Fälle 17,79 · Wetter 0,00 · Nachbearbeitung 0,25 · HUD 0,02
+     [java]   Compute 4.3: in Ordnung (64×64, 0,009 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   5.9.2026 15:00 MESZ · Sonne 32,1° / 207° · Belichtung 2,4 (gemessen, Bild 0,101)
+     [java]   Verdrahtung 19 Verbindungen, 9 geplant · Wind Bft 2 aus 265° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Quellwolken über den Gipfeln · 4/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 0 % · 21 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 32,2° · Mond 36 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 4/8 · Basis 900 m · Gipfel bis 2500 m · Zug 7 m/s aus 285° · hoher Schleier 10 %, Sonne am Auge 0 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge ja
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m · Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 11 Fälle (0,7 s, Fälle 0,2 s) · 3 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,56 %, Relief ± 22,7 mm · Wände nass 0 %, unter den Fällen 56 %
+     [java]   Fälle: Storfossen 9,19 m³/s · Geirangelva, Kaskade 1 9,19 m³/s · Sieben Schwestern 0,92 m³/s · Friaren 0,55 m³/s · Brudesløret 0,22 m³/s · Storsæterfossen 0,29 m³/s · Regenfälle 0 von 5 · nächster Storfossen 48 m, 82 dB · 2 gezeichnet, 0,03 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 37 %) · 37 % vom Juni · Regen 0,0 mm im Speicher · am Fall 21 °C
+     [java]   Geirangelva: 1462 m vom Delta bis 161 m über NN · Storfossen 11?67 m (200 m lang) · Geirangelva, Kaskade 1 88?111 m (105 m lang) · Geirangelva, Kaskade 2 115?161 m (155 m lang) · 3 Strecken als Fluss · 3 Strecken als Fluss, 9,2 m³/s, 69 % des Bands nass · Treppe am Storfossen: 308 Stufen, 55 m hoch · Geländer 84 Pfosten · 20 Steine im Fluss · 7.632 Dreiecke
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 76 Knoten, 248.972 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN +23,4 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild 2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,04 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 0 m tief
+     [java]   Frei · Auge 27 m über NN, 3 m über Grund · Blick 120° · Kern Ost · 0,0 km bis Storfossen
+     [java]   UTM 32 N  E 406395  N 6886363 · 62°05?52? N · 7°12?25? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase8_Spaetsommer.png
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 21.6.2026 11:00 MESZ: bestes Bild 11,88 ms, Mittel 14,80 ms (68 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 3,77 · Spiegelbild 0,96 · Gelände 4,64 · Wasser 1,48 · Fälle 0,21 · Wetter 0,00 · Nachbearbeitung 0,42 · HUD 0,02
+     [java]   69 Bilder/s   Grafikkarte 11,51 ms   Prozessor 4,02 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 3,77 · Spiegelbild 0,96 · Gelände 4,64 · Wasser 1,48 · Fälle 0,21 · Wetter 0,00 · Nachbearbeitung 0,42 · HUD 0,02
+     [java]   Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   21.6.2026 11:00 MESZ · Sonne 43,5° / 128° · Belichtung 2,8 (gemessen, Bild 0,0954)
+     [java]   Verdrahtung 19 Verbindungen, 9 geplant · Wind Bft 3 aus 270° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Fjordwind am Mittag · 3/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 0 % · 20 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 43,5° · Mond 45 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 3/8 · Basis 900 m · Gipfel bis 2500 m · Zug 8 m/s aus 290° · hoher Schleier 10 %, Sonne am Auge 100 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge ja
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m · Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 11 Fälle (0,7 s, Fälle 0,2 s) · 3 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,56 %, Relief ± 22,7 mm · Wände nass 0 %, unter den Fällen 96 %
+     [java]   Fälle: Storfossen 23,63 m³/s · Geirangelva, Kaskade 1 23,63 m³/s · Sieben Schwestern 2,36 m³/s · Friaren 1,42 m³/s · Brudesløret 0,57 m³/s · Storsæterfossen 0,76 m³/s · Regenfälle 0 von 5 · nächster Sieben Schwestern 458 m, 65 dB · 2 gezeichnet, 0,04 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 95 %) · 95 % vom Juni · Regen 0,0 mm im Speicher · am Fall 20 °C
+     [java]   Geirangelva: 1462 m vom Delta bis 161 m über NN · Storfossen 11?67 m (200 m lang) · Geirangelva, Kaskade 1 88?111 m (105 m lang) · Geirangelva, Kaskade 2 115?161 m (155 m lang) · 3 Strecken als Fluss · 3 Strecken als Fluss, 23,6 m³/s, 69 % des Bands nass · Treppe am Storfossen: 308 Stufen, 55 m hoch · Geländer 84 Pfosten · 20 Steine im Fluss · 7.632 Dreiecke
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 82 Knoten, 239.826 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN -175,1 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild 2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,05 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 175 m tief
+     [java]   Frei · Auge 2 m über NN, 2 m über dem Fjord · Blick 330° · Kern West · 0,4 km bis Sieben Schwestern
+     [java]   UTM 32 N  E 400755  N 6887230 · 62°06?15? N · 7°05?55? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase8_Schwestern.png
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 21.6.2026 11:00 MESZ: bestes Bild 12,47 ms, Mittel 15,54 ms (64 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 3,61 · Spiegelbild 0,85 · Gelände 4,13 · Wasser 1,37 · Fälle 0,20 · Wetter 0,00 · Nachbearbeitung 0,22 · HUD 0,02
+     [java]   90 Bilder/s   Grafikkarte 10,41 ms   Prozessor 5,32 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 3,61 · Spiegelbild 0,85 · Gelände 4,13 · Wasser 1,37 · Fälle 0,20 · Wetter 0,00 · Nachbearbeitung 0,22 · HUD 0,02
+     [java]   Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   21.6.2026 11:00 MESZ · Sonne 43,5° / 128° · Belichtung 3,0 (geschätzt)
+     [java]   Verdrahtung 19 Verbindungen, 9 geplant · Wind Bft 3 aus 270° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Fjordwind am Mittag · 3/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 0 % · 20 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 43,5° · Mond 45 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 3/8 · Basis 900 m · Gipfel bis 2500 m · Zug 8 m/s aus 290° · hoher Schleier 10 %, Sonne am Auge 100 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge ja
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m · Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 11 Fälle (0,7 s, Fälle 0,2 s) · 3 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,56 %, Relief ± 22,7 mm · Wände nass 0 %, unter den Fällen 96 %
+     [java]   Fälle: Storfossen 23,63 m³/s · Geirangelva, Kaskade 1 23,63 m³/s · Sieben Schwestern 2,36 m³/s · Friaren 1,42 m³/s · Brudesløret 0,57 m³/s · Storsæterfossen 0,76 m³/s · Regenfälle 0 von 5 · nächster Sieben Schwestern 458 m, 65 dB · 2 gezeichnet, 0,03 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 95 %) · 95 % vom Juni · Regen 0,0 mm im Speicher · am Fall 20 °C
+     [java]   Geirangelva: 1462 m vom Delta bis 161 m über NN · Storfossen 11?67 m (200 m lang) · Geirangelva, Kaskade 1 88?111 m (105 m lang) · Geirangelva, Kaskade 2 115?161 m (155 m lang) · 3 Strecken als Fluss · 3 Strecken als Fluss, 23,6 m³/s, 69 % des Bands nass · Treppe am Storfossen: 308 Stufen, 55 m hoch · Geländer 84 Pfosten · 20 Steine im Fluss · 7.632 Dreiecke
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 82 Knoten, 239.826 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN -175,1 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild 2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,05 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 175 m tief
+     [java]   Frei · Auge 2 m über NN, 2 m über dem Fjord · Blick 330° · Kern West · 0,4 km bis Sieben Schwestern
+     [java]   UTM 32 N  E 400755  N 6887230 · 62°06?15? N · 7°05?55? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase8_Schwestern_geschaetzt.png
+
+BUILD SUCCESSFUL
+Total time: 46 seconds
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>

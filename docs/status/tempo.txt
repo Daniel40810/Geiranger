@@ -1,0 +1,25 @@
+run:
+Geiranger: ATI Technologies Inc. � AMD Radeon(TM) Graphics � 4.6.0 Core Profile Context 26.10.1.261008
+Geiranger: Compute 4.3: in Ordnung (64�64, 0,005 ms, bis 1024 F�den, 64 KiB geteilt)
+Geiranger: Wasser: ocean, Preset Fjord � Bft 2 � Leichte Brise � Douglas 2 ruhig � Windsee Hs 0,1 m, Tp 1,2 s � D�nung 0,0 m, 9 s aus 290� � Schaum 0 % �  � Spiegelbild aus (nur Himmel)
+Geiranger: Gel�nde HGT 1? N62E006 + N62E007 (DEM1) � Land 92,4 %, Fjord 7,6 %
+AMD Radeon(TM) Graphics � OpenGL 4.6
+Compute 4.3: in Ordnung (64�64, 0,005 ms, bis 1024 F�den, 64 KiB geteilt)
+1920�1080 Mittel, 21.6.2026 11:00 MESZ: bestes Bild 7,01 ms, Mittel 10,68 ms (94 Bilder/s)
+Durchg�nge (ms): Spiegelbild 1,76 � Himmel 0,25 � Gel�nde 2,68 � Wasser 1,20 � Nachbearbeitung 0,16 � HUD 0,01
+  107 Bilder/s   Grafikkarte 6,06 ms   Prozessor 2,11 ms   Budget 16,0 ms
+  Spiegelbild 1,76 � Himmel 0,25 � Gel�nde 2,68 � Wasser 1,20 � Nachbearbeitung 0,16 � HUD 0,01
+  Compute 4.3: in Ordnung (64�64, 0,005 ms, bis 1024 F�den, 64 KiB geteilt)
+  21.6.2026 11:00 MESZ � Sonne 43,5� / 128� � Belichtung 0,60
+  Verdrahtung 6 Verbindungen, 15 geplant � Wind Bft 2 aus 270� � Spiegel NN +0,00 m
+  Physik 1/120 s � 0 Aufgaben � 0,01 ms je Schritt � Faden 0 % belegt
+  Gel�nde: HGT 1? N62E006 + N62E007 (DEM1) � Land 92,4 %, Fjord 7,6 %
+  Gel�nde 58 Knoten, 157.242 Punkte � fein bis 8 m, in den Kernen 2 m � Grund hier NN +874,6 m
+  Wasser: ocean, Preset Fjord � Bft 2 � Leichte Brise � Douglas 2 ruhig � Windsee Hs 0,1 m, Tp 1,2 s � D�nung 0,0 m, 9 s aus 290� � Schaum 0 % � FFT 3 � 256�, Ringgitter 51.201 Ecken � Spiegelbild 816�459 ? Rundumbild 2048�1024 � Grafikkarte = Prozessor: gr��te Abweichung 0,0 mm (H�hen bis 0,03 m)
+  Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der M�ndung � tiefste Stelle 249.1 m � hier 0 m tief
+  Kreisen � Auge 2523 m �ber NN, 1649 m �ber Grund � Blick 245� � Umgebung � 1,8 km bis Plattform �rnesvingen
+  UTM 32 N  E 406727  N 6890737 � 62�08?13? N � 7�12?40? E
+  Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+  Mittel � 1632�918 � umgekehrte Tiefe
+  AMD Radeon(TM) Graphics � OpenGL 4.6
+BUILD SUCCESSFUL (total time: 4 seconds)

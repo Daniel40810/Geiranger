@@ -1,0 +1,13 @@
+// kielwasser_schieben.comp — Phase 12: das Gitter des Kielwassers um ganze Zellen schieben (Auge ist weitergezogen);
+// was neu ins Gitter kommt, ist 0. Mit einem Versatz größer als das Gitter löscht es.
+layout(local_size_x = 16, local_size_y = 16) in;
+layout(r32f, binding = 0) uniform readonly image2D uSrc;
+layout(r32f, binding = 1) uniform writeonly image2D uDst;
+uniform ivec2 uOffset;      // Zelle im neuen Gitter = Zelle im alten − Versatz
+uniform int uN;
+void main() {
+    ivec2 g = ivec2(gl_GlobalInvocationID.xy), s = g + uOffset;
+    if (g.x >= uN || g.y >= uN) return;
+    float v = (s.x >= 0 && s.y >= 0 && s.x < uN && s.y < uN) ? imageLoad(uSrc, s).r : 0.0;
+    imageStore(uDst, g, vec4(v, 0.0, 0.0, 0.0));
+}

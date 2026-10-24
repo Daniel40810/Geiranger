@@ -1,0 +1,31 @@
+run:
+Geiranger: ATI Technologies Inc. � AMD Radeon(TM) Graphics � 4.6.0 Core Profile Context 26.10.1.261008
+Geiranger: Compute 4.3: in Ordnung (64�64, 0,005 ms, bis 1024 F�den, 64 KiB geteilt)
+Geiranger: Wasser: ocean, Preset Fjord � Bft 2 � Leichte Brise � Douglas 2 ruhig � Windsee Hs 0,1 m, Tp 1,3 s � D�nung 0,0 m, 9 s aus 290� � Schaum 0 % �  � Spiegelbild aus (nur Himmel)
+Geiranger: Himmel Tabellen 256�64, 32�, 256�128 � 8920 Sterne � 5 Planeten � 27 Figuren
+Geiranger: Wolken Rauschen 128� + 32�, Karte 512�, Schatten 256� �ber 24 km
+Geiranger: Gel�nde HGT 1? N62E006 + N62E007 (DEM1) � Land 92,4 %, Fjord 7,6 %
+AMD Radeon(TM) Graphics � OpenGL 4.6
+Compute 4.3: in Ordnung (64�64, 0,005 ms, bis 1024 F�den, 64 KiB geteilt)
+1920�1080 Mittel, 21.6.2026 11:00 MESZ: bestes Bild 9,81 ms, Mittel 14,64 ms (68 Bilder/s)
+Durchg�nge (ms): Schatten 0,00 � Himmel 3,21 � Spiegelbild 0,71 � Gel�nde 2,40 � Wasser 1,31 � Wetter 0,00 � Nachbearbeitung 0,20 � HUD 0,01
+  86 Bilder/s   Grafikkarte 7,86 ms   Prozessor 2,56 ms   Budget 16,0 ms
+  Schatten 0,00 � Himmel 3,21 � Spiegelbild 0,71 � Gel�nde 2,40 � Wasser 1,31 � Wetter 0,00 � Nachbearbeitung 0,20 � HUD 0,01
+  Compute 4.3: in Ordnung (64�64, 0,005 ms, bis 1024 F�den, 64 KiB geteilt)
+  21.6.2026 11:00 MESZ � Sonne 43,5� / 128� � Belichtung 15
+  Verdrahtung 12 Verbindungen, 14 geplant � Wind Bft 2 aus 270� � Spiegel NN +0,00 m
+  Wetter freie Regie, klar � 2/8 Cumulus � Regen 0,0 mm/h � Sicht 45 km � Nebel 0 % � 16 �C
+  Himmel Tabellen 256�64, 32�, 256�128 � 8920 Sterne � 5 Planeten � 27 Figuren � Sonne 43,5� � Mond 45 % � Sicht 45 km � Grafikkarte = Prozessor: Himmel � 0,0 %, Durchl�ssigkeit � 0,12 %, Mehrfachstreuung � 0,0 %
+  Wolken Cumulus 2/8 � Basis 900 m � Gipfel bis 2500 m � Zug 7 m/s aus 290� � hoher Schleier 10 %, Sonne am Auge 36 % � trocken � 0,0 mm/h hier (bis 0,0) � Sicht im Regen frei � 0 Einschl�ge/m�s � Nebel kein Nebel � Band kein Nebel
+  Schatten der W�nde 1024� (24 m) + Fernring 256�, 4 Streifen je Durchlauf, 1 Durchl�ufe � Sonne am Auge nein (Schatten der W�nde)
+  Physik 1/120 s � 0 Aufgaben � 0,00 ms je Schritt � Faden 0 % belegt
+  Gel�nde: HGT 1? N62E006 + N62E007 (DEM1) � Land 92,4 %, Fjord 7,6 %
+  Gel�nde 58 Knoten, 157.242 Punkte � fein bis 8 m, in den Kernen 2 m � Grund hier NN +874,6 m
+  Wasser: ocean, Preset Fjord � Bft 3 � Schwache Brise � Douglas 3 schwach bewegt � Windsee Hs 0,1 m, Tp 1,4 s � D�nung 0,0 m, 9 s aus 290� � Schaum 0 % � FFT 3 � 256�, Ringgitter 51.201 Ecken � Spiegelbild 816�459 ? Rundumbild 2048�1024 � Grafikkarte = Prozessor: gr��te Abweichung 0,0 mm (H�hen bis 0,05 m)
+  Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der M�ndung � tiefste Stelle 249.1 m � hier 0 m tief
+  Kreisen � Auge 2523 m �ber NN, 1649 m �ber Grund � Blick 245� � Umgebung � 1,8 km bis Plattform �rnesvingen
+  UTM 32 N  E 406727  N 6890737 � 62�08?13? N � 7�12?40? E
+  Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+  Mittel � 1632�918 � umgekehrte Tiefe
+  AMD Radeon(TM) Graphics � OpenGL 4.6
+BUILD SUCCESSFUL (total time: 7 seconds)

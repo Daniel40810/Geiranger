@@ -1,0 +1,74 @@
+// kielwasser.comp — Phase 12: Kielwasser der Schiffe als Höhenfeld (iWave nach Tessendorf, mit eigenem Kern).
+// Ein Gitter N² zu uWin.z m um das Auge; je Schritt:
+//   h' = (h·(2 − α·dt) − h_alt − g·dt²/dx · (K ⊛ (h + Delle))) / (1 + α·dt)
+// K (13 × 13, 28 Werte nach Abstand) ist so gefittet, dass seine Antwort |k| ist (Zelle als Einheit): das gibt die
+// Streuung tiefen Wassers ω² = g·|k| und mit einem fahrenden Rumpf das Kelvin-Muster (19,5° halber Winkel, schräge und
+// quere Wellen). Die Delle ist der Druck des Rumpfs: Tiefe uShipB.z, längs an Bug und Heck über uShipB.w m auf und ab,
+// quer parabelförmig. Land (Grund über dem Spiegel − 0,4 m) bleibt 0: dort wird die Welle zurückgeworfen; im flachen
+// Wasser (unter 3 m) und am Rand des Gitters (32 Zellen) läuft sie aus. Das Ergebnis liest ocean als lange Welle.
+#include "common.glsl"
+#include "terrain_height.glsl"
+layout(local_size_x = 16, local_size_y = 16) in;
+layout(r32f, binding = 0) uniform readonly image2D uPrev;
+layout(r32f, binding = 1) uniform readonly image2D uCur;
+layout(r32f, binding = 2) uniform writeonly image2D uNext;
+uniform vec4 uWin;          // x0, z0 (Ecke), Zelle (m), Zellen je Seite
+uniform vec3 uStep;         // dt, α (1/s), g·dt²/dx
+uniform float uKern[28];
+uniform int uShips;
+uniform vec4 uShipA[8];     // x, z, sin und cos des Kurses
+uniform vec4 uShipB[8];     // halbe Länge, halbe Breite, Delle (m), Länge von Bug und Heck (m)
+shared float tile[28][28];
+
+float delle(vec2 p) {
+    float d = 0.0;
+    for (int i = 0; i < 8; i++) {
+        if (i >= uShips) break;
+        vec2 r = p - uShipA[i].xy;
+        float s = dot(r, vec2(uShipA[i].z, -uShipA[i].w)), q = dot(r, vec2(uShipA[i].w, uShipA[i].z));
+        float along = clamp((uShipB[i].x - abs(s)) / uShipB[i].w, 0.0, 1.0);
+        float u = q / uShipB[i].y;
+        d += uShipB[i].z * along * max(0.0, 1.0 - u * u);
+    }
+    return d;
+}
+
+int kernIndex(int a, int b) {
+    int i = max(a, b), j = min(a, b);
+    return i * (i + 1) / 2 + j;
+}
+
+void main() {
+    int n = int(uWin.w);
+    ivec2 g = ivec2(gl_GlobalInvocationID.xy), l = ivec2(gl_LocalInvocationID.xy);
+    ivec2 base = ivec2(gl_WorkGroupID.xy) * 16 - 6;
+    for (int k = int(gl_LocalInvocationIndex); k < 784; k += 256) {
+        ivec2 t = ivec2(k % 28, k / 28), c = base + t;
+        float v = 0.0;
+        if (c.x >= 0 && c.y >= 0 && c.x < n && c.y < n) {
+            vec2 w = uWin.xy + (vec2(c) + 0.5) * uWin.z;
+            v = imageLoad(uCur, c).r + delle(w);
+        }
+        tile[t.y][t.x] = v;
+    }
+    barrier();
+    if (g.x >= n || g.y >= n) return;
+    float conv = 0.0;
+    for (int dj = -6; dj <= 6; dj++)
+        for (int di = -6; di <= 6; di++) {
+            if (di * di + dj * dj > 37) continue;
+            conv += uKern[kernIndex(abs(di), abs(dj))] * tile[l.y + 6 + dj][l.x + 6 + di];
+        }
+    float dt = uStep.x, a = uStep.y;
+    float h = imageLoad(uCur, g).r, hp = imageLoad(uPrev, g).r;
+    float hn = (h * (2.0 - a * dt) - hp - uStep.z * conv) / (1.0 + a * dt);
+    // Rand des Gitters: schwammig über 32 Zellen
+    int e = min(min(g.x, g.y), min(n - 1 - g.x, n - 1 - g.y));
+    hn *= mix(0.92, 1.0, smoothstep(0.0, 32.0, float(e)));
+    // Land wirft zurück, flaches Wasser dämpft
+    vec2 w = uWin.xy + (vec2(g) + 0.5) * uWin.z;
+    float depth = uLevel - heightAt(w, 0.0);
+    if (depth < 0.4) hn = 0.0;
+    else hn *= mix(0.97, 1.0, smoothstep(0.4, 3.0, depth));
+    imageStore(uNext, g, vec4(clamp(hn, -3.0, 3.0), 0.0, 0.0, 0.0));
+}

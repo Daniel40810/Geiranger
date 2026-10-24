@@ -1,0 +1,15 @@
+    <!-- Phase 6: die Vorführung von com.dan.fall als Statusbild (sechs Ansichten, mit Zeit auf der Grafikkarte und
+         Selbsttest). Dazu bleibt „tempo“ aus Phase 5 für die Nacharbeit am Fels. -->
+    <target name="falldemo" depends="jar" description="Statusbild Phase 6: docs/status/Status_Phase6.png (Vorführung com.dan.fall).">
+        <property name="platform.java" value="java"/>
+        <java classname="com.dan.fall.demo.FallDemo" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <jvmarg value="--enable-native-access=ALL-UNNAMED"/>
+            <arg line="--bild docs/status/Status_Phase6.png 1920"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+        <java classname="com.dan.fall.demo.FallCheck" fork="true" jvm="${platform.java}" dir="${basedir}" failonerror="true">
+            <jvmarg value="-Dstdout.encoding=UTF-8"/>
+            <classpath><pathelement path="${run.classpath}"/></classpath>
+        </java>
+    </target>

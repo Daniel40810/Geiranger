@@ -1,0 +1,302 @@
+deps-clean:
+
+-warn-already-built-clean:
+[propertyfile] Updating property file: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\built-clean.properties
+
+-do-clean:
+   [delete] Deleting directory C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+-post-clean:
+
+clean:
+
+-pre-init:
+
+-init-private:
+
+-pre-init-libraries:
+
+-init-private-libraries:
+
+-init-libraries:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-init-modules-supported:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-modulename:
+
+-init-source-module-properties:
+
+-init-macrodef-javac-with-module:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-test-impl:
+
+-init-macrodef-junit-init:
+
+-init-test-properties:
+
+-init-macrodef-junit-prototype-with-module:
+
+-init-macrodef-junit-prototype-without-module:
+
+-init-macrodef-junit-single:
+
+-init-macrodef-junit-batch:
+
+-init-macrodef-junit:
+
+-init-macrodef-junit-impl:
+
+-init-macrodef-testng:
+
+-init-macrodef-testng-impl:
+
+-init-macrodef-test:
+
+-init-macrodef-junit-debug-impl:
+
+-init-macrodef-test-debug-junit:
+
+-init-macrodef-testng-debug:
+
+-init-macrodef-testng-debug-impl:
+
+-init-macrodef-test-debug-testng:
+
+-init-macrodef-test-debug:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java-with-module:
+
+-init-macrodef-java-with-unnamed-module:
+
+-init-macrodef-java-without-module:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-jar-init:
+
+deps-jar:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+-warn-already-built-jar:
+[propertyfile] Updating property file: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\built-jar.properties
+
+-check-automatic-build:
+
+-clean-after-automatic-build:
+
+-verify-automatic-build:
+
+-pre-pre-compile:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+
+-pre-compile:
+
+-copy-persistence-xml:
+
+-compile-depend:
+
+-do-compile:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\empty
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\generated-sources\ap-source-output
+    [javac] Compiling 63 source files to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+     [copy] Copying 30 files to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+
+check-packages:
+     [exec] check-packages: 2 Packages, jedes für sich übersetzt
+     [exec]   Package        Kern   gl     demo   Importe  Dateien
+     [exec]   cliff          ok     ok     ok     ok       9
+     [exec]   fall           ok     ok     ok     ok       6
+     [exec] check-packages: alle 2 Packages unabhängig.
+
+-post-compile:
+
+compile:
+
+-pre-jar:
+
+-check-module-main-class:
+
+-set-module-main-class:
+
+-pre-pre-jar:
+    [mkdir] Created dir: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist
+
+-do-jar-create-manifest:
+
+-do-jar-copy-manifest:
+     [copy] Copying 1 file to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+-do-jar-set-mainclass:
+
+-do-jar-set-profile:
+
+-do-jar-set-splashscreen:
+
+-check-do-mkdist:
+
+-do-jar-jar:
+
+-init-macrodef-copylibs:
+
+-do-jar-copylibs:
+ [copylibs] Copy libraries to C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist\lib.
+ [copylibs] Building jar: C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist\Geiranger.jar
+     [echo] To run this application from the command line without Ant, try:
+     [echo] C:\Program Files\Java\jdk-21/bin/java -jar "C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist\Geiranger.jar"
+
+-do-jar-delete-manifest:
+
+-do-jar-without-libraries:
+
+-do-jar-with-libraries:
+
+-post-jar:
+
+-do-jar:
+
+-pre-deploy:
+
+-check-jlink:
+
+-do-deploy:
+
+-post-deploy:
+
+deploy:
+
+jar:
+
+faelle:
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,014 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,014 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 21.6.2026 11:00 MESZ: bestes Bild 12,32 ms, Mittel 17,46 ms (57 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 3,29 · Spiegelbild 1,19 · Gelände 5,22 · Wasser 1,51 · Fälle 1,19 · Wetter 0,00 · Nachbearbeitung 0,73 · HUD 0,02
+     [java]   59 Bilder/s   Grafikkarte 13,16 ms   Prozessor 4,60 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 3,29 · Spiegelbild 1,19 · Gelände 5,22 · Wasser 1,51 · Fälle 1,19 · Wetter 0,00 · Nachbearbeitung 0,73 · HUD 0,02
+     [java]   Compute 4.3: in Ordnung (64×64, 0,014 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   21.6.2026 11:00 MESZ · Sonne 43,5° / 128° · Belichtung 3,0
+     [java]   Verdrahtung 17 Verbindungen, 10 geplant · Wind Bft 3 aus 270° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Fjordwind am Mittag · 3/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 0 % · 20 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 43,5° · Mond 45 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 3/8 · Basis 900 m · Gipfel bis 2500 m · Zug 8 m/s aus 290° · hoher Schleier 10 %, Sonne am Auge 100 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge ja
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m · Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 8 Fälle (0,7 s, Fälle 0,2 s) · 2 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,56 %, Relief ± 22,7 mm · Wände nass 0 %, unter den Fällen 96 %
+     [java]   Fälle: Sieben Schwestern 2,36 m³/s · Friaren 1,42 m³/s · Brudesløret 0,57 m³/s · Regenfälle 0 von 5 · nächster Sieben Schwestern 498 m, 65 dB · 2 gezeichnet, 0,02 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 95 %) · 95 % vom Juni · Regen 0,0 mm im Speicher · am Fall 20 °C
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 82 Knoten, 239.826 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN -175,1 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild 2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,05 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 175 m tief
+     [java]   Frei · Auge 2 m über NN, 2 m über dem Fjord · Blick 330° · Kern West · 0,4 km bis Sieben Schwestern
+     [java]   UTM 32 N  E 400755  N 6887230 · 62°06?15? N · 7°05?55? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase7.png
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 2 · Leichte Brise · Douglas 2 ruhig · Windsee Hs 0,1 m, Tp 1,2 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 21.6.2026 19:30 MESZ: bestes Bild 12,20 ms, Mittel 17,43 ms (57 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 3,15 · Spiegelbild 1,16 · Gelände 5,50 · Wasser 2,00 · Fälle 1,65 · Wetter 0,00 · Nachbearbeitung 0,76 · HUD 0,02
+     [java]   57 Bilder/s   Grafikkarte 14,24 ms   Prozessor 3,90 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 3,15 · Spiegelbild 1,16 · Gelände 5,50 · Wasser 2,00 · Fälle 1,65 · Wetter 0,00 · Nachbearbeitung 0,76 · HUD 0,02
+     [java]   Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   21.6.2026 19:30 MESZ · Sonne 20,9° / 281° · Belichtung 6,8
+     [java]   Verdrahtung 17 Verbindungen, 10 geplant · Wind Bft 2 aus 183° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Der Abend, der Wind schläft ein · 2/8 Cumulus · Regen 0,0 mm/h · Sicht 42 km · Nebel 0 % · 19 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 21,0° · Mond 48 % · Sicht 42 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 2/8 · Basis 900 m · Gipfel bis 2500 m · Zug 4 m/s aus 203° · hoher Schleier 10 %, Sonne am Auge 100 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge nein (Schatten der Wände)
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m · Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 8 Fälle (0,7 s, Fälle 0,1 s) · 2 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,56 %, Relief ± 22,7 mm · Wände nass 0 %, unter den Fällen 96 %
+     [java]   Fälle: Sieben Schwestern 2,36 m³/s · Friaren 1,42 m³/s · Brudesløret 0,57 m³/s · Regenfälle 0 von 5 · nächster Friaren 415 m, 63 dB · 1 gezeichnet, 0,04 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 95 %) · 95 % vom Juni · Regen 0,0 mm im Speicher · am Fall 19 °C
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 99 Knoten, 261.475 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN -154,9 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 2 · Leichte Brise · Douglas 2 ruhig · Windsee Hs 0,1 m, Tp 1,2 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild 2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,03 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 155 m tief
+     [java]   Frei · Auge 2 m über NN, 2 m über dem Fjord · Blick 107° · Kern West · 0,3 km bis Friaren
+     [java]   UTM 32 N  E 401215  N 6887590 · 62°06?27? N · 7°06?26? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase7_Friaren.png
+     [java] Geiranger: ATI Technologies Inc. · AMD Radeon(TM) Graphics · 4.6.0 Core Profile Context 26.10.1.261008
+     [java] Geiranger: Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] Geiranger: Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % ·  · Spiegelbild aus (nur Himmel)
+     [java] Geiranger: Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren
+     [java] Geiranger: Wolken Rauschen 128³ + 32³, Karte 512², Schatten 256² über 24 km
+     [java] Geiranger: Gelände HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java] AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java] 1920×1080 Mittel, 21.6.2026 11:00 MESZ: bestes Bild 11,76 ms, Mittel 16,90 ms (59 Bilder/s)
+     [java] Durchgänge (ms): Schatten 0,00 · Himmel 3,09 · Spiegelbild 1,16 · Gelände 4,50 · Wasser 1,70 · Fälle 0,44 · Wetter 0,00 · Nachbearbeitung 0,23 · HUD 0,02
+     [java]   61 Bilder/s   Grafikkarte 11,15 ms   Prozessor 4,66 ms   Budget 16,0 ms
+     [java]   Schatten 0,00 · Himmel 3,09 · Spiegelbild 1,16 · Gelände 4,50 · Wasser 1,70 · Fälle 0,44 · Wetter 0,00 · Nachbearbeitung 0,23 · HUD 0,02
+     [java]   Compute 4.3: in Ordnung (64×64, 0,005 ms, bis 1024 Fäden, 64 KiB geteilt)
+     [java]   21.6.2026 11:00 MESZ · Sonne 43,5° / 128° · Belichtung 4,3
+     [java]   Verdrahtung 17 Verbindungen, 10 geplant · Wind Bft 3 aus 270° · Spiegel NN +0,00 m
+     [java]   Wetter Ein Junitag: Fjordwind am Mittag · 3/8 Cumulus · Regen 0,0 mm/h · Sicht 45 km · Nebel 0 % · 20 °C
+     [java]   Himmel Tabellen 256×64, 32², 256×128 · 8920 Sterne · 5 Planeten · 27 Figuren · Sonne 43,5° · Mond 45 % · Sicht 45 km · Grafikkarte = Prozessor: Himmel ± 0,0 %, Durchlässigkeit ± 0,12 %, Mehrfachstreuung ± 0,0 %
+     [java]   Wolken Cumulus 3/8 · Basis 900 m · Gipfel bis 2500 m · Zug 8 m/s aus 290° · hoher Schleier 10 %, Sonne am Auge 100 % · trocken · 0,0 mm/h hier (bis 0,0) · Sicht im Regen frei · 0 Einschläge/m²s · Nebel kein Nebel · Band kein Nebel
+     [java]   Schatten der Wände 1024² (24 m) + Fernring 256², 4 Streifen je Durchlauf, 1 Durchläufe · Sonne am Auge ja
+     [java]   Fels: Cliff · Engine (Phase 5) · MEDIUM · Fels ab 38°, Wand ab 55° · Relief 4,0 m bis 1500 m · Klüfte 9 m · Wandkarte 2048² zu 12 m · Wand 4,4 %, Geröll 8,9 %, Absatz 0,6 % · 8 Fälle (0,7 s, Fälle 0,3 s) · 2 Überhänge · Grafikkarte = Prozessor: Farbe ± 0,56 %, Relief ± 22,7 mm · Wände nass 0 %, unter den Fällen 96 %
+     [java]   Fälle: Sieben Schwestern 2,36 m³/s · Friaren 1,42 m³/s · Brudesløret 0,57 m³/s · Regenfälle 0 von 5 · nächster Friaren 490 m, 61 dB · 2 gezeichnet, 0,02 ms · Grafikkarte = Prozessor: Bahn ± 0 mm, Geschwindigkeit ± 0,00 m/s · Abfluss Regie (Jahreszeit 95 %) · 95 % vom Juni · Regen 0,0 mm im Speicher · am Fall 20 °C
+     [java]   Physik 1/120 s · 0 Aufgaben · 0,00 ms je Schritt · Faden 0 % belegt
+     [java]   Gelände: HGT 1? N62E006 + N62E007 (DEM1) · Land 92,4 %, Fjord 7,6 %
+     [java]   Gelände 95 Knoten, 250.847 Punkte · fein bis 8 m, in den Kernen 2 m · Grund hier NN -185,2 m
+     [java]   Wasser: ocean, Preset Fjord · Bft 3 · Schwache Brise · Douglas 3 schwach bewegt · Windsee Hs 0,1 m, Tp 1,4 s · Dünung 0,0 m, 9 s aus 290° · Schaum 0 % · FFT 3 × 256², Ringgitter 51.201 Ecken · Spiegelbild 816×459 ? Rundumbild 2048×1024 · Grafikkarte = Prozessor: größte Abweichung 0,0 mm (Höhen bis 0,05 m)
+     [java]   Fjordgrund: gemalt (F7): Ufer 10 m, Mitte 150 m, Rinne 250 m, Delta 2 m an der Mündung · tiefste Stelle 249.1 m · hier 185 m tief
+     [java]   Frei · Auge 3 m über NN, 3 m über dem Fjord · Blick 260° · Kern West · 0,4 km bis Friaren
+     [java]   UTM 32 N  E 401200  N 6887750 · 62°06?32? N · 7°06?24? E
+     [java]   Renderer.jar: 31 Packages in Renderer.jar, alle 21 gebrauchten da
+     [java]   Mittel · 1632×918 · umgekehrte Tiefe
+     [java]   AMD Radeon(TM) Graphics · OpenGL 4.6
+     [java] Bild: docs\status\Status_Phase7_VomWasser.png
+
+BUILD SUCCESSFUL
+Total time: 34 seconds
