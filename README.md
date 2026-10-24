@@ -4,7 +4,7 @@ Der Geirangerfjord als 3D-Echtzeitszene: rund 20 km Wasser zwischen Wänden aus 
 
 ![Die Fähre aus Hellesylt vor den Sieben Schwestern](docs/bilder/faehre_vor_den_schwestern.jpg)
 
-Geiranger ist die Fortsetzung von Rungholt und Glacier. Die Element-Packages kommen fertig aus `lib/Renderer.jar` (F4 A). Neu entstanden sind hier zwei, die jede Gebirgsszene brauchen kann: `fall` (Wasserfälle) und `cliff` (Steilwand als Material und Feinform). Seit Phase 18 liegen auch sie in `Renderer.jar`, ihre Quellen in `pakete/`. Jedes Package folgt demselben Vertrag: Der Kern braucht nur Java 21, `gl/` dazu JOGL, `demo/` dazu FStyle; `check-packages` übersetzt jedes einzeln.
+Geiranger ist die Fortsetzung von Rungholt und Glacier. Die Element-Packages kommen fertig aus `lib/Renderer.jar` (F4 A). Neu entstanden sind hier zwei, die jede Gebirgsszene brauchen kann: `fall` (Wasserfälle) und `cliff` (Steilwand als Material und Feinform). Seit Phase 18 liegen auch sie im Projekt Renderer und in `Renderer.jar`. Jedes Package folgt demselben Vertrag: Der Kern braucht nur Java 21, `gl/` dazu JOGL, `demo/` dazu FStyle; im Projekt Renderer übersetzt `tools/PaketPruefung.java` jedes einzeln, hier prüft `check-packages` das Jar.
 
 **Stand: Phase 18 von 18, Schliff.** Die Szene hat Gelände, Fjord und Himmel mit Wetter, Fels, Wasserfälle, die Geirangelva mit dem Storfossen, die Ørnesvingen mit Verkehr, Wald, Wiesen und Höfe, den Ort, Schiffe mit Kielwasser, Menschen, das Jahr, Klang mit dem Echo der Wände, drei Regiebücher mit Kino und die Datenbank (Schema GR_ oder Dateien in `daten/`; Einrichten, Prüfen und QGIS in [db/README.md](db/README.md)). Dazu kommen jetzt der Dauerlauf, die Verknüpfung mit Symbol, die Quellenliste und die Qualitätsstufen für alle Teile. Plan und Fortschritt stehen im Artefakt „Geiranger Werkbuch“, die Statusbilder in `docs/status/`.
 
@@ -31,15 +31,15 @@ Die Bilder aus der Szene stammen von einer AMD Radeon 680M auf „Mittel“ (Sta
 
 | Package | Inhalt | Stand |
 |---|---|---|
-| `com.dan.fall` | Wasserfälle: Abriss, freier Fall, Lauf über Fels, Strähnen, Schleier, Tosbecken, Eis | neu: Engine seit Phase 6, Lauf über Fels seit Phase 7; seit Phase 18 in `Renderer.jar`, Quellen in `pakete/` ([README](pakete/com/dan/fall/README.md)) |
-| `com.dan.cliff` | Steilwand: Gneis nach Neigung, Bänder, Klüfte, Nässe, Feinform, Überhänge | neu: Engine seit Phase 5; seit Phase 18 in `Renderer.jar`, Quellen in `pakete/` ([README](pakete/com/dan/cliff/README.md)) |
+| `com.dan.fall` | Wasserfälle: Abriss, freier Fall, Lauf über Fels, Strähnen, Schleier, Tosbecken, Eis | neu: Engine seit Phase 6, Lauf über Fels seit Phase 7; seit Phase 18 im Projekt Renderer |
+| `com.dan.cliff` | Steilwand: Gneis nach Neigung, Bänder, Klüfte, Nässe, Feinform, Überhänge | neu: Engine seit Phase 5; seit Phase 18 im Projekt Renderer |
 | `com.dan.sky`, `cloud`, `weather`, `rain`, `fog` | Himmel und Wetter | aus `Renderer.jar`, seit Phase 4; Klima „Geiranger“ mit drei Wetterbüchern |
 | `com.dan.ocean`, `wave`, `spray`, `buoyancy` | Fjord, Kielwasser, Schwimmen | seit Phase 3 (Preset „Fjord“), Phase 12 (Schiffe, lange Welle für das Kielwasser) |
 | `com.dan.river`, `road`, `forest`, `ground`, `timber` | Elva, Fv63 mit Verkehr, Wald, Bodendecke, Holzbauten | seit Phase 8 bis 11 (Biom „Vestland“, Naust, Anleger, Höfe) |
 | `com.dan.figure`, `season`, `soundscape`, `kino`, `store` | Menschen, Jahr, Klang, Kinomodus, Datenseite | seit Phase 13 bis 17 |
 | `com.dan.geiranger` | Die App | Phase 18 |
 
-`Renderer.jar` steht im Klassenpfad vor `FStyle.jar`, das ältere Kopien von `road`, `river`, `forest` und `ground` enthält. Nach einer Änderung in `pakete/` frischt das Ant-Target `renderer-jar` `lib/Renderer.jar` auf.
+`Renderer.jar` steht im Klassenpfad vor `FStyle.jar`, das ältere Kopien von `road`, `river`, `forest` und `ground` enthält. Nach einer Änderung in Renderer: dort „Clean and Build“, dann `dist/Renderer.jar` nach `lib/` kopieren; `check-packages` meldet, wenn etwas fehlt.
 
 ## Bauen und starten
 
@@ -48,7 +48,7 @@ Die Bilder aus der Szene stammen von einer AMD Radeon 680M auf „Mittel“ (Sta
 - **Verknüpfung:** [Geiranger_Verknuepfung.bat](Geiranger_Verknuepfung.bat) legt „Geiranger“ mit dem Symbol `Geiranger.ico` (der Blick den Fjord hinab, die Schwestern an der Wand, der Abendhimmel im Wasser, Goldkante) auf den Desktop und ins Startmenü. Das Symbol malt `ui.AppIcon`; `ant symbol` schreibt die PNGs ins Jar und das ICO neu.
 - Voraussetzung: OpenGL 4.3 mit Compute-Shadern. Ziel (F22 A): AMD Radeon 680M (2 GB), „Mittel“ hält 60 Bilder/s in Full HD.
 - **Startbild:** „Neu“, „Weiter wie zuletzt“ (stellt die letzte Sitzung her), „Einrichten“ (Schema GR_, endet mit „alles in Ordnung“), „Ohne Datenbank“ (dann `daten/`), ein Regiebuch „Im Kino“.
-- **Prüfung:** `ant pruefung` endet mit „ERGEBNIS: alles in Ordnung“; `check-packages` übersetzt `fall` und `cliff` einzeln; `ant dbpruefung` (oder `DbPruefung` mit Run File) prüft gegen die Datenbank und endet mit „Alles in Ordnung.“
+- **Prüfung:** `ant pruefung` endet mit „ERGEBNIS: alles in Ordnung“; `check-packages` prüft `lib/Renderer.jar` (alle gebrauchten Packages, Shader von `fall` und `cliff`); `ant dbpruefung` (oder `DbPruefung` mit Run File) prüft gegen die Datenbank und endet mit „Alles in Ordnung.“
 - **Dauerlauf** (Abnahme „fertig“): Block TECHNIK → „Dauerlauf 30 min“ oder Start mit `-Dgeiranger.dauerlauf=30`. Jede Runde spielt „Ein Junitag“ im Kino, zwei Tage frei im Zeitraffer 360 (15. Februar mit Schnee und Eis, 15. Oktober mit einer Front), „Mit der Fähre von Hellesylt“ und „Fahrt über die Ørnesvingen“ im Kino; mindestens zwei Runden. Am Ende `docs/status/Dauerlauf_….png` und `.txt` mit dem Urteil: keine Fehler, jede Runde vollständig, im Mittel 30 Bilder/s, kein Leck (Speicher und Fäden am Ende jeder Runde), Grenzen der Szene (Gäste, Fahrzeuge), Physik nachgekommen, Chronik schrieb mit. Esc beendet nur das Kino, „Abbrechen“ den Dauerlauf.
 - **Tasten:** F1 zeigt alle. Maus ziehen dreht und verschiebt, Rad zoomt, W A S D gleitet, F fliegt frei, R kreist, 1 bis 9 die Ansichten, G Grund zeigen, H das HUD, V merkt die Ansicht, Umschalt + Klick setzt einen Merkpunkt, F11 nur die Szene, F12 ein Foto nach `docs/status/`.
 
@@ -62,7 +62,7 @@ Die Bilder aus der Szene stammen von einer AMD Radeon 680M auf „Mittel“ (Sta
 | `wald`, `ort`, `schiffe`, `menschen` | 10–13 | Hänge und Höfe, der Ort bei Tag und Nacht, Fähre, Kielwasser und Kreuzfahrtschiff, Gäste und Busgruppe |
 | `jahr`, `klang`, `regie` | 14–16 | Plattform im Februar, Mai, Juni, Oktober; Fahrt mit Horn und Echo (Bild und WAV); die drei Regiebücher mit Blatt und im Kino |
 | `startdaten`, `dbpruefung`, `daten` | 17 | `db/sql/04_startdaten.sql` aus dem Code; Prüfung gegen Oracle; Tageskarte (`Status_Phase17.png`) |
-| `symbol`, `quellen`, `renderer-jar` | 18 | Programmsymbol und `Geiranger.ico`; `docs/QUELLEN.md`; `fall` und `cliff` aus `pakete/` nach `lib/Renderer.jar` |
+| `symbol`, `quellen` | 18 | Programmsymbol und `Geiranger.ico`; `docs/QUELLEN.md` |
 
 `tools.Tempo` rechnet Standbilder ohne Fenster; Schalter wie `-Dkamera=x,z,Richtung,Neigung,Höhe`, `-Dregie=Junitag|Ornesvingen|Faehre`, `-Dkino=1`, `-Dmenschen=…`, `-Dschiff=…` stehen in den Targets.
 

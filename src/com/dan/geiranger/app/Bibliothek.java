@@ -21,7 +21,7 @@ public final class Bibliothek {
     public static final String[] GEBRAUCHT = {"ground", "forest", "river", "ocean", "wave", "spray", "buoyancy", "sky", "cloud", "weather", "rain",
             "fog", "season", "ice", "road", "timber", "figure", "flock", "soundscape", "kino", "store"};
 
-    /** Packages, die in diesem Projekt neu entstanden (Phase 5 und 6); seit Phase 18 liegen sie in Renderer.jar, die Quellen in {@code pakete/} (Ant-Target {@code renderer-jar}). */
+    /** Packages, die in diesem Projekt neu entstanden (Phase 5 und 6); seit Phase 18 liegen sie in Renderer.jar, ihre Quelle ist das Projekt Renderer. */
     public static final String[] NEU = {"fall", "cliff"};
 
     private static volatile List<String> cache;

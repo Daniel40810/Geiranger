@@ -40,7 +40,7 @@ public final class Quellenliste {
 
     /** Die Bibliotheken der App. */
     static final String[][] BIBLIOTHEKEN = {
-            {"lib/Renderer.jar", "33 Packages aus Lighthouse, Haithabu, Glacier und Rungholt, seit Phase 18 mit fall und cliff aus Geiranger (Quellen in pakete/)"},
+            {"lib/Renderer.jar", "33 Packages aus Lighthouse, Haithabu, Glacier und Rungholt, seit Phase 18 mit fall und cliff aus Geiranger (Quelle: Projekt Renderer)"},
             {"lib/jogl-all.jar, gluegen-rt.jar", "JOGL (OpenGL 4.3) mit den Windows-Natives"},
             {"lib/FStyle.jar", "die Oberfläche im F-Stil (FFrame, FButton, FComboBox …)"},
             {"lib/Avatar.jar", "Menschen (com.dan.avatar, F18 A)"},

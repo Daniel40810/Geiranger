@@ -401,8 +401,8 @@ public final class Pruefung {
     static void faelle() {
         System.out.println("Wasserfälle (Phase 7)");
         // der Fehler aus der Nacharbeit zu Phase 5: das Hochladen der Wandkarte löschte die Rauschtextur (seit Phase 18 liegt cliff in Renderer.jar;
-        // die Quelle steht in pakete/, sonst prüft die Prüfung die Klasse)
-        File cq = new File("pakete/com/dan/cliff/gl/CliffGl.java");
+        // die Quelle steht im Nachbarprojekt Renderer, sonst prüft die Prüfung die Klasse)
+        File cq = new File("../Renderer/src/com/dan/cliff/gl/CliffGl.java");
         if (cq.isFile()) {
             String src = readOr(cq.getPath());
             int a = src.indexOf("public void upload("), b = src.indexOf("\n    }\n", a);
@@ -1821,7 +1821,7 @@ public final class Pruefung {
         File base = new File("src/com/dan");
         if (!base.isDirectory()) { System.out.println("  (Quellordner nicht gefunden, übersprungen)"); return; }
         File[] dirs = base.listFiles(f -> f.isDirectory() && !f.getName().equals("geiranger"));
-        check(dirs != null && dirs.length == 0, "keine Element-Packages mehr im Quellbaum: fall und cliff sind in Renderer.jar (Phase 18), die Quellen in pakete/ (F4 A)");
+        check(dirs != null && dirs.length == 0 && !new File("pakete").exists() && new File("tools/JarPruefung.java").isFile() && !new File("tools/PaketPruefung.java").exists() && !readOr("build.xml").contains("renderer-jar"), "keine Element-Packages mehr im Projekt: fall und cliff sind in Renderer.jar, ihre Quelle ist das Projekt Renderer (F4 A)");
         check(readOr(".gitignore").contains("/templates/") && readOr(".gitignore").contains("/db/db.properties"), ".gitignore hält templates/ und db/db.properties aus dem Git");
         check(!new File("Neuer Ordner").exists(), "„Neuer Ordner“ ist aufgeräumt");
         check(new File("docs/claude/GEIRANGER_WERKBUCH_PROMPT.md").isFile(), "Prompt-Entwurf bleibt in docs/claude/");
