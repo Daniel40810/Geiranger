@@ -1,0 +1,4223 @@
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>git rev-list --objects --all | findstr Avatar.jar
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>git ls-files
+.gitignore
+Geiranger.bat
+Geiranger.ico
+Geiranger_Konsole.bat
+Geiranger_Verknuepfung.bat
+README.md
+build.xml
+build_targets_p5.xml
+build_targets_p6.xml
+daten/gelaende/art.u8
+daten/gelaende/fern.r16
+daten/gelaende/gelaende.properties
+daten/gelaende/hoehe.r16
+daten/tundra/LIESMICH.md
+daten/tundra/tundra_1024.jpg
+db/Objecte_nach Schema.sql
+db/README.md
+db/Role_Grantee.sql
+db/TableFormat.sql
+db/USER.sql
+db/db.properties.example
+db/sql/01_tabellen.sql
+db/sql/02_spatial.sql
+db/sql/03_sichten.sql
+db/sql/04_startdaten.sql
+db/sql/99_entfernen.sql
+docs/QUELLEN.md
+docs/bilder/an_bord.jpg
+docs/bilder/begegnung_in_der_kehre.jpg
+docs/bilder/der_ort_im_februar.jpg
+docs/bilder/der_ort_vom_wasser.jpg
+docs/bilder/eis_an_den_schwestern.jpg
+docs/bilder/faehre_vor_den_schwestern.jpg
+docs/bilder/kielwasser.jpg
+docs/bilder/plattform_im_oktober.jpg
+docs/bilder/plattform_mit_gaesten.jpg
+docs/bilder/schwestern_knivsfla.jpg
+docs/bilder/schwestern_vom_wasser.jpg
+docs/bilder/tageskarte.jpg
+docs/claude/GEIRANGER_WERKBUCH_PROMPT.md
+"docs/status/Auf_der_F\303\244hre.m4a"
+"docs/status/Auf_der_F\303\244hre1.m4a"
+docs/status/Dauerlauf_20261024_2025.png
+docs/status/Dauerlauf_20261024_2025.txt
+docs/status/Dauerlauf_20261024_2110.png
+docs/status/Dauerlauf_20261024_2110.txt
+docs/status/Faelle.txt
+docs/status/FallCheck.txt
+docs/status/Fjordprofil.png
+docs/status/Geiranger_20261024_033119.png
+docs/status/Geiranger_20261024_033120.png
+docs/status/Geiranger_20261024_053753.png
+docs/status/Geiranger_20261024_053850.png
+docs/status/Gelaende_Import.png
+docs/status/Regiebuch_Ein_Junitag_20261024_172428.png
+docs/status/Regiebuch_Ein_Junitag_20261024_173403.png
+"docs/status/Regiebuch_Fahrt_ueber_die_\303\230rnesvingen_20261024_172513.png"
+"docs/status/Regiebuch_Fahrt_ueber_die_\303\230rnesvingen_20261024_173846.png"
+docs/status/Regiebuch_Mit_der_Faehre_von_Hellesylt_20261024_172557.png
+docs/status/Regiebuch_Mit_der_Faehre_von_Hellesylt_20261024_172640.png
+docs/status/Regiebuch_Mit_der_Faehre_von_Hellesylt_20261024_174356.png
+docs/status/Status_Phase1.png
+docs/status/Status_Phase10.png
+docs/status/Status_Phase10_Knivsfla.png
+docs/status/Status_Phase10_Nah.png
+docs/status/Status_Phase10_Skagefla.png
+docs/status/Status_Phase10a.png
+docs/status/Status_Phase11.png
+docs/status/Status_Phase11_Haenge.png
+docs/status/Status_Phase11_Nacht.png
+docs/status/Status_Phase11_Plattform.png
+docs/status/Status_Phase11_Skagefla.png
+docs/status/Status_Phase11_Strasse.png
+docs/status/Status_Phase11a.png
+docs/status/Status_Phase11b.png
+docs/status/Status_Phase12.png
+docs/status/Status_Phase12_Anleger.png
+docs/status/Status_Phase12_Kielwasser.png
+docs/status/Status_Phase12_Kreuzfahrt.png
+docs/status/Status_Phase12_Nacht.png
+docs/status/Status_Phase12a.png
+docs/status/Status_Phase12b.png
+docs/status/Status_Phase13.png
+docs/status/Status_Phase13_Bus.png
+docs/status/Status_Phase13_Gaeste.png
+docs/status/Status_Phase13_Skagefla.png
+docs/status/Status_Phase13_Storfossen.png
+docs/status/Status_Phase13a.png
+docs/status/Status_Phase13b.png
+docs/status/Status_Phase14.png
+docs/status/Status_Phase14_Eis.png
+docs/status/Status_Phase14_Juni.png
+docs/status/Status_Phase14_Mai.png
+docs/status/Status_Phase14_Oktober.png
+docs/status/Status_Phase14_Ort.png
+docs/status/Status_Phase14a.png
+docs/status/Status_Phase14b.png
+docs/status/Status_Phase15.png
+docs/status/Status_Phase15.wav
+docs/status/Status_Phase15_Faehre.png
+docs/status/Status_Phase15a.png
+docs/status/Status_Phase16.png
+docs/status/Status_Phase16_Faehre.png
+docs/status/Status_Phase16_Junitag.png
+docs/status/Status_Phase16_Ornesvingen.png
+docs/status/Status_Phase16_kino_01.png
+docs/status/Status_Phase16_kino_02.png
+docs/status/Status_Phase16_kino_03.png
+docs/status/Status_Phase16_kino_04.png
+docs/status/Status_Phase16_kino_05.png
+docs/status/Status_Phase16_kino_06.png
+docs/status/Status_Phase16_kino_07.png
+docs/status/Status_Phase16_kino_08.png
+docs/status/Status_Phase16_kino_09.png
+docs/status/Status_Phase16_kino_10.png
+docs/status/Status_Phase16_kino_11.png
+docs/status/Status_Phase17.png
+docs/status/Status_Phase17db.png
+docs/status/Status_Phase2.png
+docs/status/Status_Phase3.png
+docs/status/Status_Phase4.png
+docs/status/Status_Phase5.png
+docs/status/Status_Phase6.png
+docs/status/Status_Phase7.png
+docs/status/Status_Phase7_Friaren.png
+docs/status/Status_Phase7_VomWasser.png
+docs/status/Status_Phase7a.png
+docs/status/Status_Phase8_Hochwasser.png
+docs/status/Status_Phase8_Schwestern.png
+docs/status/Status_Phase8_Schwestern_geschaetzt.png
+docs/status/Status_Phase8_Spaetsommer.png
+docs/status/Status_Phase8a.png
+docs/status/Status_Phase8a_Storfossen.png
+docs/status/Status_Phase8b.png
+docs/status/Status_Phase9.png
+docs/status/Status_Phase9_Bus.png
+docs/status/Status_Phase9_Geiranger.png
+docs/status/Status_Phase9b.png
+docs/status/Status_Phase9b_Bus.png
+docs/status/Vorschau_Phase10_Waldkarte.png
+docs/status/Vorschau_Phase7_Mesa_Friaren.png
+docs/status/Vorschau_Phase7_Mesa_Schwestern.png
+docs/status/Vorschau_Phase7_Mesa_VomWasser.png
+docs/status/Vorschau_Phase9_Mesa_Kehren.png
+docs/status/Vorschau_Phase9_Mesa_Nah.png
+docs/status/elva.txt
+docs/status/pruefen_jahr.txt
+docs/status/pruefen_kehren.txt
+docs/status/pruefen_klang.txt
+docs/status/pruefen_klang1.txt
+docs/status/pruefen_klang2.txt
+docs/status/pruefen_klang3.txt
+docs/status/pruefen_menschen.txt
+docs/status/pruefen_ort.txt
+docs/status/pruefen_regie.txt
+docs/status/pruefen_schiffe.txt
+docs/status/pruefen_schliff.txt
+docs/status/pruefen_schliff1.txt
+docs/status/pruefen_startdaten.txt
+docs/status/pruefen_wald.txt
+docs/status/tempo.txt
+docs/status/tempo_Phase4.txt
+docs/status/tempo_Phase5.txt
+docs/status/tempo_Phase5a.txt
+lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar
+lib/FStyle.jar
+lib/Renderer.jar
+lib/gluegen-rt-natives-windows-amd64.jar
+lib/gluegen-rt.jar
+lib/jogl-all-natives-windows-amd64.jar
+lib/jogl-all.jar
+lib/nblibraries.properties
+lib/ojdbc11.jar
+lib/sdoapi.jar
+lib/sdogr.jar
+lib/sdoutl.jar
+manifest.mf
+nbproject/build-impl.xml
+nbproject/genfiles.properties
+nbproject/project.properties
+nbproject/project.xml
+pakete/com/dan/cliff/CNoise.java
+pakete/com/dan/cliff/Cliff.java
+pakete/com/dan/cliff/CliffMap.java
+pakete/com/dan/cliff/Overhang.java
+pakete/com/dan/cliff/README.md
+pakete/com/dan/cliff/demo/CliffCheck.java
+pakete/com/dan/cliff/demo/CliffDemo.java
+pakete/com/dan/cliff/demo/CliffScene.java
+pakete/com/dan/cliff/demo/DemoWall.java
+pakete/com/dan/cliff/gl/CliffGl.java
+pakete/com/dan/cliff/gl/check.frag
+pakete/com/dan/cliff/gl/check.vert
+pakete/com/dan/cliff/gl/cliff.glsl
+pakete/com/dan/cliff/gl/rock.frag
+pakete/com/dan/cliff/gl/rock.vert
+pakete/com/dan/fall/Fall.java
+pakete/com/dan/fall/README.md
+pakete/com/dan/fall/demo/DemoCliff.java
+pakete/com/dan/fall/demo/FallCheck.java
+pakete/com/dan/fall/demo/FallDemo.java
+pakete/com/dan/fall/demo/FallScene.java
+pakete/com/dan/fall/gl/FallGl.java
+pakete/com/dan/fall/gl/check.frag
+pakete/com/dan/fall/gl/check.vert
+pakete/com/dan/fall/gl/fall.glsl
+pakete/com/dan/fall/gl/ground.frag
+pakete/com/dan/fall/gl/ground.vert
+pakete/com/dan/fall/gl/mist.vert
+pakete/com/dan/fall/gl/pool.frag
+pakete/com/dan/fall/gl/pool.vert
+pakete/com/dan/fall/gl/strand.frag
+pakete/com/dan/fall/gl/strand.vert
+pakete/com/dan/fall/gl/veil.frag
+pakete/com/dan/fall/gl/veil.vert
+src/com/dan/geiranger/app/Bibliothek.java
+src/com/dan/geiranger/app/Dauerlauf.java
+src/com/dan/geiranger/app/GeirangerApp.java
+src/com/dan/geiranger/camera/Ansichten.java
+src/com/dan/geiranger/camera/Camera.java
+src/com/dan/geiranger/camera/Fahrt.java
+src/com/dan/geiranger/data/Chronik.java
+src/com/dan/geiranger/data/DateiSpeicher.java
+src/com/dan/geiranger/data/Daten.java
+src/com/dan/geiranger/data/Datenseite.java
+src/com/dan/geiranger/data/DbSpeicher.java
+src/com/dan/geiranger/data/Hoehenlinien.java
+src/com/dan/geiranger/data/Laden.java
+src/com/dan/geiranger/data/Speicher.java
+src/com/dan/geiranger/data/Startdaten.java
+src/com/dan/geiranger/data/Tageskarte.java
+src/com/dan/geiranger/data/Uebernahme.java
+src/com/dan/geiranger/data/Verbindung.java
+src/com/dan/geiranger/data/Zustand.java
+src/com/dan/geiranger/data/befunde.txt
+src/com/dan/geiranger/data/quellen.txt
+src/com/dan/geiranger/gl/Belichtung.java
+src/com/dan/geiranger/gl/ComputeProbe.java
+src/com/dan/geiranger/gl/DorfGl.java
+src/com/dan/geiranger/gl/Fels.java
+src/com/dan/geiranger/gl/FlotteGl.java
+src/com/dan/geiranger/gl/Fluss.java
+src/com/dan/geiranger/gl/Gpu.java
+src/com/dan/geiranger/gl/HudOverlay.java
+src/com/dan/geiranger/gl/Kielwasser.java
+src/com/dan/geiranger/gl/LeuteGl.java
+src/com/dan/geiranger/gl/Mat4.java
+src/com/dan/geiranger/gl/Quality.java
+src/com/dan/geiranger/gl/Renderer.java
+src/com/dan/geiranger/gl/SceneView.java
+src/com/dan/geiranger/gl/SchattenKarte.java
+src/com/dan/geiranger/gl/Shader.java
+src/com/dan/geiranger/gl/Strasse.java
+src/com/dan/geiranger/gl/TerrainLod.java
+src/com/dan/geiranger/gl/Wald.java
+src/com/dan/geiranger/gl/Wasser.java
+src/com/dan/geiranger/gl/Wasserfaelle.java
+src/com/dan/geiranger/gl/Wetter.java
+src/com/dan/geiranger/gl/shader/bauten.frag
+src/com/dan/geiranger/gl/shader/bauten.vert
+src/com/dan/geiranger/gl/shader/common.glsl
+src/com/dan/geiranger/gl/shader/elva.frag
+src/com/dan/geiranger/gl/shader/elva.vert
+src/com/dan/geiranger/gl/shader/fullscreen.vert
+src/com/dan/geiranger/gl/shader/glow.frag
+src/com/dan/geiranger/gl/shader/glow.vert
+src/com/dan/geiranger/gl/shader/kielwasser.comp
+src/com/dan/geiranger/gl/shader/kielwasser_schieben.comp
+src/com/dan/geiranger/gl/shader/licht.glsl
+src/com/dan/geiranger/gl/shader/lum.frag
+src/com/dan/geiranger/gl/shader/overlay.frag
+src/com/dan/geiranger/gl/shader/post.frag
+src/com/dan/geiranger/gl/shader/probe.comp
+src/com/dan/geiranger/gl/shader/schatten.frag
+src/com/dan/geiranger/gl/shader/schiff.vert
+src/com/dan/geiranger/gl/shader/sky.frag
+src/com/dan/geiranger/gl/shader/spiegel.frag
+src/com/dan/geiranger/gl/shader/strasse.frag
+src/com/dan/geiranger/gl/shader/strasse.vert
+src/com/dan/geiranger/gl/shader/terrain.frag
+src/com/dan/geiranger/gl/shader/terrain.vert
+src/com/dan/geiranger/gl/shader/terrain_height.glsl
+src/com/dan/geiranger/scene/Bauten.java
+src/com/dan/geiranger/scene/Begegnung.java
+src/com/dan/geiranger/scene/Buehne.java
+src/com/dan/geiranger/scene/Dorf.java
+src/com/dan/geiranger/scene/Echo.java
+src/com/dan/geiranger/scene/Elva.java
+src/com/dan/geiranger/scene/Faelle.java
+src/com/dan/geiranger/scene/Fjordgrund.java
+src/com/dan/geiranger/scene/Flotte.java
+src/com/dan/geiranger/scene/Formen.java
+src/com/dan/geiranger/scene/Geo.java
+src/com/dan/geiranger/scene/Hoefe.java
+src/com/dan/geiranger/scene/Holzbau.java
+src/com/dan/geiranger/scene/Jahr.java
+src/com/dan/geiranger/scene/Klang.java
+src/com/dan/geiranger/scene/Leute.java
+src/com/dan/geiranger/scene/Ornevegen.java
+src/com/dan/geiranger/scene/Physik.java
+src/com/dan/geiranger/scene/Plattform.java
+src/com/dan/geiranger/scene/Regie.java
+src/com/dan/geiranger/scene/SceneClock.java
+src/com/dan/geiranger/scene/Site.java
+src/com/dan/geiranger/scene/Sun.java
+src/com/dan/geiranger/scene/Terrain.java
+src/com/dan/geiranger/scene/Vestland.java
+src/com/dan/geiranger/scene/Wandschatten.java
+src/com/dan/geiranger/scene/faehre_route.txt
+src/com/dan/geiranger/scene/ornevegen_achse.txt
+src/com/dan/geiranger/scene/regie/faehre.txt
+src/com/dan/geiranger/scene/regie/junitag.txt
+src/com/dan/geiranger/scene/regie/ornesvingen.txt
+src/com/dan/geiranger/tools/Fjordprofil.java
+src/com/dan/geiranger/tools/GeoTiff.java
+src/com/dan/geiranger/tools/HgtImport.java
+src/com/dan/geiranger/tools/KlangFahrt.java
+src/com/dan/geiranger/tools/Quellenliste.java
+src/com/dan/geiranger/tools/StartdatenSql.java
+src/com/dan/geiranger/tools/Symbol.java
+src/com/dan/geiranger/tools/Tageslauf.java
+src/com/dan/geiranger/tools/Tempo.java
+src/com/dan/geiranger/ui/AppIcon.java
+src/com/dan/geiranger/ui/ControlPanel.java
+src/com/dan/geiranger/ui/Startbild.java
+src/com/dan/geiranger/ui/Theme.java
+src/com/dan/geiranger/ui/Weiter.java
+src/com/dan/geiranger/ui/icon/geiranger_128.png
+src/com/dan/geiranger/ui/icon/geiranger_16.png
+src/com/dan/geiranger/ui/icon/geiranger_24.png
+src/com/dan/geiranger/ui/icon/geiranger_256.png
+src/com/dan/geiranger/ui/icon/geiranger_32.png
+src/com/dan/geiranger/ui/icon/geiranger_48.png
+src/com/dan/geiranger/ui/icon/geiranger_64.png
+src/com/dan/geiranger/wiring/Abfluss.java
+src/com/dan/geiranger/wiring/Beaufort.java
+src/com/dan/geiranger/wiring/Clock.java
+src/com/dan/geiranger/wiring/Discharge.java
+src/com/dan/geiranger/wiring/KlimaGeiranger.java
+src/com/dan/geiranger/wiring/Lighting.java
+src/com/dan/geiranger/wiring/Terrain.java
+src/com/dan/geiranger/wiring/Wall.java
+src/com/dan/geiranger/wiring/Water.java
+src/com/dan/geiranger/wiring/Wind.java
+src/com/dan/geiranger/wiring/Wiring.java
+test/com/dan/geiranger/test/DbPruefung.java
+test/com/dan/geiranger/test/Pruefung.java
+tools/PaketPruefung.java
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>dir /S /-C
+ Volume in Laufwerk C: hat keine Bezeichnung.
+ Volumeseriennummer: 543F-03BD
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger
+
+24.10.2026  23:14    <DIR>          .
+23.10.2026  20:40    <DIR>          ..
+24.10.2026  22:18               447 .gitignore
+24.10.2026  20:33    <DIR>          build
+24.10.2026  19:22             48139 build.xml
+24.10.2026  02:03              2962 build_targets_p5.xml
+24.10.2026  02:31              1083 build_targets_p6.xml
+24.10.2026  08:06    <DIR>          daten
+24.10.2026  18:47    <DIR>          db
+24.10.2026  20:33    <DIR>          dist
+24.10.2026  19:22    <DIR>          docs
+23.10.2026  23:55               480 Geiranger.bat
+24.10.2026  19:22             50839 Geiranger.ico
+23.10.2026  23:55               562 Geiranger_Konsole.bat
+24.10.2026  19:22              1620 Geiranger_Verknuepfung.bat
+23.10.2026  20:42    <DIR>          icon
+23.10.2026  20:44    <DIR>          lib
+23.10.2026  23:55               209 manifest.mf
+23.10.2026  20:40    <DIR>          nbproject
+24.10.2026  19:22    <DIR>          pakete
+24.10.2026  19:22             11268 README.md
+23.10.2026  23:55    <DIR>          src
+24.10.2026  01:34    <DIR>          templates
+23.10.2026  23:55    <DIR>          test
+23.10.2026  23:55    <DIR>          tools
+24.10.2026  00:36    <DIR>          _alt
+24.10.2026  20:30    <DIR>          _transfer
+              10 Datei(en),         117609 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git
+
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14                15 COMMIT_EDITMSG
+24.10.2026  23:24               307 config
+24.10.2026  23:14                73 description
+24.10.2026  23:14                23 HEAD
+24.10.2026  23:14    <DIR>          hooks
+24.10.2026  23:14             36913 index
+24.10.2026  23:14    <DIR>          info
+24.10.2026  23:14    <DIR>          logs
+24.10.2026  23:14    <DIR>          objects
+24.10.2026  23:24    <DIR>          refs
+               5 Datei(en),          37331 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\hooks
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14               478 applypatch-msg.sample
+24.10.2026  23:14               896 commit-msg.sample
+24.10.2026  23:14              4726 fsmonitor-watchman.sample
+24.10.2026  23:14               189 post-update.sample
+24.10.2026  23:14               424 pre-applypatch.sample
+24.10.2026  23:14              1649 pre-commit.sample
+24.10.2026  23:14               416 pre-merge-commit.sample
+24.10.2026  23:14              1374 pre-push.sample
+24.10.2026  23:14              4898 pre-rebase.sample
+24.10.2026  23:14               544 pre-receive.sample
+24.10.2026  23:14              1492 prepare-commit-msg.sample
+24.10.2026  23:14              2783 push-to-checkout.sample
+24.10.2026  23:14              2308 sendemail-validate.sample
+24.10.2026  23:14              3650 update.sample
+              14 Datei(en),          25827 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\info
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14               240 exclude
+               1 Datei(en),            240 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\logs
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14               593 HEAD
+24.10.2026  23:14    <DIR>          refs
+               1 Datei(en),            593 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\logs\refs
+
+24.10.2026  23:24    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14    <DIR>          heads
+24.10.2026  23:24    <DIR>          remotes
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\logs\refs\heads
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:24    <DIR>          ..
+24.10.2026  23:14               388 master
+               1 Datei(en),            388 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\logs\refs\remotes
+
+24.10.2026  23:24    <DIR>          .
+24.10.2026  23:24    <DIR>          ..
+24.10.2026  23:24    <DIR>          origin
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\logs\refs\remotes\origin
+
+24.10.2026  23:24    <DIR>          .
+24.10.2026  23:24    <DIR>          ..
+24.10.2026  23:24               165 master
+               1 Datei(en),            165 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          00
+24.10.2026  23:14    <DIR>          01
+24.10.2026  23:14    <DIR>          02
+24.10.2026  23:14    <DIR>          04
+24.10.2026  23:14    <DIR>          06
+24.10.2026  23:14    <DIR>          07
+24.10.2026  23:14    <DIR>          08
+24.10.2026  23:14    <DIR>          0a
+24.10.2026  23:14    <DIR>          0b
+24.10.2026  23:14    <DIR>          0c
+24.10.2026  23:14    <DIR>          0d
+24.10.2026  23:14    <DIR>          0e
+24.10.2026  23:14    <DIR>          0f
+24.10.2026  23:14    <DIR>          10
+24.10.2026  23:14    <DIR>          12
+24.10.2026  23:14    <DIR>          13
+24.10.2026  23:14    <DIR>          15
+24.10.2026  23:14    <DIR>          16
+24.10.2026  23:14    <DIR>          17
+24.10.2026  23:14    <DIR>          19
+24.10.2026  23:14    <DIR>          1b
+24.10.2026  23:14    <DIR>          1c
+24.10.2026  23:14    <DIR>          1d
+24.10.2026  23:14    <DIR>          1e
+24.10.2026  23:14    <DIR>          1f
+24.10.2026  23:14    <DIR>          21
+24.10.2026  23:14    <DIR>          22
+24.10.2026  23:14    <DIR>          23
+24.10.2026  23:14    <DIR>          24
+24.10.2026  23:14    <DIR>          26
+24.10.2026  23:14    <DIR>          27
+24.10.2026  23:14    <DIR>          28
+24.10.2026  23:14    <DIR>          29
+24.10.2026  23:14    <DIR>          2a
+24.10.2026  23:14    <DIR>          2c
+24.10.2026  23:14    <DIR>          2d
+24.10.2026  23:14    <DIR>          30
+24.10.2026  23:14    <DIR>          32
+24.10.2026  23:14    <DIR>          33
+24.10.2026  23:14    <DIR>          34
+24.10.2026  23:14    <DIR>          35
+24.10.2026  23:14    <DIR>          36
+24.10.2026  23:14    <DIR>          37
+24.10.2026  23:14    <DIR>          38
+24.10.2026  23:14    <DIR>          39
+24.10.2026  23:14    <DIR>          3a
+24.10.2026  23:14    <DIR>          3b
+24.10.2026  23:14    <DIR>          3c
+24.10.2026  23:14    <DIR>          3d
+24.10.2026  23:14    <DIR>          3f
+24.10.2026  23:14    <DIR>          40
+24.10.2026  23:14    <DIR>          41
+24.10.2026  23:14    <DIR>          42
+24.10.2026  23:14    <DIR>          43
+24.10.2026  23:14    <DIR>          45
+24.10.2026  23:14    <DIR>          47
+24.10.2026  23:14    <DIR>          48
+24.10.2026  23:14    <DIR>          49
+24.10.2026  23:14    <DIR>          4a
+24.10.2026  23:14    <DIR>          4b
+24.10.2026  23:14    <DIR>          4c
+24.10.2026  23:14    <DIR>          4e
+24.10.2026  23:14    <DIR>          4f
+24.10.2026  23:14    <DIR>          50
+24.10.2026  23:14    <DIR>          51
+24.10.2026  23:14    <DIR>          55
+24.10.2026  23:14    <DIR>          57
+24.10.2026  23:14    <DIR>          59
+24.10.2026  23:14    <DIR>          5a
+24.10.2026  23:14    <DIR>          5b
+24.10.2026  23:14    <DIR>          5c
+24.10.2026  23:14    <DIR>          5d
+24.10.2026  23:14    <DIR>          5e
+24.10.2026  23:14    <DIR>          60
+24.10.2026  23:14    <DIR>          61
+24.10.2026  23:14    <DIR>          63
+24.10.2026  23:14    <DIR>          65
+24.10.2026  23:14    <DIR>          66
+24.10.2026  23:14    <DIR>          67
+24.10.2026  23:14    <DIR>          69
+24.10.2026  23:14    <DIR>          6a
+24.10.2026  23:14    <DIR>          6b
+24.10.2026  23:14    <DIR>          6c
+24.10.2026  23:14    <DIR>          6d
+24.10.2026  23:14    <DIR>          6e
+24.10.2026  23:14    <DIR>          6f
+24.10.2026  23:14    <DIR>          71
+24.10.2026  23:14    <DIR>          73
+24.10.2026  23:14    <DIR>          74
+24.10.2026  23:14    <DIR>          75
+24.10.2026  23:14    <DIR>          76
+24.10.2026  23:14    <DIR>          77
+24.10.2026  23:14    <DIR>          78
+24.10.2026  23:14    <DIR>          79
+24.10.2026  23:14    <DIR>          7a
+24.10.2026  23:14    <DIR>          7b
+24.10.2026  23:14    <DIR>          7c
+24.10.2026  23:14    <DIR>          7d
+24.10.2026  23:14    <DIR>          7e
+24.10.2026  23:14    <DIR>          7f
+24.10.2026  23:14    <DIR>          80
+24.10.2026  23:14    <DIR>          81
+24.10.2026  23:14    <DIR>          82
+24.10.2026  23:14    <DIR>          83
+24.10.2026  23:14    <DIR>          84
+24.10.2026  23:14    <DIR>          86
+24.10.2026  23:14    <DIR>          87
+24.10.2026  23:14    <DIR>          88
+24.10.2026  23:14    <DIR>          8a
+24.10.2026  23:14    <DIR>          8b
+24.10.2026  23:14    <DIR>          8c
+24.10.2026  23:14    <DIR>          8d
+24.10.2026  23:14    <DIR>          8e
+24.10.2026  23:14    <DIR>          8f
+24.10.2026  23:14    <DIR>          90
+24.10.2026  23:14    <DIR>          91
+24.10.2026  23:14    <DIR>          92
+24.10.2026  23:14    <DIR>          93
+24.10.2026  23:14    <DIR>          94
+24.10.2026  23:14    <DIR>          96
+24.10.2026  23:14    <DIR>          97
+24.10.2026  23:14    <DIR>          98
+24.10.2026  23:14    <DIR>          99
+24.10.2026  23:14    <DIR>          9b
+24.10.2026  23:14    <DIR>          9c
+24.10.2026  23:14    <DIR>          9e
+24.10.2026  23:14    <DIR>          9f
+24.10.2026  23:14    <DIR>          a1
+24.10.2026  23:14    <DIR>          a2
+24.10.2026  23:14    <DIR>          a3
+24.10.2026  23:14    <DIR>          a4
+24.10.2026  23:14    <DIR>          a6
+24.10.2026  23:14    <DIR>          a9
+24.10.2026  23:14    <DIR>          aa
+24.10.2026  23:14    <DIR>          ab
+24.10.2026  23:14    <DIR>          ac
+24.10.2026  23:14    <DIR>          ad
+24.10.2026  23:14    <DIR>          ae
+24.10.2026  23:14    <DIR>          af
+24.10.2026  23:14    <DIR>          b0
+24.10.2026  23:14    <DIR>          b1
+24.10.2026  23:14    <DIR>          b3
+24.10.2026  23:14    <DIR>          b4
+24.10.2026  23:14    <DIR>          b5
+24.10.2026  23:14    <DIR>          b6
+24.10.2026  23:14    <DIR>          b7
+24.10.2026  23:14    <DIR>          b8
+24.10.2026  23:14    <DIR>          b9
+24.10.2026  23:14    <DIR>          ba
+24.10.2026  23:14    <DIR>          bb
+24.10.2026  23:14    <DIR>          bd
+24.10.2026  23:14    <DIR>          bf
+24.10.2026  23:14    <DIR>          c3
+24.10.2026  23:14    <DIR>          c4
+24.10.2026  23:14    <DIR>          c5
+24.10.2026  23:14    <DIR>          c6
+24.10.2026  23:14    <DIR>          c7
+24.10.2026  23:14    <DIR>          c8
+24.10.2026  23:14    <DIR>          c9
+24.10.2026  23:14    <DIR>          ca
+24.10.2026  23:14    <DIR>          cd
+24.10.2026  23:14    <DIR>          ce
+24.10.2026  23:14    <DIR>          d0
+24.10.2026  23:14    <DIR>          d1
+24.10.2026  23:14    <DIR>          d2
+24.10.2026  23:14    <DIR>          d3
+24.10.2026  23:14    <DIR>          d4
+24.10.2026  23:14    <DIR>          d5
+24.10.2026  23:14    <DIR>          d6
+24.10.2026  23:14    <DIR>          d7
+24.10.2026  23:14    <DIR>          d8
+24.10.2026  23:14    <DIR>          d9
+24.10.2026  23:14    <DIR>          da
+24.10.2026  23:14    <DIR>          dc
+24.10.2026  23:14    <DIR>          df
+24.10.2026  23:14    <DIR>          e0
+24.10.2026  23:14    <DIR>          e1
+24.10.2026  23:14    <DIR>          e2
+24.10.2026  23:14    <DIR>          e3
+24.10.2026  23:14    <DIR>          e5
+24.10.2026  23:14    <DIR>          e6
+24.10.2026  23:14    <DIR>          e8
+24.10.2026  23:14    <DIR>          e9
+24.10.2026  23:14    <DIR>          ea
+24.10.2026  23:14    <DIR>          eb
+24.10.2026  23:14    <DIR>          ec
+24.10.2026  23:14    <DIR>          ee
+24.10.2026  23:14    <DIR>          ef
+24.10.2026  23:14    <DIR>          f1
+24.10.2026  23:14    <DIR>          f2
+24.10.2026  23:14    <DIR>          f4
+24.10.2026  23:14    <DIR>          f5
+24.10.2026  23:14    <DIR>          f7
+24.10.2026  23:14    <DIR>          f9
+24.10.2026  23:14    <DIR>          fa
+24.10.2026  23:14    <DIR>          fc
+24.10.2026  23:14    <DIR>          fd
+24.10.2026  23:14    <DIR>          fe
+24.10.2026  23:14    <DIR>          ff
+24.10.2026  23:14    <DIR>          info
+24.10.2026  23:14    <DIR>          pack
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\00
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             24179 29aefdad5f32122fe0e1b8917c1e0c49dc8d7d
+24.10.2026  23:14           6070034 efd50f964ba213f45cd469519b464ed6758895
+               2 Datei(en),        6094213 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\01
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1173 b5561f05aa9db5fbad30f378a311233b6e0695
+24.10.2026  23:14            592319 bade2385605ad5d7f1c369feccb662d44fd8dc
+               2 Datei(en),         593492 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\02
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            795377 08488db4a6c98e865ecc4481d5def18cbe08ea
+24.10.2026  23:14              2402 3afe46e97965fd5f1d6eb7bddd85e7dca0999f
+24.10.2026  23:14             18191 801de207178bc316605b5e1f676e704eb9672a
+24.10.2026  23:14              6673 c060777514f40e88aa87a890085479af19bfa4
+24.10.2026  23:14               627 feb11464b38c54c9cc57f92478a6bc9580a926
+               5 Datei(en),         823270 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\04
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2972582 038d36f57e775208bf7948e935961132a3bee8
+24.10.2026  23:14              3369 31f0842dbf2ff2acc55aeeb240a7e92725997b
+24.10.2026  23:14              1064 62eb5d8412fbc7250afbee49f68e0deff5d7fd
+               3 Datei(en),        2977015 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\06
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14                45 a8e92ea901914f7d469d5887f6918cf3f4a8a8
+               1 Datei(en),             45 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\07
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              3716 0a0929f469bb039af81c6f210c73ce8a1f7c47
+24.10.2026  23:14              2070 a00161273519419d6b7f66cc428f910b208d62
+               2 Datei(en),           5786 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\08
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               454 393ea707f466e97d7898a52c4630f1ccdb55a5
+24.10.2026  23:14            166824 8e9370ff398c132a35b7cb3f7c16990c6647f5
+               2 Datei(en),         167278 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\0a
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           6091588 3de1e1a07e35c93fc97ec33cba531e2caa05c1
+24.10.2026  23:14              3586 7eea2b85aea6ecebdcee154010b3b3bbdba5e4
+               2 Datei(en),        6095174 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\0b
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1003 babc1915c9b71e5adc5ab702305607a7476b0b
+               1 Datei(en),           1003 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\0c
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             12086 01168cc0b861dc5745345b57bd257601c296ab
+24.10.2026  23:14              5002 a23fdd1a016f191928a35d29305337860117a1
+24.10.2026  23:14           2634298 d831d677024007bb9628e781051acf15c2ff76
+               3 Datei(en),        2651386 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\0d
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2980824 41e3f803f7ef1d5690712cd40d0e4bbec72777
+24.10.2026  23:14              3188 7239ed4c9a7ef3f148aa664da52d6fd48c8878
+24.10.2026  23:14            659236 99f7a71c8c410cd2eddd8c7efdba00f571d539
+24.10.2026  23:14           2663327 f12a0dd679d18991528022a46e6f3857831956
+24.10.2026  23:14            231632 fcfe6d29c7a8d425467e1cc2c904a0a32e6407
+               5 Datei(en),        6538207 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\0e
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             43668 68554d7faa4add64a73b7bc5dc485c16da79d3
+24.10.2026  23:14              3115 b36de8f1784305fc51b7e8407a4d4d8a854c0f
+24.10.2026  23:14           2888266 b6cdd025322172f4b15a43e0f6eec36cb820c1
+24.10.2026  23:14              1973 fe2e68eabb6c457cb204c2ed67a785c153faa7
+               4 Datei(en),        2937022 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\0f
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            928384 4b427edba859d441b495ae3129126e15dd2891
+24.10.2026  23:14               151 bb5f7d3e6844ab88762b9dc42e9db225f254e2
+               2 Datei(en),         928535 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\10
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2180587 229c29a36f0bab35b57cc65a03471f030234e5
+24.10.2026  23:14           3189158 76d1728c1abf72002a18fcbc44351eb8fb4ea2
+               2 Datei(en),        5369745 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\12
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4668 d6e587da9d5eb5ebdf70148f718cd1db77dc70
+               1 Datei(en),           4668 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\13
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2951621 68615b833d802cb75815107d3bb4764d04fbdc
+               1 Datei(en),        2951621 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\15
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              9529 deedab1cfac6829099f020cfbcaef8116df31c
+24.10.2026  23:14           2397031 e7a98f1df7cf439a0531edfe4befef36a29151
+               2 Datei(en),        2406560 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\16
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1118 555a7209d0d4070d350c7e421acff250d5c59c
+24.10.2026  23:14             14905 db4c1b98e539e5ca643ada5ce0ed21c453b211
+               2 Datei(en),          16023 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\17
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               352 74f6124b2567d33cea962c0b1e9defde12110d
+24.10.2026  23:14               405 ca38d2743f09599335457c15bc403f28783c23
+24.10.2026  23:14              5219 d1510725eca9ee77e5dc4491baa85cd255d07c
+               3 Datei(en),           5976 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\19
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1385 127955a389f10b4d91f52914bf3a0f05de6784
+               1 Datei(en),           1385 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\1b
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              6529 826f36f4340175647f7cdd8b6ee8c2976db9d6
+               1 Datei(en),           6529 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\1c
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               205 4655cd5b4f6d256a7f19211511627c5dd9b0dc
+24.10.2026  23:14                85 65aa7fb550c5e8da8e0ac1c20ae8febfd7e43d
+24.10.2026  23:14           1859045 837ab7935c4f04598c009034aafb41bd9c2b5c
+               3 Datei(en),        1859335 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\1d
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4141 70d4ef14bd45685a1b10279a11d86a44c01ad1
+24.10.2026  23:14             16558 be11898c56a2528f4545feac8fd6719af008a2
+               2 Datei(en),          20699 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\1e
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2589279 74ad471af25e79a57902725b052ca0538800b2
+               1 Datei(en),        2589279 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\1f
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4258 af78ee87cf0954801e5384250ccb3fe8f07ce1
+24.10.2026  23:14            106506 eef9fc448f2130ef232bc467b8cd2b1128568a
+               2 Datei(en),         110764 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\21
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             16668 40d705dc0dd670ff29b918ad39cb3c82367f80
+24.10.2026  23:14               920 761dc259d0eed9437d81434f1592e2e9d95433
+24.10.2026  23:14           2683392 8a8b3ecdb4b259b32e692a46b5f557469d2a11
+               3 Datei(en),        2700980 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\22
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2827 c6bb45568e6daff0e8543c58f503a393bf0eac
+24.10.2026  23:14               197 c6ec0268ced09c4ba741dc97fcca96a8361728
+               2 Datei(en),           3024 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\23
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2945 d6713ae9e4be224c2a4b40133cd4360c4172b7
+               1 Datei(en),           2945 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\24
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2704351 1ed0f3821e85c52362f992e1004de343e7d8d6
+               1 Datei(en),        2704351 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\26
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               376 4b28b0e52b8e4ed02bd77c67ae3c3cdf67ef1b
+24.10.2026  23:14            299548 f0051f30a5e7f3c6ce133808464dcc7aee28ac
+               2 Datei(en),         299924 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\27
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             30300 1930e74cf5fd469795c2fbc013c3121e581228
+24.10.2026  23:14             15846 2284bdc302daf575f03ad4e2bf287bd0b727db
+               2 Datei(en),          46146 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\28
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1332 259b2775b77266cde2ffb3b5f431aeb3eb908d
+24.10.2026  23:14               120 2fb9e0a1407ac62d0aefb9944af5f0122dc098
+               2 Datei(en),           1452 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\29
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             13079 2e74aa4591459716e39dd2fe7ff8566eb71333
+24.10.2026  23:14            140895 621ae261776c9933489addc7dfa719682e526d
+24.10.2026  23:14               740 85d5b49cf7ec750ac532b9afcb82381a4d3f13
+               3 Datei(en),         154714 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\2a
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1798 2af4736c5c03bcb0c34681640f5a2b88574160
+24.10.2026  23:14              7951 cdc997aaf1528055eb4145b0d79b7f9452529e
+               2 Datei(en),           9749 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\2c
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               390 002bcf59054f3a34fdb733a3524f9e8bffa0fe
+24.10.2026  23:14              2101 2ffb483a785392a798c7ad760de5f6c491707b
+24.10.2026  23:14               576 4e38fee7996c4f3e03722531814ff457d34cac
+               3 Datei(en),           3067 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\2d
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               244 05fc1be78dbdb1242f30352a71f5bf7904e547
+24.10.2026  23:14             22910 0fc8d8efd45cf7611cbbb17d1605549777f6ae
+24.10.2026  23:14               458 5c3a86dee3e0f48734ce8040acb546597a3fce
+               3 Datei(en),          23612 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\30
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               809 0ad9a3f021778f5ed340f0d9ac3c41678c3ab7
+24.10.2026  23:14           2622022 5b5920a8c131827af054317a5f3f049d30bf20
+24.10.2026  23:14               488 87b347b665d47c75f6b9fd2db7be65ce1a5d95
+               3 Datei(en),        2623319 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\32
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             11058 7be06a549827876ab08c344932ad9ed078068e
+24.10.2026  23:14           2353723 f6fee890c4e76b711f23fad920dcdf8d4c3ced
+               2 Datei(en),        2364781 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\33
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            930378 9a8de2691e12bf9409cedc4197e70c916b08fb
+24.10.2026  23:14              4334 d01bd83c81028e324f60e4f26eb896891ff077
+               2 Datei(en),         934712 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\34
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4024 1f1e207bd9b35f1f5dfd97f42d781ccca14bb5
+24.10.2026  23:14               553 4c9be4e4cc019bdb08495e1f1d440efd902c23
+24.10.2026  23:14                45 e552178b5a82aeb1e89d83b0214146b0494193
+               3 Datei(en),           4622 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\35
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1533 ce43b03d77eccf7711e7d473f22114d812d76e
+               1 Datei(en),           1533 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\36
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14                72 0f0ca54e0491783efcad52efc373b40e7480c5
+24.10.2026  23:14              4970 294e373f48601e5d600e8a7d31e37b652624ec
+               2 Datei(en),           5042 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\37
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           1630126 5cc41e75ce96bcfcf7053214f19c2cc282431a
+24.10.2026  23:14              8625 cf8587e5e73fb1622796e11c8ebf234e98e9b4
+               2 Datei(en),        1638751 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\38
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             73990 0aef0052e7d4f9cf12c8a9b74feab1a99f418b
+24.10.2026  23:14              1126 14750493e80cf92977214f7fc747f4b9b07001
+24.10.2026  23:14              2109 a049b6ef990b2b5378c743e62e3aa02386c8e5
+               3 Datei(en),          77225 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\39
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               312 582f996cb9505c7137df64cb829906e4af1dec
+24.10.2026  23:14           7788595 98399cac7e48f679414ff7665ee8911f137102
+24.10.2026  23:14               272 e68f69291c5104ab234518bbc1b4c83390f5b5
+               3 Datei(en),        7789179 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\3a
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           1722988 736b7f20c178b30c2fb47e99976731070ed969
+24.10.2026  23:14           4161732 d5dd541fee16a6c522913bd692a272b1d5db00
+               2 Datei(en),        5884720 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\3b
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           1979593 3588e348be3e8f44d06ffce318eab75231d9d3
+               1 Datei(en),        1979593 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\3c
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2908 3727751f5fd814da904c223fd1ab8080446ee8
+24.10.2026  23:14              7754 9be42a6b626a2d9adb70dedc8463a46a9df69f
+24.10.2026  23:14               401 dca999ef0ebd40487d7f34e881748197392b5c
+24.10.2026  23:14              3219 e7f0d047f905174b0445a717ee6beb81d2e7a2
+               4 Datei(en),          14282 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\3d
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           3789007 00ba3ea1c773228665bd37a62b7db452025a32
+               1 Datei(en),        3789007 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\3f
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              5009 5a2b7fc297147f0f5d21db5bb73a0488fe8a80
+24.10.2026  23:14           3161940 701ada6c097dcbee3812b166989df281f2db2c
+24.10.2026  23:14              5335 841fabc8117686c6671e74ea5e095ded7c1719
+               3 Datei(en),        3172284 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\40
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14                51 f209a9f4ac46373a26d99314d190267e257271
+24.10.2026  23:14           7623980 f9363b7ad56898d30b6a86686f0cdb08bd2723
+               2 Datei(en),        7624031 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\41
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              8716 5975850308cd4e84cb0bc3c7d987390732f0c5
+               1 Datei(en),           8716 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\42
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2943 256434bfbfd83ca2e12c01be7014760c103219
+               1 Datei(en),           2943 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\43
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               832 012e44b89feb39c1bf8f625aaafa3ee60ced16
+24.10.2026  23:14              4022 4df998c8693751d5eb51d13dcca37d104ee461
+24.10.2026  23:14           2070506 8615571ef533cd268856b497f539b335a88a4d
+24.10.2026  23:14              2627 c838acf6a9dfbe94bb25511c814e324e247ec5
+               4 Datei(en),        2077987 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\45
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            110631 634ef778525f110e4b9ccbefb2832167e0b64b
+               1 Datei(en),         110631 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\47
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2002 29f8cf5db4fb5f0d7dd3a9f5ec83fe594c622c
+               1 Datei(en),           2002 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\48
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            578433 1fa1c1244a191a64c03876ae0cf519405f70dd
+               1 Datei(en),         578433 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\49
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           1990538 071b5a1cda2317e5a2a05c8126c86af7a98ec7
+24.10.2026  23:14            393419 4e39fbb3acb8dca6a3e9275fc58bfe9aafbede
+               2 Datei(en),        2383957 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\4a
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2404 73cad9f3402ffbcddd5782e851916443f7cc7e
+               1 Datei(en),           2404 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\4b
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2301 319f227f1abf19c4c303c2700564794a393702
+24.10.2026  23:14            818767 851c49c9384f3b358f4481fb567f039813dc54
+               2 Datei(en),         821068 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\4c
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            163739 15034e5ee8ef3e7889c9b7fe3939918761b57b
+24.10.2026  23:14             31112 24ba38ce034d76cc7ebf2d51224f3dbef36046
+24.10.2026  23:14           6183417 2d6b66351f1711d138d45d5d1740b68c912ab3
+24.10.2026  23:14               326 fc60d200687b6f47a5215a2e32a4b9a487b7c6
+               4 Datei(en),        6378594 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\4e
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             25987 2c038b1b2ec1cb559a546b03e04b2fafbbfdf0
+               1 Datei(en),          25987 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\4f
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           3058507 11c7d216ceafd1343a9cb360080cdd4f8abd56
+24.10.2026  23:14               420 66a83afe811dd3f4b6a0a0cdbea8d3234a7fb8
+24.10.2026  23:14           3941841 d4b4f88b04ef9c1c1438db7a4dcf79a1a17ad0
+               3 Datei(en),        7000768 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\50
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              6133 798b676431cd91770923525412813c42be6863
+               1 Datei(en),           6133 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\51
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            175049 4d28a8fc8e1326598d5a58b76f9af2e89b1e65
+24.10.2026  23:14            147635 8d262f7260b51a503a4b35205f65bd1f46da29
+               2 Datei(en),         322684 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\55
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               501 c56b84947bb6b12f504b415c66bf97999b6ec9
+24.10.2026  23:14           1693155 da623463e0976660b91141c12e09a4070a231d
+               2 Datei(en),        1693656 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\57
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               493 2151f2e6d87b9b87e61274e2a5720a25f8b34e
+               1 Datei(en),            493 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\59
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1254 9f70232a8410adf2f81802832f15d5810e02fc
+24.10.2026  23:14              4922 bd89c494d9d5d3ccb4fe627e9e9457db17c9fe
+               2 Datei(en),           6176 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\5a
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               804 833d9fd0300cfc39bf297971c235dffd303710
+24.10.2026  23:14               124 b410392530f54c25a7388bca988d0f787a23e4
+               2 Datei(en),            928 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\5b
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             13665 b2a881f2a07acde82f77b8da457130e548f2f3
+               1 Datei(en),          13665 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\5c
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             16666 8533491ceaa1e358c2400a198b1d00cb0705a2
+24.10.2026  23:14               742 ee336bc28d7b81a9f6e892829b4621fd3d8ae9
+               2 Datei(en),          17408 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\5d
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            382117 3908838835a075478f589ba9c0779d94854918
+               1 Datei(en),         382117 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\5e
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           3723069 8aaa8df1c3917309fb244b3a608fc44c85f8ba
+               1 Datei(en),        3723069 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\60
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            138252 055a97f06d94068d9c319e34ec27446c8fcd49
+24.10.2026  23:14               610 a6f6faa26902533b438c9291e7b676701d36df
+24.10.2026  23:14             17054 c60946ec22c1c32d19e54fafb298cd957fdce7
+               3 Datei(en),         155916 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\61
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1655 c0ce61885729d4a381d96aa7cd0d6375d4a3cc
+24.10.2026  23:14            649899 e4b23de4763bd20e4fe7bf02957e1e8dbad80e
+24.10.2026  23:14               628 ed0e637106b994a3c78eaedc2f9d8aa6772498
+               3 Datei(en),         652182 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\63
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               391 54dcb1020ea80ff2fbe61a549ea0635bca03a5
+               1 Datei(en),            391 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\65
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               424 2fd312cd916ce5c532d171e5ed28b38c47e754
+24.10.2026  23:14             19765 56e9c476c1dbf529262ee37c8e8a49fc655c7d
+               2 Datei(en),          20189 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\66
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            180975 88e9626d2e19ef04744a513069bd0809a9702e
+24.10.2026  23:14               326 c3739fe14c6f487870ebf019faae6e8a1efb44
+               2 Datei(en),         181301 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\67
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               327 835b420826ddfa24d79f67d7625ee6098709b7
+               1 Datei(en),            327 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\69
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2228112 e1d1b0d20b82594cd2a9960470ac711ef093b0
+               1 Datei(en),        2228112 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\6a
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               402 869bd044a9008e79e9613e365885d4ad75b779
+24.10.2026  23:14           1327098 d810548940b047e8a8886356ba8dee49f026e2
+               2 Datei(en),        1327500 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\6b
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            469262 99b3c1a607144bd76792e96bec7acd1495d4d8
+24.10.2026  23:14                45 ab3a1aba455337137e802150b19eca64cdd282
+24.10.2026  23:14              2726 f72d4b06530282540d394a6d20b77491d891a8
+               3 Datei(en),         472033 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\6c
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4380 18b01819554e48db2887486e15cd222feae359
+24.10.2026  23:14              5340 d46dc31b438957490a3c99571582ed01a57ce4
+               2 Datei(en),           9720 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\6d
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              3687 9d83d56775d8c923065bb43f1b75152bff383e
+               1 Datei(en),           3687 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\6e
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           3701561 83711c5101060943c0e9e78f68c8c02b7cbf90
+               1 Datei(en),        3701561 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\6f
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             50049 fa90493d66c9d3d19ad293fc875a2f14351099
+               1 Datei(en),          50049 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\71
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               913 545c72773415f379e6e30a31af337227464f8b
+24.10.2026  23:14           1829574 57fe43fd207abbe941ffe171364d8750d46e42
+               2 Datei(en),        1830487 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\73
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14                99 049d19036fe24b55fc9938b01429a8661f62b7
+               1 Datei(en),             99 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\74
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               823 36c8befdfbeb889da2b51ebcabae523c8b29f4
+24.10.2026  23:14               428 7511ce5003527eb0fd3205c8956d2d41b513b3
+24.10.2026  23:14           1711147 c3ac850ec1816dc608d88e6dbbc0bbcc4c7fc3
+24.10.2026  23:14               829 e73361e8025ce9c98d56e5bf65b987b3fdd747
+               4 Datei(en),        1713227 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\75
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               223 7248c7fa8100d1503bf73bc074680c70144e5e
+               1 Datei(en),            223 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\76
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           3584278 ec361b7b90752b77fad10b8d4d4e2314e7152a
+               1 Datei(en),        3584278 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\77
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               329 acf1e8b3b98608d1b897fcf683c186738e7056
+               1 Datei(en),            329 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\78
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           1025844 6fa51c5ad9b6104e4e4ba3260cd93509a65af6
+24.10.2026  23:14              5515 a0ba5fde52d906114da332537f08b611d6462e
+24.10.2026  23:14            145083 a18abce5b87b5622f2839cb35be94afcd1c0db
+24.10.2026  23:14             50515 a4c51b9e0be3d683765419a936a90ec4f4ca29
+24.10.2026  23:14             13748 bd7d15cfb1efb5538822b6c004131f98bd890a
+               5 Datei(en),        1240705 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\79
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               446 4fe4eabd43306b119d2f169a2ae36015173273
+24.10.2026  23:14               783 983645f9525bf2ea1de831d69a989800718e33
+               2 Datei(en),           1229 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\7a
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1054 72558d4f201292262127ad9af58585ea5b82df
+24.10.2026  23:14               237 e18ae89687494f120a7c8bc971fae50a5a8f42
+               2 Datei(en),           1291 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\7b
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              3669 4276b629155200bdc83e97a9aba9f81ea44333
+               1 Datei(en),           3669 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\7c
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           1144824 af8e6aa6a4aa4b0e7d1ab8de0415575e177508
+               1 Datei(en),        1144824 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\7d
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               152 7d990df23d1c097d69c9fc0ddedfd6920eecbb
+24.10.2026  23:14           1395378 ca12f1632e95c0a02c29ec0bbc261d0cf33187
+               2 Datei(en),        1395530 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\7e
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2148 684f88f284f420788c46e886364f97f55fe684
+               1 Datei(en),           2148 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\7f
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              7817 786be6ed69476b50a494b17c9b55633bc71526
+24.10.2026  23:14           7246099 fc966484d7ab1eb884272c9627f0d1564622c1
+               2 Datei(en),        7253916 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\80
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              6287 33835961f75f7e4e01876b42036999bfe6cbf5
+24.10.2026  23:14              7895 faf8e9cd235c3f6ef8f8395ef7282691e752ec
+               2 Datei(en),          14182 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\81
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            749035 6e03c566ad8bb9c482c36cb01757f8a14531a8
+24.10.2026  23:14           1511501 711accc23c125f6f5be32066a925945a02648b
+24.10.2026  23:14               275 fa60076452de8f9f3072ada160e66ba555c522
+               3 Datei(en),        2260811 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\82
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1196 f24888389d233525db885b96daa23561679b09
+               1 Datei(en),           1196 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\83
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           3733670 2d10e0fcff6fc0e84aa3dac6a3dcb59e94bd40
+               1 Datei(en),        3733670 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\84
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               149 5c989400bf66ed37c60d834b2bb6ca65e55c51
+               1 Datei(en),            149 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\86
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               546 612754797ebb80dcbf27c6f0f7a8a7179c988a
+24.10.2026  23:14              3358 f5e12c2d3c61baa0a7e3ddf5bfba22adc56c41
+               2 Datei(en),           3904 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\87
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1769 96d3cbb0595f4d32b318aed583bfa12166d0a1
+               1 Datei(en),           1769 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\88
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1550 fdc629fde5f82a9f776f5a516d21de231c20e2
+               1 Datei(en),           1550 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\8a
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             80120 55faddaea330201e8fe40198cddd6c5dfe7459
+24.10.2026  23:14              1304 a4509310379fab4a76f05c1e9a78152483bff0
+24.10.2026  23:14          14526942 d2e607757f25842b87640be2a49a14012de654
+               3 Datei(en),       14608366 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\8b
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           1654262 96a948107c2497cfb6e52b253c44c2283373bf
+24.10.2026  23:14              4091 b1c9ac1844edddc81b4ca09e47685bf33e72ca
+               2 Datei(en),        1658353 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\8c
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           3538137 752db4d7f57e3a59d6861b786352090383bcbb
+24.10.2026  23:14               327 8eae5eaff48a8a3b3676c1df142d7e4d1fabe4
+               2 Datei(en),        3538464 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\8d
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1648 99696942c764cb3a5fa59bb46be42db347720c
+24.10.2026  23:14           3868594 ec35d0f117983028530d35a690309b9ca3ff14
+               2 Datei(en),        3870242 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\8e
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2075 4de709d35cd6da63d4b468e143ced3ad1f3820
+               1 Datei(en),           2075 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\8f
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               311 1dfde4a089c1666caaaf117448e0a17ef0747b
+24.10.2026  23:14               845 d246f2fccb8d01a49d95999cecdf05c6936bfb
+24.10.2026  23:14             16691 e9a68b6150b5f826e8c637670f5281fabe9d88
+               3 Datei(en),          17847 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\90
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2363349 de4407e97b41c563f3d7cd8eabf76a221fcb67
+24.10.2026  23:14             15167 f700b62e0e863525f2920439c630bf61db901a
+               2 Datei(en),        2378516 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\91
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               566 489397644179047a6b3f8da57f68f7e4f9ce9b
+24.10.2026  23:14           1656254 5778d9cabfbb9d96f1fec2d90f7654b1842e13
+               2 Datei(en),        1656820 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\92
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             11584 3dddb4615aa1e4bb6b34f15c60c1620eeeb1f7
+24.10.2026  23:14              3150 7a501dfaa86256036f6422b0aa05a993291bf4
+               2 Datei(en),          14734 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\93
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               199 1888657dd5438632cf20114de2d6f66a167ad2
+24.10.2026  23:14               241 8ad5e69f4b6794a8c268a952c1f7ce05cb40c2
+               2 Datei(en),            440 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\94
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               231 629e227b8761a3762cd270660a775ffc88f226
+               1 Datei(en),            231 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\96
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            265936 4a8f96020d533aab9ae00f0a40e310db3de454
+               1 Datei(en),         265936 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\97
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4975 6061093e77dde5e02f63ecbed302e4fab3e65c
+24.10.2026  23:14              4382 aebd63324798bd915d18b0186a8a159e27aa6c
+               2 Datei(en),           9357 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\98
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2634485 3bffd427a6930e810bd1e3373a2e32413da118
+24.10.2026  23:14           3262039 6350d52aac640311cf79a7bd9fcf373329419c
+               2 Datei(en),        5896524 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\99
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              3197 9f37883e132f4bc59d7a762af9c44304b96efe
+               1 Datei(en),           3197 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\9b
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              7985 07c7214dc28b05202ad5830b3e60059e39a033
+24.10.2026  23:14           2688387 588a32dbf3d098773c8495fdd05129f1796dd4
+               2 Datei(en),        2696372 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\9c
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            293640 2dc2f6a60e090c24b3d7af9ffccc5b004151c6
+24.10.2026  23:14              3028 a1a0d96b3ab16787f4aba94dbc1a73bc172b83
+               2 Datei(en),         296668 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\9e
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           4209629 3003aeecf4fb27e0271d2162d015ee9aca4f12
+24.10.2026  23:14             14621 4105c76b30ae2101348ec3b7f87f41246b7ade
+               2 Datei(en),        4224250 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\9f
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            437088 b6f7a09add34e23ff9949fd39642c94d3a3f30
+               1 Datei(en),         437088 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\a1
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           1075347 07f0ed71df7f63161de76e34f166eff3f97309
+24.10.2026  23:14               719 c1ad354beed2ed1879b2abed1d1c0117a530de
+               2 Datei(en),        1076066 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\a2
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               601 a64d18fcb097991110cebc992ea629dd76ed77
+24.10.2026  23:14              1864 ad0280ed21eae1ec00c9ac186ab0c097b34e4f
+24.10.2026  23:14            633252 bf8b4db5238d580c32f90c61dfb7744a8c9396
+               3 Datei(en),         635717 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\a3
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4209 4728953125ec5983d9de3272bc96077d93065a
+               1 Datei(en),           4209 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\a4
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            419762 692dfb71c05aad319686abe6fb47b15326abc2
+               1 Datei(en),         419762 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\a6
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1885 496393453a83f9d45b08cad86474fb77da8a7b
+               1 Datei(en),           1885 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\a9
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           3668710 55d70ba01d3a3da48d38dafdf5f13f81b55e15
+24.10.2026  23:14           1026507 7b0d1b841f46afb8790e3002808e16af44e3e9
+               2 Datei(en),        4695217 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\aa
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           4009723 64fb98c85291b86ee26c329fa64b4f2f71693d
+24.10.2026  23:14           1910521 aee90b9f55957db8fb97057d1d02b42fc499d7
+               2 Datei(en),        5920244 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ab
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           1992849 c47914e6310dfb64fe9144ea465b1fd62232dd
+               1 Datei(en),        1992849 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ac
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14                95 84f28e0b44fb92d2db87118de5645d40e103bf
+               1 Datei(en),             95 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ad
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               164 1d75fd88305f4d70c2901fbed4c3d0ab2bde74
+               1 Datei(en),            164 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ae
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2712404 0c38f12579b3857a527188e6c60e42412d3093
+24.10.2026  23:14              2170 33334a9e784c55199eb81ac01f51093ca1b8a9
+24.10.2026  23:14                45 333f01883ddb01cde33a733360b6a1aa804c48
+24.10.2026  23:14             17965 8d009fefae357089fe5c7b32f5c82fb0f8abd4
+               4 Datei(en),        2732584 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\af
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              6425 97e761c8605cda846cdf331ad03abf134cb8e7
+24.10.2026  23:14               997 e886b08bb94b6eb6988a5dc4c9a74b37b38c59
+24.10.2026  23:14           2584009 f8f9c442fe8fd65422cc002cd3cabfc10a049d
+               3 Datei(en),        2591431 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\b0
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               401 872a747e8b90f9808d2af1dab3cf875f1f55c4
+24.10.2026  23:14               396 9f45c3a46bcbf6335aae3ffb112e2fdda38aed
+               2 Datei(en),            797 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\b1
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              3182 343a41e593531ef880bdd26b538437aa924a05
+               1 Datei(en),           3182 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\b3
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             10993 feb5aaa02fed5272c79e8383cf29aa05049957
+               1 Datei(en),          10993 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\b4
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              7069 5fc18b72bced98c062a6f4135ff96312aa0d1b
+               1 Datei(en),           7069 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\b5
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               140 bd56c4eac526ba8d304455e7b56213c32434b2
+24.10.2026  23:14              2821 c2d6b6fb8136e09135bd2824399e863c874873
+24.10.2026  23:14              1692 ff175fc67bdfd882e0d60e6246251478baf095
+               3 Datei(en),           4653 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\b6
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           3451925 523bda805133d245a5f3f5a75c93968ce6b278
+24.10.2026  23:14          15028454 60fb9f05fadf84b6e4b78689b85e05c4d8919a
+24.10.2026  23:14              7402 fbe21088a4a5c06d7b7ab65a23dbf445945c59
+               3 Datei(en),       18487781 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\b7
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               900 c6ce701a036cbf57bfcbc2257156414af4e205
+24.10.2026  23:14              1821 f357c37adf492765bcac877f5f9a288d3427a1
+               2 Datei(en),           2721 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\b8
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              7596 60f2087b6aaebe71045d16d9f461a1403649a6
+               1 Datei(en),           7596 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\b9
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2545793 259fe6fedce4f3f5130a2052a3186e4c7e74c4
+24.10.2026  23:14              2967 55332be558020c823bc08d46e3e180eb27eba1
+24.10.2026  23:14               160 b82e44554fdce07413718ef5d2f28a0cc5f75c
+               3 Datei(en),        2548920 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ba
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14                63 344f26ed4c37ac866b3026a9355c1850d288fa
+               1 Datei(en),             63 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\bb
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             11714 072acfe6d41afa5e3d8b9a9ac6ee1c38ffbe91
+24.10.2026  23:14              1533 2652f0803ce26948eac90e18ad40ec924be316
+               2 Datei(en),          13247 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\bd
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4750 78dd3f8f6b3590b6185973b19afb475a900413
+24.10.2026  23:14              3648 f5a34b422b04b58ff818fa3213da6f39a8ec87
+               2 Datei(en),           8398 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\bf
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               552 23cc7f83a802866f0b3261a1c87689d000dd5b
+24.10.2026  23:14              2571 25db0e891dfe11872ab5fd8df3041faf937418
+24.10.2026  23:14           1041503 f494812eb8894bed1f11cfdbfa871213d134df
+               3 Datei(en),        1044626 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\c3
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4929 187d13fbd172b36d3b667ade3f30ef2e80b223
+24.10.2026  23:14               421 34391ab23a8746d0a6db56e89a1cec56ade9e8
+               2 Datei(en),           5350 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\c4
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           5686116 35c4a7ed4e984624461bb40180fdb391df2a15
+24.10.2026  23:14             42905 5ab54fe52e43b1726d3c5277970c9d7216c4ed
+24.10.2026  23:14              2429 5e52810539b8ed1e49f75e2c500b258a0af14a
+24.10.2026  23:14            329361 79c9812203bd4b6d58c3493ade19a8914fdd70
+24.10.2026  23:14              2793 ea875a279e45f2073aeb41c748485e29601203
+24.10.2026  23:14              1472 fa694d3fb29ae7dca0700d1bce89975ccc625d
+               6 Datei(en),        6065076 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\c5
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               473 af0edcfa9ecd644a5de639b3e357f20a330970
+24.10.2026  23:14                64 c3e90aab8488f6f4f934415c87f0e7b715f0b4
+               2 Datei(en),            537 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\c6
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2435 629e856d276c295a1b9753da8bf3c7c7c345c2
+               1 Datei(en),           2435 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\c7
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            288953 2e119a8772f06e911a44284aaed67b1fb38eec
+24.10.2026  23:14             14639 989e532fa67d33bd17d79e8b69d856111cc400
+               2 Datei(en),         303592 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\c8
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4514 bf74fa91a2f0e2cb61e96cdf11a923631571c0
+24.10.2026  23:14               149 feb23dd5c5b53963e55161349d27198839710b
+               2 Datei(en),           4663 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\c9
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4004 229646670a2ef0276507bd50e019e212b38174
+               1 Datei(en),           4004 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ca
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            157952 101c937120fa0073931010779dc8c242c665f4
+24.10.2026  23:14           3697273 8b5d0f69ac57875389b67fdca5e522f9e0fe74
+24.10.2026  23:14              2361 f03750654c0c5e66fd280b8519977574539fef
+               3 Datei(en),        3857586 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\cd
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           1695621 24b7b565bd8b9f0e3308ef2e24c4ec0f2eeb4b
+24.10.2026  23:14              4606 c01c9bc4572e7fc1b80bf3f5d22dfba4d15a7c
+               2 Datei(en),        1700227 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ce
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2317 550581e289fb967987063d4094a3c8f31b3f21
+24.10.2026  23:14              3473 6151d9ae1d353dfb3644aa38aa5a24621c12f6
+24.10.2026  23:14                75 a0b83ae6a5c54b6ca1652517ce50032270e7f5
+               3 Datei(en),           5865 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\d0
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2343347 1e22c0e32d43964b1d1d56cc613900a85afa8d
+24.10.2026  23:14               376 b797271ab0a7058da184504849bc64d0536e2b
+               2 Datei(en),        2343723 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\d1
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              3884 86f175596eb3d3e59d6ae37a71eda4656b4812
+               1 Datei(en),           3884 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\d2
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               367 77823bf8eafe7a4996e35f1dc3b538b8c9696b
+               1 Datei(en),            367 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\d3
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           1131940 f5e2d5e5935bc0b9af73ea243b1c5713757ddd
+               1 Datei(en),        1131940 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\d4
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1314 8f331cc5816b62516185fa7be8b026924e5192
+24.10.2026  23:14             32102 debe0665c2f44951c502203fce7a68d91e6965
+               2 Datei(en),          33416 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\d5
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            624003 73062bf2cac0b43127261b5697ab2e928594de
+24.10.2026  23:14              1693 c34eb8c3ca0f1afea9dee16e037c91cc30c0be
+               2 Datei(en),         625696 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\d6
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2108652 b54877cf37385087d3221b5d9ec84d04f585bc
+               1 Datei(en),        2108652 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\d7
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               344 30642e1cdda4bac370b2f59112c403e4a00939
+               1 Datei(en),            344 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\d8
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              3653 3d758f931b08333538a046180ab020204d5731
+               1 Datei(en),           3653 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\d9
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1105 358f916d5a91460afeaba0b40336b5ecc359d2
+               1 Datei(en),           1105 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\da
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              3134 79223c618e1f11b0718bdd3d8a0cf74783d95d
+               1 Datei(en),           3134 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\dc
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1861 584583dc963850aa4920a054bcdea258bcf0f3
+24.10.2026  23:14           2425847 a804b6a9381a4b1f5203ae33cfaae28d4541a5
+24.10.2026  23:14           5504326 c0784e06ec9465bf31815bcfd23d8b04c0448b
+               3 Datei(en),        7932034 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\df
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              6847 440374bad8786dc70c9ddf0cfc322ba2f3ffd4
+24.10.2026  23:14             15324 b1a700d45912d8ca3f5e35fd6c12a83a6fa88a
+               2 Datei(en),          22171 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\e0
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14                45 3e28cbd77b4464c6b8b67281b246e1b566912d
+24.10.2026  23:14               157 9ee9bd9e98e1feae0b6fb9d97df1fa16f30a91
+24.10.2026  23:14             19354 e305acf0ed2db90f0771302aab40e6492ac48e
+               3 Datei(en),          19556 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\e1
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14                51 05d47797b0001d3cf2ab0cd7d70e95998a4125
+24.10.2026  23:14              3788 0a9038711cf8657c7ba391f2a8059832bbaa9a
+24.10.2026  23:14               238 35dd6eae4aaaa5276eef7bdb140f636d062a5f
+24.10.2026  23:14              6977 5ee41af12319edbb7bbbe0ddf3acf12dd457b2
+24.10.2026  23:14              3388 c47f0f1a6c0e17e830a774efe27d4c5629c769
+24.10.2026  23:14            187047 d0c4f631556ca3636236dd9419c7da25378985
+               6 Datei(en),         201489 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\e2
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               683 380926e823434516fab44a1062cacd522ddc62
+24.10.2026  23:14               265 500368beb46a79f482faa8c112d1c4c890866b
+24.10.2026  23:14           9059319 91b56c40a233dcb0e64d866c7230538085f544
+               3 Datei(en),        9060267 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\e3
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            561186 125de60c9290118f7902bf96afafa85ad245bb
+24.10.2026  23:14               348 230e73620f7d52c86161e8fb903f7c74374c4a
+24.10.2026  23:14              8706 7d6619b70b2bea98ef38811da05148cc192605
+24.10.2026  23:14              1429 dd2814d23a668dd3dce7d28551d3ec19a8c176
+               4 Datei(en),         571669 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\e5
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2545 6c1e260b25c22b1f96dd9326aedc01e43875b8
+               1 Datei(en),           2545 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\e6
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14                46 2a781cef11771de4e04ef154ffc8d320a36fb6
+24.10.2026  23:14              1545 35f480091cf4afb20fd90f52eb0e7f6649c07d
+               2 Datei(en),           1591 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\e8
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1693 577a5234be3492c8cd7f5c65396bfa0f8a9119
+               1 Datei(en),           1693 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\e9
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              6046 bab12e871c413e57063ea7fb653fa8ef2bf90a
+24.10.2026  23:14           2160236 d691f6ce15acc98a4d27230e3a0fab760f39bd
+24.10.2026  23:14               144 e446ccec794ed5f122b65a32cd8c05c6fcd61c
+               3 Datei(en),        2166426 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ea
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              2003 47a4d03f867c5b33529415b1ea2503d37a4626
+24.10.2026  23:14               295 47be6150730e0a0e9dad44785693ea1fe0d3a0
+               2 Datei(en),           2298 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\eb
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1783 2c0e57b17c45fa20a8d5df956dbfd3f1e9805c
+24.10.2026  23:14            483197 6f3376e57ff311a45104bf0c057fd1ffc1ab9a
+               2 Datei(en),         484980 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ec
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           3772167 7f0202af352ca3c59c6ecdce05f000ba003f9f
+24.10.2026  23:14             14873 bc61a54802924612ef14b75694ae090a0e8c99
+24.10.2026  23:14               220 e9913cb18171d07a23db0804e4aa6289e8aa8e
+24.10.2026  23:14              1970 ee553f49459d36ad7fa9cfb0657c87a8ef3de0
+               4 Datei(en),        3789230 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ee
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               144 5172bc00e938f7444c155d72691ae7b611a60d
+               1 Datei(en),            144 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ef
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           3643629 1313b4fa41d5c7735d87568709b4c5d314dc1f
+               1 Datei(en),        3643629 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\f1
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           2239746 53874bb30a679f0482f69c26f4b4fa4e8ad548
+               1 Datei(en),        2239746 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\f2
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              3320 2cf9af5d645cc80489bf2d032d09fd71e8b575
+               1 Datei(en),           3320 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\f4
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14           4057808 ddac80aafbaa7a0f346e2b45509ee22ca799df
+               1 Datei(en),        4057808 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\f5
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            710877 92a2eee3597059e7ebf56bc0b082df92340238
+               1 Datei(en),         710877 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\f7
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14               813 267de7ad896d00689f7f4db9bf58103304d89a
+24.10.2026  23:14                47 52e0315b01fffcc082579192ab31eb0c5b74b5
+24.10.2026  23:14              2282 a64deae57bedd0bdd67390903bd1f05f87acdf
+24.10.2026  23:14                81 bfb31a208f1f92f0460f3a6dd88e55b9d303d0
+               4 Datei(en),           3223 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\f9
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              4878 318ed43c2c6102d041757108fe0ead2d12d35f
+               1 Datei(en),           4878 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\fa
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1106 014388567015537b21c9d49d8aaf1b2f3f49de
+24.10.2026  23:14               481 aec2a9b7230de99dce615934a8ddd83760d6e7
+               2 Datei(en),           1587 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\fc
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            136748 f7daad1d4b0ecdafc65a69ef3887b82af2204f
+               1 Datei(en),         136748 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\fd
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14              1739 0eb470d4e6d04eaf9813d54348c8dafd51aac7
+24.10.2026  23:14               131 b37bf9d82f0828794a24228d71267e6be34332
+24.10.2026  23:14               971 f27d788ad63c34b3280ed676b82eed755fa4be
+               3 Datei(en),           2841 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\fe
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14            194428 4609d68e522baa68a3a17535f9b110063a7c9c
+               1 Datei(en),         194428 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\ff
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  23:14             13149 43aa6b14f2920aa8b100cde49b3c01b1a4733f
+24.10.2026  23:14               660 9eb3e7b07583ba666dbbee519f77fe8a40849a
+24.10.2026  23:14               277 ded521062e4fed6cd700acc352a3058743030b
+               3 Datei(en),          14086 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\info
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\objects\pack
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\refs
+
+24.10.2026  23:24    <DIR>          .
+24.10.2026  23:14    <DIR>          heads
+24.10.2026  23:24    <DIR>          remotes
+24.10.2026  23:14    <DIR>          tags
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\refs\heads
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:24    <DIR>          ..
+24.10.2026  23:14                41 master
+               1 Datei(en),             41 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\refs\remotes
+
+24.10.2026  23:24    <DIR>          .
+24.10.2026  23:24    <DIR>          ..
+24.10.2026  23:24    <DIR>          origin
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\refs\remotes\origin
+
+24.10.2026  23:24    <DIR>          .
+24.10.2026  23:24    <DIR>          ..
+24.10.2026  23:24                41 master
+               1 Datei(en),             41 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\.git\refs\tags
+
+24.10.2026  23:14    <DIR>          .
+24.10.2026  23:24    <DIR>          ..
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  20:33               101 built-jar.properties
+24.10.2026  20:33    <DIR>          classes
+24.10.2026  20:33    <DIR>          empty
+24.10.2026  20:33    <DIR>          generated-sources
+               1 Datei(en),            101 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33                 0 .netbeans_automatic_build
+24.10.2026  20:33                 0 .netbeans_update_resources
+24.10.2026  20:33    <DIR>          com
+               2 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33    <DIR>          geiranger
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33    <DIR>          app
+24.10.2026  20:33    <DIR>          camera
+24.10.2026  20:33    <DIR>          data
+24.10.2026  20:33    <DIR>          gl
+24.10.2026  20:33    <DIR>          scene
+24.10.2026  20:33    <DIR>          tools
+24.10.2026  20:33    <DIR>          ui
+24.10.2026  20:33    <DIR>          wiring
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger\app
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33              5833 Bibliothek.class
+24.10.2026  20:33              3033 Dauerlauf$Punkt.class
+24.10.2026  20:33             27098 Dauerlauf.class
+24.10.2026  20:33              1867 GeirangerApp$1.class
+24.10.2026  20:33               962 GeirangerApp$2.class
+24.10.2026  20:33             24752 GeirangerApp.class
+               6 Datei(en),          63545 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger\camera
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33              2871 Ansichten$Ansicht.class
+24.10.2026  20:33              6170 Ansichten.class
+24.10.2026  20:33              1250 Camera$Mode.class
+24.10.2026  20:33              9669 Camera.class
+24.10.2026  20:33              4800 Fahrt.class
+               5 Datei(en),          24760 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger\data
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33              4131 befunde.txt
+24.10.2026  20:33               408 Chronik$Schreib.class
+24.10.2026  20:33               993 Chronik$Spur.class
+24.10.2026  20:33             26277 Chronik.class
+24.10.2026  20:33              5897 DateiSpeicher$Csv.class
+24.10.2026  20:33             41276 DateiSpeicher.class
+24.10.2026  20:33              2932 Daten$Ansicht.class
+24.10.2026  20:33              2490 Daten$Befund.class
+24.10.2026  20:33              2151 Daten$Busankunft.class
+24.10.2026  20:33              3041 Daten$Elva.class
+24.10.2026  20:33              3411 Daten$Fahrplan.class
+24.10.2026  20:33              3495 Daten$Fahrt.class
+24.10.2026  20:33              4861 Daten$Fall.class
+24.10.2026  20:33              2792 Daten$Form.class
+24.10.2026  20:33              3808 Daten$Gebaeude.class
+24.10.2026  20:33              5447 Daten$Gelaende.class
+24.10.2026  20:33              9964 Daten$Geom.class
+24.10.2026  20:33              1941 Daten$Hoehenlinie.class
+24.10.2026  20:33              2281 Daten$Hoehenstufe.class
+24.10.2026  20:33              2205 Daten$Kehre.class
+24.10.2026  20:33              2596 Daten$Kernfenster.class
+24.10.2026  20:33              2367 Daten$KlimaMonat.class
+24.10.2026  20:33              3285 Daten$Merkpunkt.class
+24.10.2026  20:33              2272 Daten$Ort.class
+24.10.2026  20:33              2715 Daten$PaketPreset.class
+24.10.2026  20:33              2270 Daten$Quelle.class
+24.10.2026  20:33              2100 Daten$Regiebuch.class
+24.10.2026  20:33              3095 Daten$Regielauf.class
+24.10.2026  20:33              2801 Daten$Schiff.class
+24.10.2026  20:33              3494 Daten$Schiffsfahrt.class
+24.10.2026  20:33              2098 Daten$Schiffsweg.class
+24.10.2026  20:33              3458 Daten$Sitzung.class
+24.10.2026  20:33              3609 Daten$Stand.class
+24.10.2026  20:33              3635 Daten$Straehne.class
+24.10.2026  20:33              3030 Daten$Strasse.class
+24.10.2026  20:33              2225 Daten$Stuetzpunkt.class
+24.10.2026  20:33              3527 Daten$Stunde.class
+24.10.2026  20:33              2702 Daten$Tag.class
+24.10.2026  20:33              3345 Daten$Tageschronik.class
+24.10.2026  20:33              2385 Daten$Wetterbuch.class
+24.10.2026  20:33              6751 Daten.class
+24.10.2026  20:33              3237 Datenseite.class
+24.10.2026  20:33               471 DbSpeicher$Arbeit.class
+24.10.2026  20:33             78549 DbSpeicher.class
+24.10.2026  20:33              9004 Hoehenlinien.class
+24.10.2026  20:33              9428 Laden.class
+24.10.2026  20:33              2067 quellen.txt
+24.10.2026  20:33              5382 Speicher.class
+24.10.2026  20:33               901 Startdaten$1.class
+24.10.2026  20:33              4426 Startdaten$Kopf.class
+24.10.2026  20:33              3789 Startdaten$Szene.class
+24.10.2026  20:33             50749 Startdaten.class
+24.10.2026  20:33              2074 Tageskarte$Ergebnis.class
+24.10.2026  20:33             11834 Tageskarte.class
+24.10.2026  20:33              7834 Uebernahme.class
+24.10.2026  20:33             11790 Verbindung.class
+24.10.2026  20:33              2405 Zustand$Regler.class
+24.10.2026  20:33              2423 Zustand$Schalter.class
+24.10.2026  20:33             23575 Zustand.class
+              59 Datei(en),         423499 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger\gl
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33              4125 Belichtung.class
+24.10.2026  20:33              2993 ComputeProbe$Result.class
+24.10.2026  20:33              4489 ComputeProbe.class
+24.10.2026  20:33              6774 DorfGl.class
+24.10.2026  20:33             10551 Fels.class
+24.10.2026  20:33              6023 FlotteGl.class
+24.10.2026  20:33              8509 Fluss.class
+24.10.2026  20:33              2388 Gpu$Mesh.class
+24.10.2026  20:33              3393 Gpu.class
+24.10.2026  20:33              1779 HudOverlay$Ready.class
+24.10.2026  20:33              6984 HudOverlay.class
+24.10.2026  20:33             10126 Kielwasser.class
+24.10.2026  20:33             10333 LeuteGl.class
+24.10.2026  20:33              4860 Mat4.class
+24.10.2026  20:33              7690 Quality.class
+24.10.2026  20:33               807 Renderer$1.class
+24.10.2026  20:33              8342 Renderer$RegieCtx.class
+24.10.2026  20:33            111081 Renderer.class
+24.10.2026  20:33              3123 SceneView$1.class
+24.10.2026  20:33              3292 SceneView$2.class
+24.10.2026  20:33               849 SceneView$3.class
+24.10.2026  20:33               304 SceneView$Klick.class
+24.10.2026  20:33             10583 SceneView.class
+24.10.2026  20:33              4844 SchattenKarte.class
+24.10.2026  20:33    <DIR>          shader
+24.10.2026  20:33              2389 Shader$Source.class
+24.10.2026  20:33             10982 Shader.class
+24.10.2026  20:33              1116 Strasse$1.class
+24.10.2026  20:33               537 Strasse$Frame.class
+24.10.2026  20:33             14367 Strasse.class
+24.10.2026  20:33              4653 TerrainLod$Patch.class
+24.10.2026  20:33              9553 TerrainLod.class
+24.10.2026  20:33              1254 Wald$1.class
+24.10.2026  20:33             12485 Wald.class
+24.10.2026  20:33              1314 Wasser$1.class
+24.10.2026  20:33              7907 Wasser.class
+24.10.2026  20:33             16050 Wasserfaelle.class
+24.10.2026  20:33              9754 Wetter.class
+              37 Datei(en),         326603 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger\gl\shader
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33              4189 bauten.frag
+24.10.2026  20:33               489 bauten.vert
+24.10.2026  20:33              6128 common.glsl
+24.10.2026  20:33              2577 elva.frag
+24.10.2026  20:33               629 elva.vert
+24.10.2026  20:33               269 fullscreen.vert
+24.10.2026  20:33               511 glow.frag
+24.10.2026  20:33               549 glow.vert
+24.10.2026  20:33              3533 kielwasser.comp
+24.10.2026  20:33               732 kielwasser_schieben.comp
+24.10.2026  20:33              1788 licht.glsl
+24.10.2026  20:33               834 lum.frag
+24.10.2026  20:33               543 overlay.frag
+24.10.2026  20:33              1374 post.frag
+24.10.2026  20:33               690 probe.comp
+24.10.2026  20:33              1635 schatten.frag
+24.10.2026  20:33               682 schiff.vert
+24.10.2026  20:33               376 sky.frag
+24.10.2026  20:33              1724 spiegel.frag
+24.10.2026  20:33              2088 strasse.frag
+24.10.2026  20:33               658 strasse.vert
+24.10.2026  20:33             14784 terrain.frag
+24.10.2026  20:33              3131 terrain.vert
+24.10.2026  20:33              3602 terrain_height.glsl
+              24 Datei(en),          53515 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger\scene
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33              7327 Bauten$Netz.class
+24.10.2026  20:33             10775 Bauten.class
+24.10.2026  20:33              5697 Begegnung.class
+24.10.2026  20:33              1782 Buehne.class
+24.10.2026  20:33              1627 Dorf$Art.class
+24.10.2026  20:33              3440 Dorf$Bau.class
+24.10.2026  20:33             13517 Dorf$Bauer.class
+24.10.2026  20:33             18409 Dorf.class
+24.10.2026  20:33              2887 Echo$Treffer.class
+24.10.2026  20:33             11462 Echo.class
+24.10.2026  20:33              1582 Elva$Strecke.class
+24.10.2026  20:33              1731 Elva$Stufe.class
+24.10.2026  20:33              9579 Elva.class
+24.10.2026  20:33              8179 faehre_route.txt
+24.10.2026  20:33              1551 Faelle$Art.class
+24.10.2026  20:33              3136 Faelle$Def.class
+24.10.2026  20:33              1649 Faelle$Eintrag.class
+24.10.2026  20:33              1834 Faelle$Kante.class
+24.10.2026  20:33             12630 Faelle.class
+24.10.2026  20:33              8898 Fjordgrund.class
+24.10.2026  20:33              1272 Flotte$1.class
+24.10.2026  20:33              1343 Flotte$Art.class
+24.10.2026  20:33              1907 Flotte$Profil.class
+24.10.2026  20:33              1718 Flotte$Schiff.class
+24.10.2026  20:33              4354 Flotte$Weg.class
+24.10.2026  20:33             29479 Flotte.class
+24.10.2026  20:33              2420 Formen$Form.class
+24.10.2026  20:33              1817 Formen$Schnitt.class
+24.10.2026  20:33             13406 Formen.class
+24.10.2026  20:33              3216 Geo$Tm.class
+24.10.2026  20:33              1874 Geo.class
+24.10.2026  20:33              2216 Hoefe$Haus.class
+24.10.2026  20:33              2764 Hoefe$HausLage.class
+24.10.2026  20:33              2351 Hoefe$Hof.class
+24.10.2026  20:33              7460 Hoefe.class
+24.10.2026  20:33              6352 Holzbau.class
+24.10.2026  20:33              8021 Jahr.class
+24.10.2026  20:33              1539 Klang$1.class
+24.10.2026  20:33              1388 Klang$Lage.class
+24.10.2026  20:33             36393 Klang.class
+24.10.2026  20:33              1564 Leute$Gast.class
+24.10.2026  20:33              1942 Leute$Pfad.class
+24.10.2026  20:33             49363 Leute.class
+24.10.2026  20:33              1140 Ornevegen$1.class
+24.10.2026  20:33              2089 Ornevegen$Kehre.class
+24.10.2026  20:33             10231 Ornevegen.class
+24.10.2026  20:33             12921 ornevegen_achse.txt
+24.10.2026  20:33               643 Physik$Aufgabe.class
+24.10.2026  20:33              6197 Physik.class
+24.10.2026  20:33              4883 Plattform.class
+24.10.2026  20:33    <DIR>          regie
+24.10.2026  20:33              2711 Regie$1.class
+24.10.2026  20:33              3986 Regie$Book.class
+24.10.2026  20:33               985 Regie$Ctx.class
+24.10.2026  20:33              2542 Regie$Cue.class
+24.10.2026  20:33              3068 Regie$Warte.class
+24.10.2026  20:33              1931 Regie$Zeile.class
+24.10.2026  20:33             23436 Regie.class
+24.10.2026  20:33              5013 SceneClock.class
+24.10.2026  20:33              2594 Site$Fenster.class
+24.10.2026  20:33              2005 Site$Ort.class
+24.10.2026  20:33              4604 Site.class
+24.10.2026  20:33              3032 Sun.class
+24.10.2026  20:33             16884 Terrain.class
+24.10.2026  20:33             10351 Vestland.class
+24.10.2026  20:33              2499 Wandschatten.class
+              65 Datei(en),         435596 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger\scene\regie
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33              1655 faehre.txt
+24.10.2026  20:33              2896 junitag.txt
+24.10.2026  20:33              1365 ornesvingen.txt
+               3 Datei(en),           5916 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger\tools
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33              2039 Fjordprofil$Schnitt.class
+24.10.2026  20:33             10013 Fjordprofil.class
+24.10.2026  20:33             13099 GeoTiff.class
+24.10.2026  20:33             16453 HgtImport.class
+24.10.2026  20:33              3602 KlangFahrt$Fahrt.class
+24.10.2026  20:33             19741 KlangFahrt.class
+24.10.2026  20:33             11445 Quellenliste.class
+24.10.2026  20:33              7767 StartdatenSql$Alles.class
+24.10.2026  20:33             35508 StartdatenSql.class
+24.10.2026  20:33              3938 Symbol.class
+24.10.2026  20:33              4855 Tageslauf.class
+24.10.2026  20:33             23438 Tempo.class
+              12 Datei(en),         151898 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger\ui
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33              8557 AppIcon.class
+24.10.2026  20:33               950 ControlPanel$1.class
+24.10.2026  20:33               897 ControlPanel$2.class
+24.10.2026  20:33              2973 ControlPanel$Sitzungszeile.class
+24.10.2026  20:33            101042 ControlPanel.class
+24.10.2026  20:33    <DIR>          icon
+24.10.2026  20:33              1734 Startbild$1.class
+24.10.2026  20:33              2573 Startbild$Wahl.class
+24.10.2026  20:33             28078 Startbild.class
+24.10.2026  20:33              1258 Theme$Role.class
+24.10.2026  20:33              3592 Theme.class
+24.10.2026  20:33              7098 Weiter.class
+              11 Datei(en),         158752 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger\ui\icon
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33             11614 geiranger_128.png
+24.10.2026  20:33               763 geiranger_16.png
+24.10.2026  20:33              1283 geiranger_24.png
+24.10.2026  20:33             26547 geiranger_256.png
+24.10.2026  20:33              1981 geiranger_32.png
+24.10.2026  20:33              3632 geiranger_48.png
+24.10.2026  20:33              4901 geiranger_64.png
+               7 Datei(en),          50721 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\classes\com\dan\geiranger\wiring
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33              1623 Abfluss$Fall.class
+24.10.2026  20:33              4523 Abfluss.class
+24.10.2026  20:33              1316 Beaufort.class
+24.10.2026  20:33               203 Clock.class
+24.10.2026  20:33               432 Discharge.class
+24.10.2026  20:33              8139 KlimaGeiranger.class
+24.10.2026  20:33               245 Lighting.class
+24.10.2026  20:33              1008 Terrain.class
+24.10.2026  20:33               487 Wall.class
+24.10.2026  20:33               363 Water.class
+24.10.2026  20:33               709 Wind.class
+24.10.2026  20:33              2281 Wiring$Link.class
+24.10.2026  20:33               939 Wiring$ManualWind.class
+24.10.2026  20:33               769 Wiring$Spiegel.class
+24.10.2026  20:33             17683 Wiring.class
+              15 Datei(en),          40720 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\empty
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\generated-sources
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33    <DIR>          ap-source-output
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\build\generated-sources\ap-source-output
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\daten
+
+24.10.2026  08:06    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  08:06    <DIR>          cache
+24.10.2026  00:36    <DIR>          gelaende
+24.10.2026  05:29    <DIR>          tundra
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\daten\cache
+
+24.10.2026  08:06    <DIR>          .
+24.10.2026  08:06    <DIR>          ..
+24.10.2026  08:06         216426335 avatar_base-9e8791a2724ef255.gltfc
+               1 Datei(en),      216426335 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\daten\gelaende
+
+24.10.2026  00:36    <DIR>          .
+24.10.2026  08:06    <DIR>          ..
+24.10.2026  01:05           4194304 art.u8
+24.10.2026  01:05            524288 fern.r16
+24.10.2026  01:05               827 gelaende.properties
+24.10.2026  01:05           8388608 hoehe.r16
+               4 Datei(en),       13108027 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\daten\tundra
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  08:06    <DIR>          ..
+24.10.2026  05:29               576 LIESMICH.md
+24.10.2026  05:29            265985 tundra_1024.jpg
+               2 Datei(en),         266561 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\db
+
+24.10.2026  18:47    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+23.10.2026  21:21               516 db.properties
+24.10.2026  18:47               514 db.properties.example
+23.10.2026  21:19           7338618 Objecte_nach Schema.sql
+24.10.2026  18:47              3388 README.md
+23.10.2026  21:17              2174 Role_Grantee.sql
+24.10.2026  18:47    <DIR>          sql
+23.10.2026  21:18                50 TableFormat.sql
+23.10.2026  21:15               162 USER.sql
+               7 Datei(en),        7345422 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\db\sql
+
+24.10.2026  18:47    <DIR>          .
+24.10.2026  18:47    <DIR>          ..
+24.10.2026  18:47             60573 01_tabellen.sql
+24.10.2026  18:47             11537 02_spatial.sql
+24.10.2026  18:47              7526 03_sichten.sql
+24.10.2026  18:59           2211828 04_startdaten.sql
+24.10.2026  18:47              1239 99_entfernen.sql
+               5 Datei(en),        2292703 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  20:33           1749665 Geiranger.jar
+24.10.2026  20:33    <DIR>          lib
+24.10.2026  20:33              1325 README.TXT
+               2 Datei(en),        1750990 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\dist\lib
+
+24.10.2026  20:33    <DIR>          .
+24.10.2026  20:33    <DIR>          ..
+24.10.2026  20:33         191359994 Avatar.jar
+24.10.2026  20:33          15092981 FStyle.jar
+24.10.2026  20:33             23010 gluegen-rt-natives-windows-amd64.jar
+24.10.2026  20:33            411363 gluegen-rt.jar
+24.10.2026  20:33            294752 jogl-all-natives-windows-amd64.jar
+24.10.2026  20:33           3991187 jogl-all.jar
+24.10.2026  20:33           7718137 ojdbc11.jar
+24.10.2026  20:33           5087017 Renderer.jar
+24.10.2026  20:33            340727 sdoapi.jar
+24.10.2026  20:33            497990 sdogr.jar
+24.10.2026  20:33            434806 sdoutl.jar
+              11 Datei(en),      225251964 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\docs
+
+24.10.2026  19:22    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  19:10    <DIR>          bilder
+23.10.2026  21:45    <DIR>          claude
+24.10.2026  19:44              9381 QUELLEN.md
+24.10.2026  21:10    <DIR>          status
+               1 Datei(en),           9381 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\docs\bilder
+
+24.10.2026  19:10    <DIR>          .
+24.10.2026  19:22    <DIR>          ..
+24.10.2026  19:10            106717 an_bord.jpg
+24.10.2026  19:10            163811 begegnung_in_der_kehre.jpg
+24.10.2026  19:10            231619 der_ort_im_februar.jpg
+24.10.2026  19:10            187127 der_ort_vom_wasser.jpg
+24.10.2026  19:10            181030 eis_an_den_schwestern.jpg
+24.10.2026  19:10            175017 faehre_vor_den_schwestern.jpg
+24.10.2026  19:10            166830 kielwasser.jpg
+24.10.2026  19:10            141598 plattform_im_oktober.jpg
+24.10.2026  19:10             80919 plattform_mit_gaesten.jpg
+24.10.2026  19:10            157978 schwestern_knivsfla.jpg
+24.10.2026  19:10            147736 schwestern_vom_wasser.jpg
+24.10.2026  19:22            137481 tageskarte.jpg
+              12 Datei(en),        1877863 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\docs\claude
+
+23.10.2026  21:45    <DIR>          .
+24.10.2026  19:22    <DIR>          ..
+23.10.2026  21:45              3478 GEIRANGER_WERKBUCH_PROMPT.md
+               1 Datei(en),           3478 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\docs\status
+
+24.10.2026  21:10    <DIR>          .
+24.10.2026  19:22    <DIR>          ..
+24.10.2026  16:26            305338 Auf_der_Fähre.m4a
+24.10.2026  16:39            621026 Auf_der_Fähre1.m4a
+24.10.2026  20:25            152819 Dauerlauf_20261024_2025.png
+24.10.2026  20:25             22353 Dauerlauf_20261024_2025.txt
+24.10.2026  21:10            146312 Dauerlauf_20261024_2110.png
+24.10.2026  21:10             22256 Dauerlauf_20261024_2110.txt
+24.10.2026  04:14             25262 elva.txt
+24.10.2026  03:41             17199 Faelle.txt
+24.10.2026  02:40              1905 FallCheck.txt
+24.10.2026  01:05           1401843 Fjordprofil.png
+24.10.2026  03:31           1026957 Geiranger_20261024_033119.png
+24.10.2026  03:31           1026376 Geiranger_20261024_033120.png
+24.10.2026  05:37           1722449 Geiranger_20261024_053753.png
+24.10.2026  05:38           1695092 Geiranger_20261024_053850.png
+24.10.2026  01:05           1844321 Gelaende_Import.png
+24.10.2026  08:35             85188 pruefen_jahr.txt
+24.10.2026  05:06             52723 pruefen_kehren.txt
+24.10.2026  15:57             54697 pruefen_klang.txt
+24.10.2026  16:23             54889 pruefen_klang1.txt
+24.10.2026  16:38             54882 pruefen_klang2.txt
+24.10.2026  16:57             54865 pruefen_klang3.txt
+24.10.2026  08:09             77263 pruefen_menschen.txt
+24.10.2026  06:17             69589 pruefen_ort.txt
+24.10.2026  17:27             75448 pruefen_regie.txt
+24.10.2026  07:07             73268 pruefen_schiffe.txt
+24.10.2026  19:43             40726 pruefen_schliff.txt
+24.10.2026  19:48             40643 pruefen_schliff1.txt
+24.10.2026  19:01             44623 pruefen_startdaten.txt
+24.10.2026  05:35             66711 pruefen_wald.txt
+24.10.2026  17:24          15033325 Regiebuch_Ein_Junitag_20261024_172428.png
+24.10.2026  17:34          14535034 Regiebuch_Ein_Junitag_20261024_173403.png
+24.10.2026  17:25           5514415 Regiebuch_Fahrt_ueber_die_Ørnesvingen_20261024_172513.png
+24.10.2026  17:38           5696379 Regiebuch_Fahrt_ueber_die_Ørnesvingen_20261024_173846.png
+24.10.2026  17:25           6098096 Regiebuch_Mit_der_Faehre_von_Hellesylt_20261024_172557.png
+24.10.2026  17:26           6076099 Regiebuch_Mit_der_Faehre_von_Hellesylt_20261024_172640.png
+24.10.2026  17:43           6189229 Regiebuch_Mit_der_Faehre_von_Hellesylt_20261024_174356.png
+23.10.2026  23:58            710662 Status_Phase1.png
+24.10.2026  05:33           3940681 Status_Phase10.png
+24.10.2026  05:39           1326724 Status_Phase10a.png
+24.10.2026  05:34           3722197 Status_Phase10_Knivsfla.png
+24.10.2026  05:34           2974215 Status_Phase10_Nah.png
+24.10.2026  05:34           2664492 Status_Phase10_Skagefla.png
+24.10.2026  06:16           3867640 Status_Phase11.png
+24.10.2026  06:21           2159567 Status_Phase11a.png
+24.10.2026  07:06           2711565 Status_Phase11b.png
+24.10.2026  06:17           4056573 Status_Phase11_Haenge.png
+24.10.2026  06:16           1655762 Status_Phase11_Nacht.png
+24.10.2026  06:16           1910629 Status_Phase11_Plattform.png
+24.10.2026  06:17           2689594 Status_Phase11_Skagefla.png
+24.10.2026  06:16           3058112 Status_Phase11_Strasse.png
+24.10.2026  07:06           4008909 Status_Phase12.png
+24.10.2026  07:12           2621213 Status_Phase12a.png
+24.10.2026  08:08           3643808 Status_Phase12b.png
+24.10.2026  07:06           4208581 Status_Phase12_Anleger.png
+24.10.2026  07:06           3696169 Status_Phase12_Kielwasser.png
+24.10.2026  07:06           2887634 Status_Phase12_Kreuzfahrt.png
+24.10.2026  07:06           1978974 Status_Phase12_Nacht.png
+24.10.2026  08:07           1993166 Status_Phase13.png
+24.10.2026  08:12           1075635 Status_Phase13a.png
+24.10.2026  08:35           1991530 Status_Phase13b.png
+24.10.2026  08:08           2354740 Status_Phase13_Bus.png
+24.10.2026  08:07           2239656 Status_Phase13_Gaeste.png
+24.10.2026  08:08           2186572 Status_Phase13_Skagefla.png
+24.10.2026  08:08           2589537 Status_Phase13_Storfossen.png
+24.10.2026  08:33           2398273 Status_Phase14.png
+24.10.2026  08:38           1653773 Status_Phase14a.png
+24.10.2026  16:57           2363295 Status_Phase14b.png
+24.10.2026  08:34           3450898 Status_Phase14_Eis.png
+24.10.2026  08:34           2706172 Status_Phase14_Juni.png
+24.10.2026  08:33           2591010 Status_Phase14_Mai.png
+24.10.2026  08:34           2685739 Status_Phase14_Oktober.png
+24.10.2026  08:34           3789119 Status_Phase14_Ort.png
+24.10.2026  16:56             89799 Status_Phase15.png
+24.10.2026  16:56          23046444 Status_Phase15.wav
+24.10.2026  16:05            795783 Status_Phase15a.png
+24.10.2026  16:56           4160463 Status_Phase15_Faehre.png
+24.10.2026  17:26           6076099 Status_Phase16.png
+24.10.2026  17:25           6098096 Status_Phase16_Faehre.png
+24.10.2026  17:24          15033325 Status_Phase16_Junitag.png
+24.10.2026  17:26             38006 Status_Phase16_kino_01.png
+24.10.2026  17:26            662151 Status_Phase16_kino_02.png
+24.10.2026  17:26           2347846 Status_Phase16_kino_03.png
+24.10.2026  17:26           2429963 Status_Phase16_kino_04.png
+24.10.2026  17:26           3190090 Status_Phase16_kino_05.png
+24.10.2026  17:26           3162821 Status_Phase16_kino_06.png
+24.10.2026  17:26           1519258 Status_Phase16_kino_07.png
+24.10.2026  17:26           1720465 Status_Phase16_kino_08.png
+24.10.2026  17:26           2954004 Status_Phase16_kino_09.png
+24.10.2026  17:26           2983194 Status_Phase16_kino_10.png
+24.10.2026  17:26             51159 Status_Phase16_kino_11.png
+24.10.2026  17:25           5514415 Status_Phase16_Ornesvingen.png
+24.10.2026  19:22            834721 Status_Phase17.png
+24.10.2026  18:55            120288 Status_Phase17db.png
+24.10.2026  00:39           1041972 Status_Phase2.png
+24.10.2026  01:08           1153229 Status_Phase3.png
+24.10.2026  01:39           2547946 Status_Phase4.png
+24.10.2026  02:09           2070304 Status_Phase5.png
+24.10.2026  02:38            756726 Status_Phase6.png
+24.10.2026  03:39           3583241 Status_Phase7.png
+24.10.2026  03:44           2227600 Status_Phase7a.png
+24.10.2026  03:40           3732526 Status_Phase7_Friaren.png
+24.10.2026  03:40           3537153 Status_Phase7_VomWasser.png
+24.10.2026  04:16            633539 Status_Phase8a.png
+24.10.2026  05:05           1698150 Status_Phase8a_Storfossen.png
+24.10.2026  05:12           1134467 Status_Phase8b.png
+24.10.2026  04:13            930078 Status_Phase8_Hochwasser.png
+24.10.2026  04:13           3700540 Status_Phase8_Schwestern.png
+24.10.2026  04:13           3667651 Status_Phase8_Schwestern_geschaetzt.png
+24.10.2026  04:13            928092 Status_Phase8_Spaetsommer.png
+24.10.2026  05:05           2108559 Status_Phase9.png
+24.10.2026  05:34           2633825 Status_Phase9b.png
+24.10.2026  05:34           3266026 Status_Phase9b_Bus.png
+24.10.2026  05:05           1630964 Status_Phase9_Bus.png
+24.10.2026  05:05           1859179 Status_Phase9_Geiranger.png
+24.10.2026  01:12              2379 tempo.txt
+24.10.2026  01:37              3395 tempo_Phase4.txt
+24.10.2026  02:07              3706 tempo_Phase5.txt
+24.10.2026  02:35              3706 tempo_Phase5a.txt
+24.10.2026  05:29            650671 Vorschau_Phase10_Waldkarte.png
+24.10.2026  03:25            561512 Vorschau_Phase7_Mesa_Friaren.png
+24.10.2026  03:25            579056 Vorschau_Phase7_Mesa_Schwestern.png
+24.10.2026  03:25            395340 Vorschau_Phase7_Mesa_VomWasser.png
+24.10.2026  05:00            304738 Vorschau_Phase9_Mesa_Kehren.png
+24.10.2026  05:00            196925 Vorschau_Phase9_Mesa_Nah.png
+             124 Datei(en),      296954001 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\icon
+
+23.10.2026  20:42    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\lib
+
+23.10.2026  20:44    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+23.10.2026  07:36         191360022 Avatar.jar
+23.10.2026  20:40    <DIR>          CopyLibs
+29.09.2026  14:23          15092989 FStyle.jar
+02.10.2026  18:57             23010 gluegen-rt-natives-windows-amd64.jar
+02.10.2026  18:57            411363 gluegen-rt.jar
+02.10.2026  18:56            294752 jogl-all-natives-windows-amd64.jar
+02.10.2026  18:56           3991187 jogl-all.jar
+23.10.2026  20:40               177 nblibraries.properties
+26.06.2026  13:47           7718137 ojdbc11.jar
+24.10.2026  19:22           5087824 Renderer.jar
+11.10.2025  19:18            340727 sdoapi.jar
+11.10.2025  19:18            497990 sdogr.jar
+11.10.2025  19:18            434806 sdoutl.jar
+              12 Datei(en),      225252984 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\lib\CopyLibs
+
+23.10.2026  20:40    <DIR>          .
+23.10.2026  20:44    <DIR>          ..
+23.10.2026  20:40            108988 org-netbeans-modules-java-j2seproject-copylibstask.jar
+               1 Datei(en),         108988 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\nbproject
+
+23.10.2026  20:40    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+23.10.2026  20:40            104899 build-impl.xml
+23.10.2026  20:40               477 genfiles.properties
+24.10.2026  21:17    <DIR>          private
+24.10.2026  05:29              4167 project.properties
+23.10.2026  20:40               755 project.xml
+               4 Datei(en),         110298 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\nbproject\private
+
+24.10.2026  21:17    <DIR>          .
+23.10.2026  20:40    <DIR>          ..
+23.10.2026  20:40               114 private.properties
+24.10.2026  21:17               230 private.xml
+               2 Datei(en),            344 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\pakete
+
+24.10.2026  19:22    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  19:22    <DIR>          com
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\pakete\com
+
+24.10.2026  19:22    <DIR>          .
+24.10.2026  19:22    <DIR>          ..
+24.10.2026  19:22    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\pakete\com\dan
+
+24.10.2026  19:22    <DIR>          .
+24.10.2026  19:22    <DIR>          ..
+24.10.2026  02:03    <DIR>          cliff
+24.10.2026  02:31    <DIR>          fall
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\pakete\com\dan\cliff
+
+24.10.2026  02:03    <DIR>          .
+24.10.2026  19:22    <DIR>          ..
+24.10.2026  19:22             13257 Cliff.java
+24.10.2026  19:22              9519 CliffMap.java
+24.10.2026  19:22              4150 CNoise.java
+24.10.2026  02:03    <DIR>          demo
+24.10.2026  02:03    <DIR>          gl
+24.10.2026  19:22              4652 Overhang.java
+24.10.2026  19:22              6705 README.md
+               5 Datei(en),          38283 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\pakete\com\dan\cliff\demo
+
+24.10.2026  02:03    <DIR>          .
+24.10.2026  02:03    <DIR>          ..
+24.10.2026  19:22              7161 CliffCheck.java
+24.10.2026  19:22             11345 CliffDemo.java
+24.10.2026  19:22              6892 CliffScene.java
+24.10.2026  19:22              1184 DemoWall.java
+               4 Datei(en),          26582 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\pakete\com\dan\cliff\gl
+
+24.10.2026  02:03    <DIR>          .
+24.10.2026  02:03    <DIR>          ..
+24.10.2026  19:22               321 check.frag
+24.10.2026  19:22               488 check.vert
+24.10.2026  19:22              9956 cliff.glsl
+24.10.2026  19:22             21000 CliffGl.java
+24.10.2026  19:22              1242 rock.frag
+24.10.2026  19:22               789 rock.vert
+               6 Datei(en),          33796 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\pakete\com\dan\fall
+
+24.10.2026  02:31    <DIR>          .
+24.10.2026  19:22    <DIR>          ..
+24.10.2026  02:31    <DIR>          demo
+24.10.2026  19:22             37663 Fall.java
+24.10.2026  02:31    <DIR>          gl
+24.10.2026  19:22              7258 README.md
+               2 Datei(en),          44921 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\pakete\com\dan\fall\demo
+
+24.10.2026  02:31    <DIR>          .
+24.10.2026  02:31    <DIR>          ..
+24.10.2026  19:22              3088 DemoCliff.java
+24.10.2026  19:22             12988 FallCheck.java
+24.10.2026  19:22             11564 FallDemo.java
+24.10.2026  19:22              6357 FallScene.java
+               4 Datei(en),          33997 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\pakete\com\dan\fall\gl
+
+24.10.2026  02:31    <DIR>          .
+24.10.2026  02:31    <DIR>          ..
+24.10.2026  19:22               231 check.frag
+24.10.2026  19:22               436 check.vert
+24.10.2026  19:22              6047 fall.glsl
+24.10.2026  19:22             33278 FallGl.java
+24.10.2026  19:22              1180 ground.frag
+24.10.2026  19:22               338 ground.vert
+24.10.2026  19:22              1564 mist.vert
+24.10.2026  19:22               778 pool.frag
+24.10.2026  19:22               569 pool.vert
+24.10.2026  19:22              1100 strand.frag
+24.10.2026  19:22              1614 strand.vert
+24.10.2026  19:22               472 veil.frag
+24.10.2026  19:22              2181 veil.vert
+              13 Datei(en),          49788 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src
+
+23.10.2026  23:55    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+23.10.2026  23:55    <DIR>          com
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com
+
+23.10.2026  23:55    <DIR>          .
+23.10.2026  23:55    <DIR>          ..
+24.10.2026  19:22    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan
+
+24.10.2026  19:22    <DIR>          .
+23.10.2026  23:55    <DIR>          ..
+24.10.2026  18:47    <DIR>          geiranger
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger
+
+24.10.2026  18:47    <DIR>          .
+24.10.2026  19:22    <DIR>          ..
+24.10.2026  19:22    <DIR>          app
+23.10.2026  23:55    <DIR>          camera
+24.10.2026  18:47    <DIR>          data
+24.10.2026  08:00    <DIR>          gl
+24.10.2026  17:20    <DIR>          scene
+24.10.2026  19:22    <DIR>          tools
+24.10.2026  19:22    <DIR>          ui
+24.10.2026  03:25    <DIR>          wiring
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger\app
+
+24.10.2026  19:22    <DIR>          .
+24.10.2026  18:47    <DIR>          ..
+24.10.2026  19:22              3366 Bibliothek.java
+24.10.2026  20:30             21456 Dauerlauf.java
+24.10.2026  19:22             17540 GeirangerApp.java
+               3 Datei(en),          42362 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger\camera
+
+23.10.2026  23:55    <DIR>          .
+24.10.2026  18:47    <DIR>          ..
+24.10.2026  06:12              5691 Ansichten.java
+24.10.2026  17:20             13158 Camera.java
+24.10.2026  02:31              5546 Fahrt.java
+               3 Datei(en),          24395 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger\data
+
+24.10.2026  18:47    <DIR>          .
+24.10.2026  18:47    <DIR>          ..
+24.10.2026  18:47              4131 befunde.txt
+24.10.2026  18:47             18024 Chronik.java
+24.10.2026  18:47             31358 DateiSpeicher.java
+24.10.2026  18:47             23388 Daten.java
+24.10.2026  18:47              2353 Datenseite.java
+24.10.2026  18:47             52323 DbSpeicher.java
+24.10.2026  18:47              7489 Hoehenlinien.java
+24.10.2026  18:47              6174 Laden.java
+24.10.2026  18:47              2067 quellen.txt
+24.10.2026  18:47              4960 Speicher.java
+24.10.2026  18:47             38280 Startdaten.java
+24.10.2026  19:22              8715 Tageskarte.java
+24.10.2026  18:47              3582 Uebernahme.java
+24.10.2026  18:47              8700 Verbindung.java
+24.10.2026  18:47             12142 Zustand.java
+              15 Datei(en),         223686 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger\gl
+
+24.10.2026  08:00    <DIR>          .
+24.10.2026  18:47    <DIR>          ..
+24.10.2026  04:09              5204 Belichtung.java
+24.10.2026  02:31              4447 ComputeProbe.java
+24.10.2026  19:22              6342 DorfGl.java
+24.10.2026  05:00              7825 Fels.java
+24.10.2026  07:00              3996 FlotteGl.java
+24.10.2026  04:09              8529 Fluss.java
+24.10.2026  02:31              5294 Gpu.java
+24.10.2026  02:31              5153 HudOverlay.java
+24.10.2026  19:22             10338 Kielwasser.java
+24.10.2026  19:22              7399 LeuteGl.java
+24.10.2026  02:31              7150 Mat4.java
+24.10.2026  19:22              7375 Quality.java
+24.10.2026  19:22            129627 Renderer.java
+24.10.2026  18:47             12893 SceneView.java
+24.10.2026  02:31              5156 SchattenKarte.java
+24.10.2026  07:00    <DIR>          shader
+24.10.2026  02:31              9262 Shader.java
+24.10.2026  16:19             14119 Strasse.java
+24.10.2026  05:00             16872 TerrainLod.java
+24.10.2026  08:28              9748 Wald.java
+24.10.2026  02:31              8860 Wasser.java
+24.10.2026  08:28             12355 Wasserfaelle.java
+24.10.2026  02:31              8143 Wetter.java
+              22 Datei(en),         306087 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger\gl\shader
+
+24.10.2026  07:00    <DIR>          .
+24.10.2026  08:00    <DIR>          ..
+24.10.2026  07:00              4189 bauten.frag
+24.10.2026  04:09               489 bauten.vert
+24.10.2026  02:31              6128 common.glsl
+24.10.2026  04:09              2577 elva.frag
+24.10.2026  04:09               629 elva.vert
+24.10.2026  02:31               269 fullscreen.vert
+24.10.2026  06:12               511 glow.frag
+24.10.2026  06:12               549 glow.vert
+24.10.2026  07:00              3533 kielwasser.comp
+24.10.2026  07:00               732 kielwasser_schieben.comp
+24.10.2026  04:09              1788 licht.glsl
+24.10.2026  04:09               834 lum.frag
+24.10.2026  02:31               543 overlay.frag
+24.10.2026  02:31              1374 post.frag
+24.10.2026  02:31               690 probe.comp
+24.10.2026  02:31              1635 schatten.frag
+24.10.2026  07:00               682 schiff.vert
+24.10.2026  02:31               376 sky.frag
+24.10.2026  02:31              1724 spiegel.frag
+24.10.2026  05:00              2088 strasse.frag
+24.10.2026  05:00               658 strasse.vert
+24.10.2026  08:28             14784 terrain.frag
+24.10.2026  07:00              3131 terrain.vert
+24.10.2026  05:00              3602 terrain_height.glsl
+              24 Datei(en),          53515 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger\scene
+
+24.10.2026  17:20    <DIR>          .
+24.10.2026  18:47    <DIR>          ..
+24.10.2026  08:00             18197 Bauten.java
+24.10.2026  05:00              6523 Begegnung.java
+24.10.2026  02:31              1529 Buehne.java
+24.10.2026  18:47             31484 Dorf.java
+24.10.2026  09:06             12183 Echo.java
+24.10.2026  04:09              9969 Elva.java
+24.10.2026  07:00              8179 faehre_route.txt
+24.10.2026  05:29             14564 Faelle.java
+24.10.2026  02:31             13262 Fjordgrund.java
+24.10.2026  18:47             42765 Flotte.java
+24.10.2026  18:47             13543 Formen.java
+24.10.2026  02:31              4264 Geo.java
+24.10.2026  18:47              6625 Hoefe.java
+24.10.2026  06:12              7968 Holzbau.java
+24.10.2026  18:47              8494 Jahr.java
+24.10.2026  16:48             39270 Klang.java
+24.10.2026  18:47             54614 Leute.java
+24.10.2026  06:12             10777 Ornevegen.java
+24.10.2026  05:00             12921 ornevegen_achse.txt
+24.10.2026  02:31              5634 Physik.java
+24.10.2026  05:29              4978 Plattform.java
+24.10.2026  17:20    <DIR>          regie
+24.10.2026  18:47             23260 Regie.java
+24.10.2026  02:31              4390 SceneClock.java
+24.10.2026  05:00              7865 Site.java
+24.10.2026  02:31              4206 Sun.java
+24.10.2026  18:47             19132 Terrain.java
+24.10.2026  09:06             11302 Vestland.java
+24.10.2026  02:31              3124 Wandschatten.java
+              28 Datei(en),         401022 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger\scene\regie
+
+24.10.2026  17:20    <DIR>          .
+24.10.2026  17:20    <DIR>          ..
+24.10.2026  17:20              1655 faehre.txt
+24.10.2026  17:20              2896 junitag.txt
+24.10.2026  17:20              1365 ornesvingen.txt
+               3 Datei(en),           5916 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger\tools
+
+24.10.2026  19:22    <DIR>          .
+24.10.2026  18:47    <DIR>          ..
+24.10.2026  02:31              8177 Fjordprofil.java
+24.10.2026  02:31             13412 GeoTiff.java
+24.10.2026  02:31             17348 HgtImport.java
+24.10.2026  16:19             17249 KlangFahrt.java
+24.10.2026  19:44              7269 Quellenliste.java
+24.10.2026  18:47             29908 StartdatenSql.java
+24.10.2026  19:22              2306 Symbol.java
+24.10.2026  19:22              2377 Tageslauf.java
+24.10.2026  17:20             21049 Tempo.java
+               9 Datei(en),         119095 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger\ui
+
+24.10.2026  19:22    <DIR>          .
+24.10.2026  18:47    <DIR>          ..
+24.10.2026  19:22              8735 AppIcon.java
+24.10.2026  19:22             75743 ControlPanel.java
+24.10.2026  19:22    <DIR>          icon
+24.10.2026  18:47             23049 Startbild.java
+24.10.2026  02:31              2399 Theme.java
+24.10.2026  18:47              3184 Weiter.java
+               5 Datei(en),         113110 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger\ui\icon
+
+24.10.2026  19:22    <DIR>          .
+24.10.2026  19:22    <DIR>          ..
+24.10.2026  19:22             11614 geiranger_128.png
+24.10.2026  19:22               763 geiranger_16.png
+24.10.2026  19:22              1283 geiranger_24.png
+24.10.2026  19:22             26547 geiranger_256.png
+24.10.2026  19:22              1981 geiranger_32.png
+24.10.2026  19:22              3632 geiranger_48.png
+24.10.2026  19:22              4901 geiranger_64.png
+               7 Datei(en),          50721 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\src\com\dan\geiranger\wiring
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  18:47    <DIR>          ..
+24.10.2026  08:28              5080 Abfluss.java
+24.10.2026  02:31               969 Beaufort.java
+24.10.2026  02:31               671 Clock.java
+24.10.2026  02:31               584 Discharge.java
+24.10.2026  18:47              8051 KlimaGeiranger.java
+24.10.2026  02:31               560 Lighting.java
+24.10.2026  02:31              1231 Terrain.java
+24.10.2026  02:31               806 Wall.java
+24.10.2026  02:31               530 Water.java
+24.10.2026  02:31               973 Wind.java
+24.10.2026  18:47             19000 Wiring.java
+              11 Datei(en),          38455 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\templates
+
+24.10.2026  01:34    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+23.10.2026  21:29            230394 Geiranger1.jpg
+23.10.2026  21:30             20802 Geiranger2.jpg
+23.10.2026  21:30            336251 Geiranger3.jpg
+23.10.2026  20:53          77365469 gigantic_sandstone_terrain_wldhdhxva_ue_high.zip
+23.10.2026  21:01          43247840 gigantic_tundra_terrain_viyjcbq_high.zip
+23.10.2026  21:08          70854422 ice_cliff_uhupbgxfa_high.zip
+23.10.2026  22:06            402579 Karte-Geirangerfjord.png
+23.10.2026  23:21          10834861 N58E007.zip
+23.10.2026  23:23           7489233 N62E006.zip
+23.10.2026  23:23          11638181 N62E007.zip
+23.10.2026  23:23          11734633 N62E008.zip
+23.10.2026  20:36    <DIR>          rasters_COP30 (2)
+24.10.2026  01:33    <DIR>          rasters_COP30 (3)
+23.10.2026  22:53        1704259852 S1C_IW_RAW__0SDV_20261023T171030_20261023T171102_010015_013FB4_89C4.SAFE.zip
+23.10.2026  21:25             66186 Waterfall1.jpg
+23.10.2026  21:26            342713 Waterfall2.jpg
+23.10.2026  21:26             31782 Waterfall3.jpg
+23.10.2026  21:27            118840 Ørnesvingen1.jpg
+23.10.2026  21:28            436272 Ørnesvingen2.jpg
+23.10.2026  21:29             18518 Ørnesvingen3.jpg
+              18 Datei(en),     1939428828 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\templates\rasters_COP30 (2)
+
+23.10.2026  20:36    <DIR>          .
+24.10.2026  01:34    <DIR>          ..
+23.10.2026  20:35           2352886 output_hh.tif
+               1 Datei(en),        2352886 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\templates\rasters_COP30 (3)
+
+24.10.2026  01:33    <DIR>          .
+24.10.2026  01:34    <DIR>          ..
+24.10.2026  01:33            555544 output_hh.tif
+               1 Datei(en),         555544 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\test
+
+23.10.2026  23:55    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+23.10.2026  23:55    <DIR>          com
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\test\com
+
+23.10.2026  23:55    <DIR>          .
+23.10.2026  23:55    <DIR>          ..
+23.10.2026  23:55    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\test\com\dan
+
+23.10.2026  23:55    <DIR>          .
+23.10.2026  23:55    <DIR>          ..
+23.10.2026  23:55    <DIR>          geiranger
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\test\com\dan\geiranger
+
+23.10.2026  23:55    <DIR>          .
+23.10.2026  23:55    <DIR>          ..
+24.10.2026  18:47    <DIR>          test
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\test\com\dan\geiranger\test
+
+24.10.2026  18:47    <DIR>          .
+23.10.2026  23:55    <DIR>          ..
+24.10.2026  18:47              4200 DbPruefung.java
+24.10.2026  20:30            143399 Pruefung.java
+               2 Datei(en),         147599 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\tools
+
+23.10.2026  23:55    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+24.10.2026  19:22             11175 PaketPruefung.java
+               1 Datei(en),          11175 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_alt
+
+24.10.2026  00:36    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+23.10.2026  20:43    <DIR>          Neuer Ordner
+24.10.2026  01:05    <DIR>          phase1
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_alt\Neuer Ordner
+
+23.10.2026  20:43    <DIR>          .
+24.10.2026  00:36    <DIR>          ..
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_alt\phase1
+
+24.10.2026  01:05    <DIR>          .
+24.10.2026  00:36    <DIR>          ..
+24.10.2026  00:36              4334 stage.frag
+24.10.2026  01:05              4334 stage_p2.frag
+               2 Datei(en),           8668 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer
+
+24.10.2026  20:30    <DIR>          .
+24.10.2026  23:14    <DIR>          ..
+23.10.2026  23:55              2389 build_targets.xml
+24.10.2026  00:36              2025 build_targets_p2.xml
+24.10.2026  01:05              2626 build_targets_p3.xml
+24.10.2026  01:29              2069 build_targets_p4.xml
+24.10.2026  19:10            402268 kontakt_0.jpg
+24.10.2026  19:10            375334 kontakt_1.jpg
+24.10.2026  19:10            294415 kontakt_2.jpg
+24.10.2026  05:29    <DIR>          p10x
+24.10.2026  05:29    <DIR>          p10x_nbproject_unused
+24.10.2026  03:25    <DIR>          p7x
+24.10.2026  04:09    <DIR>          p8x
+24.10.2026  05:00    <DIR>          p9x
+24.10.2026  08:28               978 phase14.md5
+24.10.2026  09:06               833 phase15.md5
+24.10.2026  16:19               533 phase15b.md5
+24.10.2026  16:19            100432 phase15b.tgz
+24.10.2026  16:33               193 phase15c.md5
+24.10.2026  16:33             53401 phase15c.tgz
+24.10.2026  16:48               267 phase15d.md5
+24.10.2026  17:20              1005 phase16.md5
+24.10.2026  18:47              3123 phase17.md5
+24.10.2026  18:47           1647798 phase17.tgz
+24.10.2026  19:22              4534 phase18.md5
+24.10.2026  19:22           3715945 phase18.tgz
+24.10.2026  19:44               206 phase18b.md5
+24.10.2026  19:44             48717 phase18b.tgz
+24.10.2026  20:30               151 phase18c.md5
+24.10.2026  20:30             49146 phase18c.tgz
+24.10.2026  19:04    <DIR>          rh18
+24.10.2026  17:52            191573 rh_ref.tgz
+23.10.2026  23:37           1811754 rungholt_src.tgz
+24.10.2026  07:19         151006374 stand_p12.tgz
+24.10.2026  02:45          46224142 stand_p6.tgz
+24.10.2026  05:18    <DIR>          tundra
+              27 Datei(en),      205942231 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  20:30    <DIR>          ..
+24.10.2026  05:29             22482 build.xml
+24.10.2026  05:29    <DIR>          daten
+24.10.2026  05:29    <DIR>          docs
+24.10.2026  05:29             14644 README.md
+24.10.2026  05:29    <DIR>          src
+24.10.2026  05:29    <DIR>          test
+               2 Datei(en),          37126 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\daten
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29    <DIR>          tundra
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\daten\tundra
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29               576 LIESMICH.md
+24.10.2026  05:29            265985 tundra_1024.jpg
+               2 Datei(en),         266561 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\docs
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29    <DIR>          status
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\docs\status
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29            650671 Vorschau_Phase10_Waldkarte.png
+               1 Datei(en),         650671 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\src
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29    <DIR>          com
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\src\com
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\src\com\dan
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29    <DIR>          fall
+24.10.2026  05:29    <DIR>          geiranger
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\src\com\dan\fall
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29             37663 Fall.java
+               1 Datei(en),          37663 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\src\com\dan\geiranger
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29    <DIR>          gl
+24.10.2026  05:29    <DIR>          scene
+24.10.2026  05:29    <DIR>          tools
+24.10.2026  05:29    <DIR>          ui
+24.10.2026  05:29    <DIR>          wiring
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\src\com\dan\geiranger\gl
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29              5726 Quality.java
+24.10.2026  05:29             83455 Renderer.java
+24.10.2026  05:29    <DIR>          shader
+24.10.2026  05:29              5493 Wald.java
+               3 Datei(en),          94674 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\src\com\dan\geiranger\gl\shader
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29              1006 bauten.frag
+24.10.2026  05:29             11795 terrain.frag
+               2 Datei(en),          12801 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\src\com\dan\geiranger\scene
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29             17782 Bauten.java
+24.10.2026  05:29             14564 Faelle.java
+24.10.2026  05:29             12017 Formen.java
+24.10.2026  05:29              6284 Hoefe.java
+24.10.2026  05:29              8684 Ornevegen.java
+24.10.2026  05:29              4978 Plattform.java
+24.10.2026  05:29              9342 Vestland.java
+               7 Datei(en),          73651 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\src\com\dan\geiranger\tools
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29             10724 Tempo.java
+               1 Datei(en),          10724 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\src\com\dan\geiranger\ui
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29             33645 ControlPanel.java
+               1 Datei(en),          33645 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\src\com\dan\geiranger\wiring
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29             17683 Wiring.java
+               1 Datei(en),          17683 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\test
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29    <DIR>          com
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\test\com
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\test\com\dan
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29    <DIR>          geiranger
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\test\com\dan\geiranger
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29    <DIR>          test
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x\test\com\dan\geiranger\test
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  05:29    <DIR>          ..
+24.10.2026  05:29             66266 Pruefung.java
+               1 Datei(en),          66266 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p10x_nbproject_unused
+
+24.10.2026  05:29    <DIR>          .
+24.10.2026  20:30    <DIR>          ..
+24.10.2026  05:29              4167 project.properties
+               1 Datei(en),           4167 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  20:30    <DIR>          ..
+24.10.2026  03:25             13060 build.xml
+24.10.2026  03:25    <DIR>          docs
+24.10.2026  03:25              9068 README.md
+24.10.2026  03:25    <DIR>          src
+24.10.2026  03:25    <DIR>          test
+               2 Datei(en),          22128 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\docs
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25    <DIR>          status
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\docs\status
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25            561512 Vorschau_Phase7_Mesa_Friaren.png
+24.10.2026  03:25            579056 Vorschau_Phase7_Mesa_Schwestern.png
+24.10.2026  03:25            395340 Vorschau_Phase7_Mesa_VomWasser.png
+               3 Datei(en),        1535908 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25    <DIR>          com
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25    <DIR>          cliff
+24.10.2026  03:25    <DIR>          fall
+24.10.2026  03:25    <DIR>          geiranger
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\cliff
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25             13257 Cliff.java
+24.10.2026  03:25              9519 CliffMap.java
+24.10.2026  03:25              4150 CNoise.java
+24.10.2026  03:25    <DIR>          demo
+24.10.2026  03:25    <DIR>          gl
+24.10.2026  03:25              4652 Overhang.java
+24.10.2026  03:25              6705 README.md
+               5 Datei(en),          38283 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\cliff\demo
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25              7161 CliffCheck.java
+24.10.2026  03:25             11345 CliffDemo.java
+24.10.2026  03:25              6892 CliffScene.java
+24.10.2026  03:25              1184 DemoWall.java
+               4 Datei(en),          26582 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\cliff\gl
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25               321 check.frag
+24.10.2026  03:25               488 check.vert
+24.10.2026  03:25              8288 cliff.glsl
+24.10.2026  03:25             21000 CliffGl.java
+24.10.2026  03:25              1242 rock.frag
+24.10.2026  03:25               789 rock.vert
+               6 Datei(en),          32128 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\fall
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25    <DIR>          demo
+24.10.2026  03:25             37206 Fall.java
+24.10.2026  03:25    <DIR>          gl
+24.10.2026  03:25              7258 README.md
+               2 Datei(en),          44464 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\fall\demo
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25              3088 DemoCliff.java
+24.10.2026  03:25             12988 FallCheck.java
+24.10.2026  03:25             11564 FallDemo.java
+24.10.2026  03:25              6357 FallScene.java
+               4 Datei(en),          33997 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\fall\gl
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25               231 check.frag
+24.10.2026  03:25               436 check.vert
+24.10.2026  03:25              6047 fall.glsl
+24.10.2026  03:25             32609 FallGl.java
+24.10.2026  03:25              1180 ground.frag
+24.10.2026  03:25               338 ground.vert
+24.10.2026  03:25              1222 mist.vert
+24.10.2026  03:25               778 pool.frag
+24.10.2026  03:25               569 pool.vert
+24.10.2026  03:25              1100 strand.frag
+24.10.2026  03:25              1614 strand.vert
+24.10.2026  03:25               472 veil.frag
+24.10.2026  03:25              1763 veil.vert
+              13 Datei(en),          48359 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\geiranger
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25    <DIR>          camera
+24.10.2026  03:25    <DIR>          gl
+24.10.2026  03:25    <DIR>          scene
+24.10.2026  03:25    <DIR>          tools
+24.10.2026  03:25    <DIR>          ui
+24.10.2026  03:25    <DIR>          wiring
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\geiranger\camera
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25              5148 Ansichten.java
+               1 Datei(en),           5148 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\geiranger\gl
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25              7147 Fels.java
+24.10.2026  03:25              5167 Quality.java
+24.10.2026  03:25             68092 Renderer.java
+24.10.2026  03:25             12256 Wasserfaelle.java
+               4 Datei(en),          92662 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\geiranger\scene
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25             12323 Faelle.java
+24.10.2026  03:25              7477 Site.java
+               2 Datei(en),          19800 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\geiranger\tools
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25              7728 Tempo.java
+               1 Datei(en),           7728 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\geiranger\ui
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25             32517 ControlPanel.java
+               1 Datei(en),          32517 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\src\com\dan\geiranger\wiring
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25              4579 Abfluss.java
+24.10.2026  03:25             17198 Wiring.java
+               2 Datei(en),          21777 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\test
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25    <DIR>          com
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\test\com
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\test\com\dan
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25    <DIR>          geiranger
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\test\com\dan\geiranger
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25    <DIR>          test
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p7x\test\com\dan\geiranger\test
+
+24.10.2026  03:25    <DIR>          .
+24.10.2026  03:25    <DIR>          ..
+24.10.2026  03:25             50306 Pruefung.java
+               1 Datei(en),          50306 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  20:30    <DIR>          ..
+24.10.2026  04:09             15805 build.xml
+24.10.2026  04:09             10865 README.md
+24.10.2026  04:09    <DIR>          src
+24.10.2026  04:09    <DIR>          test
+               2 Datei(en),          26670 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09    <DIR>          com
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com\dan
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09    <DIR>          cliff
+24.10.2026  04:09    <DIR>          geiranger
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com\dan\cliff
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09    <DIR>          gl
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com\dan\cliff\gl
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09              8410 cliff.glsl
+               1 Datei(en),           8410 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com\dan\geiranger
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09    <DIR>          camera
+24.10.2026  04:09    <DIR>          gl
+24.10.2026  04:09    <DIR>          scene
+24.10.2026  04:09    <DIR>          tools
+24.10.2026  04:09    <DIR>          ui
+24.10.2026  04:09    <DIR>          wiring
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com\dan\geiranger\camera
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09              5301 Ansichten.java
+               1 Datei(en),           5301 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com\dan\geiranger\gl
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09              5204 Belichtung.java
+24.10.2026  04:09              7287 Fels.java
+24.10.2026  04:09              8529 Fluss.java
+24.10.2026  04:09             73672 Renderer.java
+24.10.2026  04:09    <DIR>          shader
+24.10.2026  04:09             12347 Wasserfaelle.java
+               5 Datei(en),         107039 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com\dan\geiranger\gl\shader
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09              1004 bauten.frag
+24.10.2026  04:09               489 bauten.vert
+24.10.2026  04:09              2577 elva.frag
+24.10.2026  04:09               629 elva.vert
+24.10.2026  04:09              1788 licht.glsl
+24.10.2026  04:09               834 lum.frag
+24.10.2026  04:09             10489 terrain.frag
+               7 Datei(en),          17810 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com\dan\geiranger\scene
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09             12561 Bauten.java
+24.10.2026  04:09              9969 Elva.java
+24.10.2026  04:09             14308 Faelle.java
+24.10.2026  04:09              8959 Formen.java
+24.10.2026  04:09              7569 Site.java
+24.10.2026  04:09             17553 Terrain.java
+               6 Datei(en),          70919 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com\dan\geiranger\tools
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09              8180 Tempo.java
+               1 Datei(en),           8180 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com\dan\geiranger\ui
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09             32774 ControlPanel.java
+               1 Datei(en),          32774 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\src\com\dan\geiranger\wiring
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09             17297 Wiring.java
+               1 Datei(en),          17297 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\test
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09    <DIR>          com
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\test\com
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\test\com\dan
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09    <DIR>          geiranger
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\test\com\dan\geiranger
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09    <DIR>          test
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p8x\test\com\dan\geiranger\test
+
+24.10.2026  04:09    <DIR>          .
+24.10.2026  04:09    <DIR>          ..
+24.10.2026  04:09             56520 Pruefung.java
+               1 Datei(en),          56520 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  20:30    <DIR>          ..
+24.10.2026  05:00             18610 build.xml
+24.10.2026  05:00    <DIR>          docs
+24.10.2026  05:00             12880 README.md
+24.10.2026  05:00    <DIR>          src
+24.10.2026  05:00    <DIR>          test
+               2 Datei(en),          31490 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\docs
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00    <DIR>          status
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\docs\status
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00            304738 Vorschau_Phase9_Mesa_Kehren.png
+24.10.2026  05:00            196925 Vorschau_Phase9_Mesa_Nah.png
+               2 Datei(en),         501663 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00    <DIR>          com
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com\dan
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00    <DIR>          fall
+24.10.2026  05:00    <DIR>          geiranger
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com\dan\fall
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00    <DIR>          gl
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com\dan\fall\gl
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00             33278 FallGl.java
+24.10.2026  05:00              1564 mist.vert
+24.10.2026  05:00              2181 veil.vert
+               3 Datei(en),          37023 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com\dan\geiranger
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00    <DIR>          camera
+24.10.2026  05:00    <DIR>          gl
+24.10.2026  05:00    <DIR>          scene
+24.10.2026  05:00    <DIR>          tools
+24.10.2026  05:00    <DIR>          ui
+24.10.2026  05:00    <DIR>          wiring
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com\dan\geiranger\camera
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00              5575 Ansichten.java
+               1 Datei(en),           5575 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com\dan\geiranger\gl
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00              7825 Fels.java
+24.10.2026  05:00             76873 Renderer.java
+24.10.2026  05:00    <DIR>          shader
+24.10.2026  05:00             12569 Strasse.java
+24.10.2026  05:00             16872 TerrainLod.java
+               4 Datei(en),         114139 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com\dan\geiranger\gl\shader
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00              2088 strasse.frag
+24.10.2026  05:00               658 strasse.vert
+24.10.2026  05:00             10733 terrain.frag
+24.10.2026  05:00              3602 terrain_height.glsl
+               4 Datei(en),          17081 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com\dan\geiranger\scene
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00             15730 Bauten.java
+24.10.2026  05:00              6523 Begegnung.java
+24.10.2026  05:00             12017 Formen.java
+24.10.2026  05:00              8684 Ornevegen.java
+24.10.2026  05:00             12921 ornevegen_achse.txt
+24.10.2026  05:00              4978 Plattform.java
+24.10.2026  05:00              7865 Site.java
+24.10.2026  05:00             18989 Terrain.java
+               8 Datei(en),          87707 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com\dan\geiranger\tools
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00             10349 Tempo.java
+               1 Datei(en),          10349 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com\dan\geiranger\ui
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00             33142 ControlPanel.java
+               1 Datei(en),          33142 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\src\com\dan\geiranger\wiring
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00             17479 Wiring.java
+               1 Datei(en),          17479 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\test
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00    <DIR>          com
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\test\com
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00    <DIR>          dan
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\test\com\dan
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00    <DIR>          geiranger
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\test\com\dan\geiranger
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00    <DIR>          test
+               0 Datei(en),              0 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\p9x\test\com\dan\geiranger\test
+
+24.10.2026  05:00    <DIR>          .
+24.10.2026  05:00    <DIR>          ..
+24.10.2026  05:00             61043 Pruefung.java
+               1 Datei(en),          61043 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\rh18
+
+24.10.2026  19:04    <DIR>          .
+24.10.2026  20:30    <DIR>          ..
+24.10.2026  19:04              5668 AppIcon.java
+24.10.2026  19:04             18101 Dauerlauf.java
+24.10.2026  19:04              5808 Quellenliste.java
+24.10.2026  19:04              9685 README_rh.md
+               4 Datei(en),          39262 Bytes
+
+ Verzeichnis von C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger\_transfer\tundra
+
+24.10.2026  05:18    <DIR>          .
+24.10.2026  20:30    <DIR>          ..
+24.10.2026  05:18           5944812 BaseColor.jpg
+24.10.2026  05:18             35453 meta.json
+24.10.2026  05:18          13116035 Normal.jpg
+               3 Datei(en),       19096300 Bytes
+
+     Anzahl der angezeigten Dateien:
+            1210 Datei(en),     3451270744 Bytes
+            1123 Verzeichnis(se),    37951221760 Bytes frei
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>git rev-list --objects --all > objects.txt
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>git gc --prune=now --aggressive
+Enumerating objects: 388, done.
+Counting objects: 100% (388/388), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (377/377), done.
+Writing objects: 100% (388/388), done.
+Total 388 (delta 30), reused 0 (delta 0), pack-reused 0 (from 0)
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>git count-objects -vH
+count: 0
+size: 0 bytes
+in-pack: 388
+packs: 1
+size-pack: 269.92 MiB
+prune-packable: 0
+garbage: 0
+size-garbage: 0 bytes
+
+C:\Users\Dan40810\Documents\NetBeansProjects\Geiranger>

@@ -4,6 +4,9 @@
 /lib/Avatar.jar
 /build/
 /dist/
+/docs/status/*.png
+/docs/status/*.wav
+/docs/status/*.m4a
 /nbproject/private/
 # Vorlagen und Rohdaten (Karte, Fotos, HGT- und GLO-30-Kacheln, Scan-Assets, Sentinel-1: mehrere GB, fremde Rechte);
 # was die App braucht, liegt ab Phase 2 nach dem Import in daten/
