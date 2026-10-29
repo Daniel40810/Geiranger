@@ -267,7 +267,8 @@ public final class ControlPanel extends JPanel implements javax.swing.Scrollable
         put(bookBox);
         java.util.List<Object> lagen = new java.util.ArrayList<>();
         lagen.add("Lage von Hand …");
-        for (com.dan.weather.Weather.Phase ph : com.dan.weather.Weather.Phase.values()) if (ph != com.dan.weather.Weather.Phase.ORKAN) lagen.add(ph.label);
+        // nur die neun Lagen bis zum Föhnsturm: der Orkan (Rungholt) und die Lagen des Mittelgebirges (Brocken Phase 3) gehören nicht zum Fjord
+        for (com.dan.weather.Weather.Phase ph : com.dan.weather.Weather.Phase.values()) if (ph.ordinal() < com.dan.weather.Weather.Phase.ORKAN.ordinal()) lagen.add(ph.label);
         FComboBox phaseBox = new FComboBox(lagen.toArray());
         phaseBox.setToolTipText("Freie Regie ab jetzt, beginnend mit dieser Lage (danach wählt das Klima „Geiranger“)");
         phaseBox.addActionListener(e -> {
